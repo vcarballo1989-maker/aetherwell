@@ -1,0 +1,302 @@
+{
+  "schema_version": "2.1.0",
+  "generated_at": "2026-10-16T23:14:00Z",
+  "analyst_agent": "market_analyst",
+  "budget_constraints": {
+    "initial_capital_usd": 50.00,
+    "paid_ads_testing_allocation_usd": 35.00,
+    "retargeting_allocation_usd": 10.00,
+    "operational_buffer_usd": 5.00,
+    "max_allowed_cogs_usd": 12.00,
+    "min_gross_margin_pct": 70.0,
+    "target_break_even_roas_max": 1.35
+  },
+  "brand_identity": {
+    "brand_name": "AetherWell™",
+    "tagline": "Alivio Cervical Clínico y Descanso Profundo en 10 Minutos al Día",
+    "niche_category": "Health, Wellness & Ergonomic Recovery",
+    "target_audience": {
+      "age_range": "24-58",
+      "segments": [
+        "Trabajadores remotos y profesionales de oficina (6+ horas frente a pantallas)",
+        "Usuarios con dolor cervical crónico, rigidez de hombros o migrañas tensionales",
+        "Entusiastas del bienestar postural y biohacking accesible"
+      ],
+      "primary_channels": ["TikTok Ads", "Instagram Reels", "Meta Advantage+ Shopping", "TikTok Organic UGC"]
+    },
+    "free_shipping_threshold_usd": 45.00,
+    "standard_shipping_fee_usd": 4.99
+  },
+  "products": [
+    {
+      "id": "prod_hero_orthocloud_001",
+      "sku": "AW-ORTHO-001",
+      "role": "hero",
+      "name": "OrthoCloud™ Pro — Camilla de Tracción Cervical y Acupresión 3D",
+      "short_name": "OrthoCloud™ Pro",
+      "slug": "orthocloud-pro-cervical-stretcher",
+      "badge": "MÁS VENDIDO · RECOMENDADO POR FISIOTERAPEUTAS",
+      "headline": "Descomprime tu cuello, corrige la postura y elimina la tensión cervical en solo 10 minutos al día.",
+      "description": "Diseñada con una curva ergonómica de tracción bidireccional en C y V y 8 nodos de acupresión magnética profunda, OrthoCloud™ Pro restaura la curvatura natural de 26° de tu columna cervical, aliviando el 'cuello de texto', los nervios pinzados y las cefaleas tensionales desde la primera sesión.",
+      "features": [
+        "Tracción bidireccional ajustable (Lado Suave para principiantes / Lado Intenso para corrección profunda)",
+        "8 nodos de acupresión terapéutica que estimulan la microcirculación suboccipital",
+        "Espuma médica de poliuretano de memoria densa auto-moldeable (soporta hasta 150 kg sin deformarse)",
+        "Resultados perceptibles en sesiones de 8 a 10 minutos diarios"
+      ],
+      "pricing": {
+        "currency": "USD",
+        "compare_at_price": 79.99,
+        "retail_price": 39.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 6.20,
+        "cogs_shipping_usd": 2.20,
+        "total_cogs_usd": 8.40,
+        "payment_gateway_fee_est_usd": 1.46,
+        "gross_profit_usd": 31.59,
+        "gross_margin_pct": 79.00,
+        "net_contribution_margin_usd": 30.13,
+        "break_even_roas": 1.27,
+        "max_cpa_break_even_usd": 31.59
+      },
+      "variants": [
+        {
+          "variant_id": "var_ortho_midnight",
+          "sku": "AW-ORTHO-001-BLK",
+          "name": "Obsidian Black (Terapéutico)",
+          "color_hex": "#1A1D24",
+          "stock_status": "in_stock",
+          "inventory_qty": 450,
+          "price_override": null
+        },
+        {
+          "variant_id": "var_ortho_arctic",
+          "sku": "AW-ORTHO-001-BLU",
+          "name": "Clinical Ice Blue",
+          "color_hex": "#3B82F6",
+          "stock_status": "in_stock",
+          "inventory_qty": 320,
+          "price_override": null
+        },
+        {
+          "variant_id": "var_ortho_sage",
+          "sku": "AW-ORTHO-001-GRN",
+          "name": "Zen Sage Green",
+          "color_hex": "#10B981",
+          "stock_status": "in_stock",
+          "inventory_qty": 210,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "Zendrop",
+        "zendrop": {
+          "product_id": "ZD-8849201",
+          "supplier_id": "ZD-SUP-healthplus-09",
+          "warehouse_origin": "US-East / CN-Express-Hub",
+          "shipping_method": "Zendrop Select Express Line",
+          "processing_time_days": "1-2",
+          "shipping_time_days": "7-10",
+          "auto_fulfillment_enabled": true
+        },
+        "aliexpress_fallback": {
+          "product_id": "AE-1005006849201",
+          "store_name": "OrthoMed Factory Direct Store",
+          "store_rating": 4.9,
+          "shipping_method": "AliExpress Selection Standard (Choice)",
+          "shipping_time_days": "8-11",
+          "unit_cost_usd": 5.90,
+          "shipping_cost_usd": 2.30
+        }
+      },
+      "social_proof": {
+        "rating": 4.9,
+        "reviews_count": 1428,
+        "return_rate_pct": 1.2,
+        "viral_metrics": {
+          "estimated_ctr_pct": 3.45,
+          "estimated_cpc_usd": 0.38,
+          "scroll_stopper_score": 9.5
+        }
+      }
+    },
+    {
+      "id": "prod_bump_thermosilk_002",
+      "sku": "AW-MASK-002",
+      "role": "order_bump",
+      "name": "ThermoSilk™ — Antifaz de Compresión Térmica & Crioterapia para Migrañas",
+      "short_name": "ThermoSilk™ Migraine Mask",
+      "slug": "thermosilk-migraine-relief-cap",
+      "badge": "COMPLEMENTO IDEAL · 25% DTO EN CARRITO",
+      "headline": "Combina la tracción cervical con compresión 360° frío/calor para eliminar migrañas y tensión ocular al instante.",
+      "description": "Gorro-antifaz de gel de grado médico 360° que bloquea el 100% de la luz y aplica terapia fría o caliente uniforme sobre sienes, frente y nuca. El complemento perfecto mientras usas tu OrthoCloud™ Pro.",
+      "features": [
+        "Terapia dual Frío (congelador 30 min) o Calor (microondas 15 seg)",
+        "Compresión suave 360° sin presión incómoda sobre los párpados",
+        "Bloqueo total de luz 100% Blackout con tejido modal transpirable"
+      ],
+      "pricing": {
+        "currency": "USD",
+        "compare_at_price": 29.99,
+        "retail_price": 19.99,
+        "upsell_offer_price": 14.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 2.40,
+        "cogs_shipping_usd": 1.10,
+        "total_cogs_usd": 3.50,
+        "payment_gateway_fee_est_usd": 0.48,
+        "gross_profit_usd": 11.49,
+        "gross_margin_pct": 76.65,
+        "net_contribution_margin_usd": 11.01,
+        "break_even_roas": 1.30
+      },
+      "variants": [
+        {
+          "variant_id": "var_mask_obsidian",
+          "sku": "AW-MASK-002-BLK",
+          "name": "Obsidian Black",
+          "color_hex": "#1A1D24",
+          "stock_status": "in_stock",
+          "inventory_qty": 600,
+          "price_override": null
+        },
+        {
+          "variant_id": "var_mask_lavender",
+          "sku": "AW-MASK-002-LAV",
+          "name": "Calming Lavender",
+          "color_hex": "#A855F7",
+          "stock_status": "in_stock",
+          "inventory_qty": 380,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "Zendrop",
+        "zendrop": {
+          "product_id": "ZD-8849315",
+          "supplier_id": "ZD-SUP-healthplus-09",
+          "warehouse_origin": "US-East / CN-Express-Hub",
+          "shipping_method": "Zendrop Bundled Express (Mismo Paquete)",
+          "processing_time_days": "1-2",
+          "shipping_time_days": "7-10",
+          "auto_fulfillment_enabled": true
+        },
+        "aliexpress_fallback": {
+          "product_id": "AE-1005006849315",
+          "store_name": "OrthoMed Factory Direct Store",
+          "store_rating": 4.9,
+          "shipping_method": "AliExpress Selection Standard (Choice)",
+          "shipping_time_days": "8-11",
+          "unit_cost_usd": 2.30,
+          "shipping_cost_usd": 1.10
+        }
+      },
+      "social_proof": {
+        "rating": 4.8,
+        "reviews_count": 894,
+        "return_rate_pct": 0.9
+      }
+    },
+    {
+      "id": "prod_upsell_posturealign_003",
+      "sku": "AW-POSTURE-003",
+      "role": "cross_sell_upsell",
+      "name": "PostureAlign™ Smart — Corrector Espinal Invisible con Vibración Biofeedback",
+      "short_name": "PostureAlign™ Smart",
+      "slug": "posturealign-smart-corrector",
+      "badge": "OFERTA EXCLUSIVA POST-COMPRA · 33% DTO",
+      "headline": "Mantén la alineación perfecta durante tus 8 horas de trabajo con recordatorios hápticos inteligentes.",
+      "description": "Mientras OrthoCloud™ Pro descomprime tu cuello en casa, PostureAlign™ Smart entrena tu memoria muscular durante el día. Su sensor giroscópico detecta cuando te encorvas más de 25° y emite una suave vibración silenciosa para que corrijas tu postura al instante.",
+      "features": [
+        "Sensor inteligente de ángulo de inclinación (25° de precisión)",
+        "Diseño ultraligero de 85g invisible bajo la ropa con correas transpirables",
+        "Batería USB-C de larga duración (15 días por carga de 1.5 horas)"
+      ],
+      "pricing": {
+        "currency": "USD",
+        "compare_at_price": 49.99,
+        "retail_price": 29.99,
+        "upsell_offer_price": 19.99,
+        "discount_percentage": 60,
+        "cogs_product_usd": 3.50,
+        "cogs_shipping_usd": 1.30,
+        "total_cogs_usd": 4.80,
+        "payment_gateway_fee_est_usd": 0.64,
+        "gross_profit_usd": 15.19,
+        "gross_margin_pct": 75.99,
+        "net_contribution_margin_usd": 14.55,
+        "break_even_roas": 1.32
+      },
+      "variants": [
+        {
+          "variant_id": "var_posture_universal",
+          "sku": "AW-POSTURE-003-UNI",
+          "name": "Talla Universal Ajustable (Unisex)",
+          "color_hex": "#334155",
+          "stock_status": "in_stock",
+          "inventory_qty": 510,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "Zendrop",
+        "zendrop": {
+          "product_id": "ZD-8849488",
+          "supplier_id": "ZD-SUP-healthplus-09",
+          "warehouse_origin": "US-East / CN-Express-Hub",
+          "shipping_method": "Zendrop Bundled Express (Mismo Paquete)",
+          "processing_time_days": "1-2",
+          "shipping_time_days": "7-10",
+          "auto_fulfillment_enabled": true
+        },
+        "aliexpress_fallback": {
+          "product_id": "AE-1005006849488",
+          "store_name": "OrthoMed Factory Direct Store",
+          "store_rating": 4.8,
+          "shipping_method": "AliExpress Selection Standard (Choice)",
+          "shipping_time_days": "8-12",
+          "unit_cost_usd": 3.40,
+          "shipping_cost_usd": 1.30
+        }
+      },
+      "social_proof": {
+        "rating": 4.8,
+        "reviews_count": 642,
+        "return_rate_pct": 1.8
+      }
+    }
+  ],
+  "bundles_and_upsell_rules": {
+    "cart_order_bump": {
+      "trigger_product_skus": ["AW-ORTHO-001"],
+      "offer_product_sku": "AW-MASK-002",
+      "offer_price_usd": 14.99,
+      "regular_price_usd": 19.99,
+      "Copy_hook": "🔥 ¡Añade el Antifaz de Migraña ThermoSilk™ por solo $14.99 (Ahorra 25%) y desbloquea ENVÍO GRATIS ASEGURADO hoy!",
+      "expected_take_rate_pct": 38.0,
+      "resulting_cart_total_usd": 54.98,
+      "resulting_gross_margin_pct": 78.36
+    },
+    "one_click_upsell": {
+      "trigger_condition": "cart_contains_AW-ORTHO-001",
+      "offer_product_sku": "AW-POSTURE-003",
+      "offer_price_usd": 19.99,
+      "regular_price_usd": 29.99,
+      "copy_hook": "⚡ Completa tu rehabilitación postural 24/7: Lleva el Corrector Inteligente PostureAlign™ con 33% DTO adicional.",
+      "expected_take_rate_pct": 22.0
+    },
+    "complete_relief_bundle": {
+      "bundle_sku": "AW-BUNDLE-ALL",
+      "name": "Pack Clínico de Recuperación Cervical 360° (Los 3 Productos)",
+      "included_skus": ["AW-ORTHO-001", "AW-MASK-002", "AW-POSTURE-003"],
+      "compare_at_total_usd": 159.97,
+      "regular_total_usd": 89.97,
+      "bundle_price_usd": 59.99,
+      "total_cogs_usd": 16.70,
+      "gross_profit_usd": 43.29,
+      "gross_margin_pct": 72.16,
+      "break_even_roas": 1.39,
+      "free_shipping_included": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "antigravity-commerce-engine",
+  "version": "1.0.0",
+  "description": "Plataforma de E-Commerce Autónomo de Alta Conversión (Next.js Commerce / Shopify Storefront / Stripe Checkout / Zendrop API)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/*.test.js",
+    "audit:24h": "node src/cli/audit.js"
+  },
+  "keywords": [
+    "dropshipping",
+    "antigravity",
+    "nextjs-commerce",
+    "shopify",
+    "stripe",
+    "zendrop"
+  ],
+  "author": "Antigravity Autonomous Ecosystem (dev_engineer)",
+  "license": "PROPRIETARY"
+}
