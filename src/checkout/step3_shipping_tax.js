@@ -3,7 +3,9 @@
  * Cálculo de impuestos regionales (Sales Tax / IVA / VAT) y tarifas de envío (Zendrop Express / VIP).
  */
 
-export const FREE_SHIPPING_THRESHOLD_USD = 65.0;
+import { loadCatalog } from '../catalog/catalogService.js';
+
+export const FREE_SHIPPING_THRESHOLD_USD = 45.0;
 
 export const SHIPPING_RATES_BY_ZONE = {
   US: { standard: 4.99, express: 9.99, etaStandard: '5-8 días hábiles', etaExpress: '3-5 días hábiles' },
@@ -46,11 +48,13 @@ export const COUNTRY_TAX_RATES = {
  * @param {object} params.cart Resultado de buildAndValidateCart (Paso 1)
  * @param {object} params.customerValidation Resultado de validateCustomerAndAddress (Paso 2)
  * @param {'standard'|'express'} [params.shippingMethod='standard']
+ * @param {number} [params.freeShippingThresholdUsd] Umbral opcional de envío gratis (por defecto lee de data/catalog.json: $45.00 USD)
  */
 export function calculateShippingAndTax({
   cart,
   customerValidation,
-  shippingMethod = 'standard'
+  shippingMethod = 'standard',
+  freeShippingThresholdUsd
 } = {}) {
   if (!cart || !cart.valid) {
     return {
@@ -79,12 +83,18 @@ export function calculateShippingAndTax({
     };
   }
 
+  const dynamicThreshold = Number(
+    freeShippingThresholdUsd ??
+      loadCatalog().metadata?.freeShippingThresholdUsd ??
+      FREE_SHIPPING_THRESHOLD_USD
+  );
+
   const { countryCode, state } = customerValidation.customer.shippingAddress;
   const zoneRates = SHIPPING_RATES_BY_ZONE[countryCode] || SHIPPING_RATES_BY_ZONE.US;
 
   const subtotalAfterDiscounts = cart.subtotalAfterDiscounts;
   const qualifiesForFreeStandardShipping =
-    subtotalAfterDiscounts >= FREE_SHIPPING_THRESHOLD_USD ||
+    subtotalAfterDiscounts >= dynamicThreshold ||
     Boolean(cart.freeShippingUnlockedByPromo);
 
   let shippingCost = 0;
@@ -132,10 +142,10 @@ export function calculateShippingAndTax({
     estimatedDelivery:
       shippingMethod === 'express' ? zoneRates.etaExpress : zoneRates.etaStandard,
     qualifiesForFreeStandardShipping,
-    freeShippingThresholdUsd: FREE_SHIPPING_THRESHOLD_USD,
+    freeShippingThresholdUsd: dynamicThreshold,
     amountNeededForFreeShippingUsd: qualifiesForFreeStandardShipping
       ? 0
-      : +(FREE_SHIPPING_THRESHOLD_USD - subtotalAfterDiscounts).toFixed(2),
+      : +(dynamicThreshold - subtotalAfterDiscounts).toFixed(2),
     breakdown: {
       rawSubtotal: cart.rawSubtotal,
       totalDiscount: cart.totalDiscount,

@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-16T23:23:00Z",
+  "brand_name": "AetherWell™",
+  "free_shipping_threshold_usd": 45,
+  "official_formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
+  "current_cycle_t0_pre_live": {
+    "description": "Estado operativo actual tras construcción en paralelo y antes de activar tráfico pagado en vivo (En espera de Activador 1 KYC/Banca).",
+    "audit": {
+      "status": "FAILURE_STATE",
+      "netProfitUsd": -0.42,
+      "metrics": {
+        "formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
+        "initialFundUsd": 50,
+        "settledRevenueUsd": 0,
+        "apiTokenCostsUsd": 0.42,
+        "activeAdSpendUsd": 0,
+        "totalOperatingExpensesUsd": 0.42,
+        "netProfitUsd": -0.42,
+        "remainingOperatingFundUsd": 49.58,
+        "rawRemainingFundUsd": 49.58,
+        "verifiedSalesCount": 0
+      },
+      "selfPenalty": {
+        "applied": true,
+        "allowPremiumReasoningModels": false,
+        "enforcedModelTier": "lightweight_ultra_efficient",
+        "durationHours": 24,
+        "reason": "Beneficio Neto <= 0. Prohibido usar modelos de razonamiento premium durante las próximas 24 horas."
+      },
+      "strategyMutation": {
+        "applied": true,
+        "marketAnalystDirective": "DELETE_CURRENT_CATALOG_AND_PIVOT_NICHE_IMMEDIATELY",
+        "growthMarketerDirective": "SHUTDOWN_ALL_ACTIVE_AD_SETS_AND_CREATIVES",
+        "forbidRepeatedAngles": true
+      },
+      "emergencyBrake": {
+        "triggered": false,
+        "haltAllSubagents": false,
+        "finalShutdownReport": null
+      }
+    },
+    "hitl_activator_1": {
+      "triggered": true,
+      "alert": {
+        "code": "ACTIVATOR_1_KYC_BANKING",
+        "severity": "CRITICAL_HITL",
+        "pauseExecution": true,
+        "reason": "ACTIVADOR 1 (KYC / Banca): El embudo de checkout está 100% operativo y verificado en sandbox, pero requiere credenciales reales de Stripe/PayPal/Shopify, Tax ID y verificación KYC para procesar cobros reales.",
+        "metadata": {
+          "missingRequirements": [
+            "STRIPE_LIVE_SECRET_KEY (actualmente en modo sandbox sk_test_*)",
+            "Verificación de identidad KYC en Stripe/PayPal",
+            "Identificador fiscal de empresa (EIN / NIF / Tax ID)",
+            "Cuenta bancaria comercial vinculada para liquidación de fondos",
+            "Credenciales de producción de Shopify Storefront API"
+          ]
+        },
+        "timestamp": "2026-10-16T23:24:45.233Z"
+      }
+    },
+    "ad_budget_governance": {
+      "total_initial_fund_usd": 50,
+      "phase_1_abo_testing_allocation_usd": 35,
+      "phase_2_retargeting_allocation_usd": 10,
+      "operational_liquidity_reserve_usd": 5,
+      "total_committed_ad_spend_usd": 45,
+      "currency": "USD",
+      "strict_cap_enforcement": true,
+      "target_unit_economics": {
+        "hero_retail_price_usd": 39.99,
+        "target_aov_with_upsells_usd": 48.85,
+        "hero_break_even_roas": 1.27,
+        "max_allowable_cpa_usd": 31.59,
+        "target_cpc_max_usd": 0.55,
+        "target_ctr_min_pct": 2
+      }
+    }
+  },
+  "simulations_24h": {
+    "scenario_success_aetherwell_4_orders": {
+      "status": "SUCCESS_STATE",
+      "netProfitUsd": 97.94,
+      "metrics": {
+        "formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
+        "initialFundUsd": 50,
+        "settledRevenueUsd": 143.36,
+        "apiTokenCostsUsd": 0.42,
+        "activeAdSpendUsd": 45,
+        "totalOperatingExpensesUsd": 45.42,
+        "netProfitUsd": 97.94,
+        "remainingOperatingFundUsd": 147.94,
+        "rawRemainingFundUsd": 147.94,
+        "verifiedSalesCount": 4
+      },
+      "scalingReward": {
+        "applied": true,
+        "allowPremiumReasoningModels": true,
+        "enforcedModelTier": "premium_long_context"
+      },
+      "budgetScaling": {
+        "applied": true,
+        "reinvestmentRatePct": 50,
+        "additionalAdBudgetUsd": 48.97,
+        "growthMarketerDirective": "INCREMENT_AD_BUDGET_BY_$48.97_USD"
+      },
+      "abTesting": {
+        "applied": true,
+        "keepWinningNiche": true,
+        "optimizationTargets": [
+          "web_load_speed_cwv",
+          "checkout_conversion_hooks"
+        ]
+      },
+      "emergencyBrake": {
+        "triggered": false,
+        "haltAllSubagents": false,
+        "finalShutdownReport": null
+      }
+    },
+    "scenario_failure_emergency_brake_zero_sales": {
+      "status": "FAILURE_STATE",
+      "netProfitUsd": -50,
+      "metrics": {
+        "formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
+        "initialFundUsd": 50,
+        "settledRevenueUsd": 0,
+        "apiTokenCostsUsd": 5,
+        "activeAdSpendUsd": 45,
+        "totalOperatingExpensesUsd": 50,
+        "netProfitUsd": -50,
+        "remainingOperatingFundUsd": 0,
+        "rawRemainingFundUsd": 0,
+        "verifiedSalesCount": 0
+      },
+      "selfPenalty": {
+        "applied": true,
+        "allowPremiumReasoningModels": false,
+        "enforcedModelTier": "lightweight_ultra_efficient",
+        "durationHours": 24,
+        "reason": "Beneficio Neto <= 0. Prohibido usar modelos de razonamiento premium durante las próximas 24 horas."
+      },
+      "strategyMutation": {
+        "applied": true,
+        "marketAnalystDirective": "DELETE_CURRENT_CATALOG_AND_PIVOT_NICHE_IMMEDIATELY",
+        "growthMarketerDirective": "SHUTDOWN_ALL_ACTIVE_AD_SETS_AND_CREATIVES",
+        "forbidRepeatedAngles": true
+      },
+      "emergencyBrake": {
+        "triggered": true,
+        "haltAllSubagents": true,
+        "finalShutdownReport": {
+          "title": "INFORME FINAL DE CIERRE DEL SISTEMA ANTIGRAVITY (FRENO DE EMERGENCIA)",
+          "reason": "El presupuesto operativo asignado ($50.00 USD) llegó a $0.00 sin generar al menos 1 venta verificada.",
+          "initialFundUsd": 50,
+          "totalSpentUsd": 50,
+          "verifiedSalesCount": 0,
+          "timestamp": "2026-10-16T23:24:45.233Z"
+        }
+      }
+    }
+  }
+}

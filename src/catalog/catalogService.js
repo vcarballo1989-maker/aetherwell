@@ -259,10 +259,31 @@ export function loadCatalog(catalogPath = DEFAULT_CATALOG_PATH) {
             source: 'data/catalog.json',
             metadata: !Array.isArray(parsed)
               ? {
-                  niche: parsed.niche || parsed.selected_niche || normalized[0]?.niche,
-                  updatedAt: parsed.updatedAt || parsed.timestamp || new Date().toISOString()
+                  brandName: parsed.brand_identity?.brand_name || 'AetherWell™',
+                  tagline:
+                    parsed.brand_identity?.tagline ||
+                    'Alivio Cervical Clínico y Descanso Profundo en 10 Minutos al Día',
+                  niche:
+                    parsed.brand_identity?.niche_category ||
+                    parsed.niche ||
+                    parsed.selected_niche ||
+                    normalized[0]?.niche,
+                  freeShippingThresholdUsd: Number(
+                    parsed.brand_identity?.free_shipping_threshold_usd ?? 45.0
+                  ),
+                  standardShippingFeeUsd: Number(
+                    parsed.brand_identity?.standard_shipping_fee_usd ?? 4.99
+                  ),
+                  updatedAt:
+                    parsed.generated_at || parsed.updatedAt || parsed.timestamp || new Date().toISOString()
                 }
-              : { niche: normalized[0]?.niche, updatedAt: new Date().toISOString() },
+              : {
+                  brandName: 'AetherWell™',
+                  niche: normalized[0]?.niche,
+                  freeShippingThresholdUsd: 45.0,
+                  standardShippingFeeUsd: 4.99,
+                  updatedAt: new Date().toISOString()
+                },
             products: normalized
           };
         }
@@ -276,7 +297,10 @@ export function loadCatalog(catalogPath = DEFAULT_CATALOG_PATH) {
   return {
     source: 'fallback_seed',
     metadata: {
+      brandName: 'AetherWell™',
       niche: fallbackNormalized[0].niche,
+      freeShippingThresholdUsd: 45.0,
+      standardShippingFeeUsd: 4.99,
       updatedAt: new Date().toISOString()
     },
     products: fallbackNormalized

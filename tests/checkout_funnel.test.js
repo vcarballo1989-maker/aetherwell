@@ -197,9 +197,9 @@ describe('PASO 2: Validación de Datos de Cliente y Dirección de Envío (custom
 describe('PASO 3: Cálculo de Impuestos y Tarifas de Envío (shipping_tax)', () => {
   const validCustomer = validateCustomerAndAddress(VALID_CUSTOMER_US);
 
-  it('Aplica tarifa de envío estándar cuando el pedido es menor a $65 USD y calcula Sales Tax estatal (FL 6%)', () => {
+  it('Aplica tarifa de envío estándar ($4.99) cuando el pedido es menor al umbral de $45.00 USD ($39.99) y calcula Sales Tax estatal (FL 6%)', () => {
     const cart = buildAndValidateCart({
-      items: [{ productId: 'prod_posture_pro_01', quantity: 1 }], // $49.99 < $65
+      items: [{ productId: 'prod_hydro_floss_02', quantity: 1 }], // $39.99 < $45.00
       customCatalog: TEST_CATALOG
     });
 
@@ -210,18 +210,27 @@ describe('PASO 3: Cálculo de Impuestos y Tarifas de Envío (shipping_tax)', () 
     });
 
     assert.equal(res.valid, true);
+    assert.equal(res.freeShippingThresholdUsd, 45.0);
     assert.equal(res.qualifiesForFreeStandardShipping, false);
+    assert.equal(res.amountNeededForFreeShippingUsd, 5.01);
     assert.equal(res.breakdown.shippingCost, 4.99);
     assert.equal(res.breakdown.taxRatePct, 6);
-    assert.equal(res.breakdown.taxAmount, 3.3); // (49.99 + 4.99) * 0.06 = 3.2988 -> 3.30
-    assert.equal(res.breakdown.grandTotal, 58.28);
+    assert.equal(res.breakdown.taxAmount, 2.7); // (39.99 + 4.99) * 0.06 = 2.6988 -> 2.70
+    assert.equal(res.breakdown.grandTotal, 47.68);
   });
 
-  it('Desbloquea envío estándar GRATIS al superar el umbral de $65 USD', () => {
+  it('Desbloquea envío estándar GRATIS al superar el umbral de $45.00 USD (Combo OrthoCloud $39.99 + Order Bump ThermoSilk $14.99 = $54.98)', () => {
+    const liveCatalog = loadCatalog().products;
     const cart = buildAndValidateCart({
-      items: [{ productId: 'prod_posture_pro_01', quantity: 2 }], // $84.98 tras 15% bundle > $65
-      customCatalog: TEST_CATALOG
+      items: [
+        { productId: 'prod_hero_orthocloud_001', quantity: 1 },
+        { productId: 'prod_bump_thermosilk_002', quantity: 1, isUpsell: true }
+      ],
+      customCatalog: liveCatalog
     });
+
+    assert.equal(cart.valid, true);
+    assert.equal(cart.subtotalAfterDiscounts, 54.98); // $39.99 + $14.99 (25% off $19.99)
 
     const res = calculateShippingAndTax({
       cart,
@@ -230,6 +239,7 @@ describe('PASO 3: Cálculo de Impuestos y Tarifas de Envío (shipping_tax)', () 
     });
 
     assert.equal(res.valid, true);
+    assert.equal(res.freeShippingThresholdUsd, 45.0);
     assert.equal(res.qualifiesForFreeStandardShipping, true);
     assert.equal(res.breakdown.shippingCost, 0);
   });

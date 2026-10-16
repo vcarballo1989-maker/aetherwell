@@ -27,19 +27,24 @@ export function renderHighConvertingStorefront(catalogData, kycStatus) {
     )
     .join('\n');
 
+  const threshold = metadata?.freeShippingThresholdUsd ?? 45.0;
+  const brandName = metadata?.brandName || 'AetherWell™';
+  const tagline =
+    metadata?.tagline || 'Alivio Cervical Clínico y Descanso Profundo en 10 Minutos al Día';
+
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${heroProduct?.title || 'Antigravity Commerce'} — Tienda Oficial</title>
+  <title>${brandName} | ${heroProduct?.title || 'Antigravity Commerce'} — Tienda Oficial</title>
   <style>
     :root { --bg: #0b0f19; --card: #131b2e; --accent: #10b981; --text: #f8fafc; --muted: #94a3b8; }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
     body { background: var(--bg); color: var(--text); line-height: 1.5; }
     .urgency-bar { background: linear-gradient(90deg, #059669, #10b981); color: #fff; text-align: center; padding: 8px 16px; font-weight: 700; font-size: 0.9rem; }
     .container { max-width: 1120px; margin: 0 auto; padding: 32px 20px; }
-    .hero { display: grid; grid-template-columns: 1fr; gap: 24px; margin-bottom: 40px; padding: 32px; background: var(--card); border-radius: 16px; border: 1px solid #1e293b; }
+    .hero { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 40px; padding: 32px; background: var(--card); border-radius: 16px; border: 1px solid #1e293b; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
     .product-card { background: var(--card); padding: 24px; border-radius: 14px; border: 1px solid #1e293b; position: relative; }
     .badge-discount { display: inline-block; background: #ef4444; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; margin-bottom: 12px; }
@@ -51,11 +56,11 @@ export function renderHighConvertingStorefront(catalogData, kycStatus) {
   </style>
 </head>
 <body>
-  <div class="urgency-bar">⚡ ENVÍO EXPRÉS GRATIS EN PEDIDOS SUPERIORES A $65 USD • GARANTÍA DE 30 DÍAS ⚡</div>
+  <div class="urgency-bar">⚡ ENVÍO EXPRÉS GRATIS EN PEDIDOS SUPERIORES A $${threshold.toFixed(2)} USD • GARANTÍA CLÍNICA DE 30 DÍAS ⚡</div>
   <main class="container">
     <section class="hero">
-      <h1>${heroProduct?.title || 'Catálogo de Alta Conversión Antigravity'}</h1>
-      <p>Nicho Activo: <strong>${metadata?.niche || 'Dropshipping High-Margin'}</strong> (Fuente: <code>${source}</code>)</p>
+      <h1>${brandName} — ${tagline}</h1>
+      <p>Producto Estrella: <strong>${heroProduct?.title || 'OrthoCloud™ Pro'}</strong> • Nicho Activo: <strong>${metadata?.niche || 'Health, Wellness & Ergonomic Recovery'}</strong> (Fuente: <code>${source}</code>)</p>
     </section>
     <section class="grid">
       ${productCardsHtml}
