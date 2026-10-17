@@ -16,7 +16,7 @@ export class TikTokAdsService {
     const env = loadOperationalEnv();
     this.config = {
       accessToken: customConfig?.accessToken || env.marketing?.tiktok?.accessToken || process.env.TIKTOK_ACCESS_TOKEN || 'act_sandbox_antigravity_tiktok_token_99',
-      advertiserId: customConfig?.advertiserId || env.marketing?.tiktok?.advertiserId || process.env.TIKTOK_ADVERTISER_ID || '7428190382910291',
+      advertiserId: customConfig?.advertiserId || env.marketing?.tiktok?.advertiserId || process.env.TIKTOK_ADVERTISER_ID || '7607711370196615636',
       dailySpendCapEur: customConfig?.dailySpendCapEur || env.marketing?.tiktok?.dailySpendCapEur || 9.50,
       maxAllowedCpcEur: customConfig?.maxAllowedCpcEur || env.marketing?.tiktok?.maxAllowedCpcEur || 0.40,
       landingPageUrl: customConfig?.landingPageUrl || 'https://aetherwell-4crw.onrender.com/'

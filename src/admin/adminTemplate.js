@@ -255,7 +255,7 @@ export function renderAdminDashboard({
       </div>
       <div class="infra-line">
         <span class="infra-label">Advertiser ID:</span>
-        <span class="infra-val" style="color: #60a5fa;">${tiktokStatus?.advertiserId || '7428190382910291'}</span>
+        <span class="infra-val" style="color: #60a5fa;">${tiktokStatus?.advertiserId || '7607711370196615636'}</span>
       </div>
       <div class="infra-line">
         <span class="infra-label">Línea de Presupuesto Diario:</span>

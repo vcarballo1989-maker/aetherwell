@@ -86,7 +86,7 @@ describe('TikTok Marketing API v1.3 & Guardián de Presupuesto Diario (9,50 €/
     const service = new TikTokAdsService();
     const adminStatus = await service.getStatusForAdmin();
 
-    assert.equal(adminStatus.advertiserId, '7428190382910291');
+    assert.equal(adminStatus.advertiserId, '7607711370196615636');
     assert.equal(adminStatus.dailySpendCapEur, 9.50);
     assert.equal(adminStatus.maxAllowedCpcEur, 0.40);
     assert.equal(adminStatus.targetCountry, 'España (ES)');

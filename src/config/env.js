@@ -59,7 +59,7 @@ export const DEFAULT_CONFIG = {
   marketing: {
     tiktok: {
       accessToken: process.env.TIKTOK_ACCESS_TOKEN || 'act_sandbox_antigravity_tiktok_token_99',
-      advertiserId: process.env.TIKTOK_ADVERTISER_ID || '7428190382910291',
+      advertiserId: process.env.TIKTOK_ADVERTISER_ID || '7607711370196615636',
       dailySpendCapEur: Number(process.env.TIKTOK_DAILY_SPEND_CAP_EUR || 9.50),
       maxAllowedCpcEur: Number(process.env.TIKTOK_MAX_ALLOWED_CPC_EUR || 0.40)
     }
