@@ -19,6 +19,9 @@ import {
 } from './checkout/funnel.js';
 import { renderHighConvertingStorefront } from './storefront/template.js';
 import { renderAdminDashboard } from './admin/adminTemplate.js';
+import { checkCjConnection, dispatchStripeSessionToCj, createCjDropshippingOrder } from './suppliers/cjService.js';
+
+const processedCjSessions = new Set();
 
 export function createCommerceServer(customLedger = null) {
   const envConfig = loadOperationalEnv();
@@ -110,13 +113,15 @@ export function createCommerceServer(customLedger = null) {
           }
         }
 
+        const cjStatus = await checkCjConnection();
         const audit = ledger.run24hAudit();
         const html = renderAdminDashboard({
           stripeBalance,
           stripeSessions,
           audit,
           kycStatus,
-          currentEnv
+          currentEnv,
+          cjStatus
         });
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         return res.end(html);
@@ -127,6 +132,23 @@ export function createCommerceServer(customLedger = null) {
         const catalogData = loadCatalog();
         const currentEnv = loadOperationalEnv();
         const kycStatus = evaluateKycReadiness(currentEnv);
+
+        // Despacho automático de pedido si el cliente vuelve de Stripe con pago completado
+        const paymentStatus = url.searchParams.get('payment_status');
+        const sessionId = url.searchParams.get('session_id');
+        if (paymentStatus === 'success' && sessionId && currentEnv.stripe?.secretKey) {
+          if (!processedCjSessions.has(sessionId)) {
+            processedCjSessions.add(sessionId);
+            dispatchStripeSessionToCj(sessionId, currentEnv.stripe.secretKey)
+              .then((res) => {
+                console.log(`[CJ Dropshipping] Sesión ${sessionId} despachada automáticamente a CJ:`, res.cjOrder?.orderId || res.error || 'OK');
+              })
+              .catch((err) => {
+                console.warn(`[CJ Dropshipping Error] Sesión ${sessionId}:`, err.message);
+              });
+          }
+        }
+
         const html = renderHighConvertingStorefront(catalogData, kycStatus, ledger, currentEnv);
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         return res.end(html);
@@ -161,6 +183,26 @@ export function createCommerceServer(customLedger = null) {
           audit: ledger.run24hAudit(),
           kycStatus: ledger.checkActivator1KycBanking(loadOperationalEnv())
         });
+      }
+
+      // 4.1 Estado de Almacén CJdropshipping (/api/fulfillment/cj-status)
+      if (req.method === 'GET' && url.pathname === '/api/fulfillment/cj-status') {
+        const cjStatus = await checkCjConnection();
+        return sendJson(200, cjStatus);
+      }
+
+      // 4.2 Despacho Manual o Reintento de Orden a CJdropshipping (/api/fulfillment/cj-dispatch)
+      if (req.method === 'POST' && url.pathname === '/api/fulfillment/cj-dispatch') {
+        const body = await parseBody();
+        const currentEnv = loadOperationalEnv();
+        const sessionId = body.sessionId || body.stripeSessionId;
+        if (sessionId) {
+          const result = await dispatchStripeSessionToCj(sessionId, currentEnv.stripe?.secretKey);
+          return sendJson(result.success ? 200 : 400, result);
+        } else {
+          const result = await createCjDropshippingOrder(body);
+          return sendJson(result.success ? 200 : 400, result);
+        }
       }
 
       // 5. Checkout Completo Interactivo (/api/checkout y /api/checkout/full-funnel)

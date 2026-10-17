@@ -45,6 +45,8 @@ export const DEFAULT_CONFIG = {
     isProductionToken: Boolean(defaultShopifyToken && !defaultShopifyToken.includes('sandbox'))
   },
   suppliers: {
+    cjApiKey: process.env.CJ_API_KEY || (defaultIsLiveKey ? 'CJ5949933@api@a3dbfc875a0b40d69e728777547b36c5' : 'cj_sandbox_key'),
+    cjAccountId: process.env.CJ_ACCOUNT_ID || 'CJ5949933',
     zendropApiKey: process.env.ZENDROP_API_KEY || 'zd_sandbox_antigravity_key',
     aliexpressApiKey: process.env.ALIEXPRESS_API_KEY || 'ae_sandbox_antigravity_key'
   },
@@ -130,6 +132,8 @@ export function loadOperationalEnv(envFilePath = path.resolve(process.cwd(), '.e
       isProductionToken: Boolean(shopifyToken && !shopifyToken.includes('sandbox'))
     },
     suppliers: {
+      cjApiKey: envVars.CJ_API_KEY || (isLiveKey ? 'CJ5949933@api@a3dbfc875a0b40d69e728777547b36c5' : 'cj_sandbox_key'),
+      cjAccountId: envVars.CJ_ACCOUNT_ID || 'CJ5949933',
       zendropApiKey: envVars.ZENDROP_API_KEY || 'zd_sandbox_antigravity_key',
       aliexpressApiKey: envVars.ALIEXPRESS_API_KEY || 'ae_sandbox_antigravity_key'
     },

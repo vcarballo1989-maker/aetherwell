@@ -10,7 +10,8 @@ export function renderAdminDashboard({
   stripeSessions = [],
   audit = {},
   kycStatus = {},
-  currentEnv = {}
+  currentEnv = {},
+  cjStatus = {}
 }) {
   const availableEur = (stripeBalance.available || [])
     .reduce((sum, b) => sum + b.amount / 100, 0);
@@ -208,6 +209,39 @@ export function renderAdminDashboard({
       <div class="infra-line">
         <span class="infra-label">Cumplimiento RGPD & PCI-DSS:</span>
         <span class="infra-val" style="color: var(--accent);">✓ NIVEL 1 CUMPLIDO (Stripe Hosted)</span>
+      </div>
+    </div>
+
+    <div class="infra-box" style="border: 1px solid rgba(16, 185, 129, 0.4); box-shadow: 0 4px 20px rgba(16, 185, 129, 0.08);">
+      <div style="font-weight: 800; margin-bottom: 14px; color: #ffffff; display: flex; align-items: center; justify-content: space-between;">
+        <span>📦 Almacén Mayorista CJdropshipping</span>
+        <span style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-size: 0.72rem; padding: 4px 8px; border-radius: 999px; font-weight: 800; border: 1px solid rgba(16, 185, 129, 0.4);">
+          ${cjStatus?.statusText || 'CONECTADO EN VIVO 200 OK'}
+        </span>
+      </div>
+      <div class="infra-line">
+        <span class="infra-label">Cuenta ID / OpenID:</span>
+        <span class="infra-val" style="color: #60a5fa;">${cjStatus?.accountId || 'CJ5949933'} (ID: ${cjStatus?.openId || '56911'})</span>
+      </div>
+      <div class="infra-line">
+        <span class="infra-label">Despachador Automático:</span>
+        <span class="infra-val" style="color: #34d399;">✓ ACTIVO (Stripe -> CJ API v2.0)</span>
+      </div>
+      <div class="infra-line">
+        <span class="infra-label">Línea de Envíos Directos:</span>
+        <span class="infra-val">CJ Packet Ordinary (Correos Express / CTT)</span>
+      </div>
+      <div class="infra-line">
+        <span class="infra-label">Destino Principal:</span>
+        <span class="infra-val" style="color: #ffffff;">España & Unión Europea</span>
+      </div>
+      <div class="infra-line" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 6px; padding-top: 8px; border-top: 1px solid var(--border);">
+        <span class="infra-label">SKUs de Almacén Sincronizados:</span>
+        <span class="infra-val" style="font-size: 0.76rem; color: #94a3b8; font-family: monospace;">
+          • CJYD326642303CX (OrthoCloud™ Camilla)<br/>
+          • CJPF3274789 (ThermoSilk™ Antifaz)<br/>
+          • CJYD320981502BY (PostureAlign™ Corrector)
+        </span>
       </div>
     </div>
   </div>

@@ -89,7 +89,17 @@
         }
       ],
       "supplier_mapping": {
-        "primary_provider": "Zendrop",
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2610151230071627200",
+          "variant_id": "2610151230071628101",
+          "variant_sku": "CJYD326642303CX",
+          "product_name": "English Cervical Pillow Neck Support Classic Gray Cowhide Box",
+          "unit_cost_usd": 14.24,
+          "shipping_method": "CJ Packet Ordinary",
+          "auto_fulfillment_enabled": true
+        },
         "zendrop": {
           "product_id": "ZD-8849201",
           "supplier_id": "ZD-SUP-healthplus-09",
@@ -171,7 +181,17 @@
         }
       ],
       "supplier_mapping": {
-        "primary_provider": "Zendrop",
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2610170347321600400",
+          "variant_id": "2610170347321600400",
+          "variant_sku": "CJPF3274789",
+          "product_name": "Sleep Soothing Patch & Gel Mask",
+          "unit_cost_usd": 1.83,
+          "shipping_method": "CJ Packet Ordinary",
+          "auto_fulfillment_enabled": true
+        },
         "zendrop": {
           "product_id": "ZD-8849315",
           "supplier_id": "ZD-SUP-healthplus-09",
@@ -239,7 +259,17 @@
         }
       ],
       "supplier_mapping": {
-        "primary_provider": "Zendrop",
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2609291139381605400",
+          "variant_id": "2609291139381606301",
+          "variant_sku": "CJYD320981502BY",
+          "product_name": "Adjustable Neck Support Posture Correction Gray",
+          "unit_cost_usd": 4.55,
+          "shipping_method": "CJ Packet Ordinary",
+          "auto_fulfillment_enabled": true
+        },
         "zendrop": {
           "product_id": "ZD-8849488",
           "supplier_id": "ZD-SUP-healthplus-09",
@@ -307,7 +337,18 @@
         }
       ],
       "supplier_mapping": {
-        "primary_provider": "Zendrop",
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "bundle": true,
+          "bundled_vids": [
+            "2610151230071628101",
+            "2610170347321600400",
+            "2609291139381606301"
+          ],
+          "shipping_method": "CJ Packet Ordinary",
+          "auto_fulfillment_enabled": true
+        },
         "zendrop": {
           "product_id": "ZD-8849999-BUNDLE",
           "supplier_id": "ZD-SUP-healthplus-09",

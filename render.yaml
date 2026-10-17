@@ -25,3 +25,7 @@ services:
         value: "true"
       - key: ZENDROP_API_KEY
         sync: false
+      - key: CJ_API_KEY
+        sync: false
+      - key: CJ_ACCOUNT_ID
+        value: "CJ5949933"
