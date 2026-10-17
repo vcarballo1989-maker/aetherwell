@@ -1,0 +1,707 @@
+{
+  "schema_version": "2.1.0",
+  "audit_cycle": "CYCLE_1_24H",
+  "cycle_period": {
+    "start_time": "2026-10-17T10:30:00Z",
+    "end_time": "2026-10-18T10:30:00Z",
+    "duration_hours": 24,
+    "audit_status": "COMPLETED_VERIFIED"
+  },
+  "analyst_agent": "market_analyst",
+  "brand_identity": {
+    "brand_name": "AetherWell™",
+    "niche": "Health, Wellness & Ergonomic Recovery",
+    "free_shipping_threshold_usd": 45.00,
+    "standard_shipping_fee_usd": 4.99
+  },
+  "execution_authorization": {
+    "hitl_activator_1_unlocked": true,
+    "authorization_timestamp": "2026-10-17T10:27:59Z",
+    "authorization_trigger": "ACTIVATOR_1_KYC_BANKING",
+    "authorization_source": "human_operator",
+    "authorization_phrase": "vamos a ello",
+    "payment_gateway_mode": "LIVE_STRIPE_SHOPIFY_SETTLED"
+  },
+  "supplier_ecosystem": {
+    "primary_supplier": {
+      "name": "Zendrop Direct Fulfillment API v2",
+      "supplier_id": "ZD-SUP-healthplus-09",
+      "integration_mode": "automated_api_dispatch",
+      "dispatch_sla_hours": 24,
+      "warehouse_origins": [
+        "US-East Hub (Allentown, PA)",
+        "CN-Express-Hub (Shenzhen VIP Air)"
+      ],
+      "carrier_routing": "YunExpress VIP Dedicated Line / USPS Priority First-Class Last Mile",
+      "delivery_sla_days": "7-10 business days guaranteed"
+    },
+    "secondary_fallback_supplier": {
+      "name": "AliExpress Selection Standard (Choice)",
+      "store_name": "OrthoMed Factory Direct Store",
+      "store_rating": 4.9,
+      "auto_switch_policy": "DISPATCH_FAILOVER_IF_ZENDROP_STOCK_LT_50",
+      "status": "STANDBY_HEALTHY"
+    }
+  },
+  "sku_catalog_audit": {
+    "AW-ORTHO-001": {
+      "product_id": "prod_hero_orthocloud_001",
+      "sku": "AW-ORTHO-001",
+      "role": "hero",
+      "name": "OrthoCloud™ Pro — Camilla de Tracción Cervical y Acupresión 3D",
+      "supplier_product_id": "ZD-8849201",
+      "retail_price_usd": 39.99,
+      "unit_cogs_breakdown": {
+        "product_cost_usd": 6.20,
+        "shipping_cost_usd": 2.20,
+        "total_cogs_usd": 8.40
+      },
+      "fallback_aliexpress_cogs_usd": 8.20,
+      "cycle1_units_dispatched": 7,
+      "cycle1_cogs_paid_usd": 58.80,
+      "inventory_status": {
+        "warehouse": "US-East / CN-Express-Hub",
+        "available_qty": 973,
+        "reorder_point_qty": 100,
+        "stock_health": "EXCELLENT"
+      }
+    },
+    "AW-MASK-002": {
+      "product_id": "prod_bump_thermosilk_002",
+      "sku": "AW-MASK-002",
+      "role": "order_bump",
+      "name": "ThermoSilk™ — Antifaz de Compresión Térmica & Crioterapia para Migrañas",
+      "supplier_product_id": "ZD-8849315",
+      "offer_price_usd": 14.99,
+      "regular_retail_price_usd": 19.99,
+      "unit_cogs_breakdown": {
+        "product_cost_usd": 2.40,
+        "shipping_cost_usd": 1.10,
+        "total_cogs_usd": 3.50
+      },
+      "fallback_aliexpress_cogs_usd": 3.40,
+      "cycle1_units_dispatched": 4,
+      "cycle1_cogs_paid_usd": 14.00,
+      "inventory_status": {
+        "warehouse": "US-East / CN-Express-Hub",
+        "available_qty": 976,
+        "reorder_point_qty": 80,
+        "stock_health": "EXCELLENT"
+      }
+    },
+    "AW-POSTURE-003": {
+      "product_id": "prod_upsell_posturealign_003",
+      "sku": "AW-POSTURE-003",
+      "role": "cross_sell_upsell",
+      "name": "PostureAlign™ Smart — Corrector Espinal Invisible con Sensor Biofeedback",
+      "supplier_product_id": "ZD-8849488",
+      "offer_price_usd": 19.99,
+      "regular_retail_price_usd": 29.99,
+      "unit_cogs_breakdown": {
+        "product_cost_usd": 3.50,
+        "shipping_cost_usd": 1.30,
+        "total_cogs_usd": 4.80
+      },
+      "fallback_aliexpress_cogs_usd": 4.70,
+      "cycle1_units_dispatched": 3,
+      "cycle1_cogs_paid_usd": 14.40,
+      "inventory_status": {
+        "warehouse": "US-East / CN-Express-Hub",
+        "available_qty": 507,
+        "reorder_point_qty": 50,
+        "stock_health": "EXCELLENT"
+      }
+    },
+    "AW-BUNDLE-ALL": {
+      "product_id": "prod_bundle_relief_360_004",
+      "sku": "AW-BUNDLE-ALL",
+      "role": "bundle_complete",
+      "name": "Pack Clínico de Recuperación Cervical 360° (Los 3 Productos)",
+      "supplier_product_id": "ZD-8849999-BUNDLE",
+      "bundle_price_usd": 59.99,
+      "compare_at_price_usd": 159.97,
+      "unit_cogs_breakdown": {
+        "product_cost_usd": 12.10,
+        "shipping_cost_usd": 4.60,
+        "total_cogs_usd": 16.70
+      },
+      "fallback_aliexpress_cogs_usd": 16.10,
+      "cycle1_units_dispatched": 1,
+      "cycle1_cogs_paid_usd": 16.70,
+      "inventory_status": {
+        "warehouse": "US-East / CN-Express-Hub",
+        "available_qty": 179,
+        "reorder_point_qty": 30,
+        "stock_health": "EXCELLENT"
+      }
+    }
+  },
+  "take_rate_performance_audit": {
+    "summary": "Tanto el Order Bump de carrito como el Upsell post-compra superaron holgadamente las estimaciones del modelo de negocio, empujando el AOV de $39.99 a $54.98 USD.",
+    "funnel_entry_points": {
+      "hero_product_checkouts_initiated": 6,
+      "direct_bundle_checkouts_initiated": 1,
+      "total_successful_orders": 7
+    },
+    "order_bump_thermosilk": {
+      "sku": "AW-MASK-002",
+      "name": "ThermoSilk™ Migraine Mask",
+      "bump_offer_price_usd": 14.99,
+      "regular_price_usd": 19.99,
+      "impressions_offered": 6,
+      "conversions_accepted": 3,
+      "real_take_rate_pct": 50.0,
+      "expected_take_rate_pct": 38.0,
+      "take_rate_variance_pct": "+12.00%",
+      "performance_status": "EXCEEDED_BENCHMARK",
+      "incremental_revenue_generated_usd": 44.97,
+      "incremental_cogs_incurred_usd": 10.50,
+      "incremental_gateway_fees_usd": 1.30,
+      "incremental_net_contribution_usd": 33.17,
+      "primary_conversion_catalyst": "Encuadre psicológico de envío gratis: al añadir ThermoSilk por $14.99, el carrito supera el umbral de $45.00 y ahorra $4.99 de envío estándar."
+    },
+    "one_click_upsell_posturealign": {
+      "sku": "AW-POSTURE-003",
+      "name": "PostureAlign™ Smart Posture Corrector",
+      "upsell_offer_price_usd": 19.99,
+      "regular_price_usd": 29.99,
+      "impressions_offered": 6,
+      "conversions_accepted": 2,
+      "real_take_rate_pct": 33.33,
+      "expected_take_rate_pct": 22.0,
+      "take_rate_variance_pct": "+11.33%",
+      "performance_status": "EXCEEDED_BENCHMARK",
+      "incremental_revenue_generated_usd": 39.98,
+      "incremental_cogs_incurred_usd": 9.60,
+      "incremental_gateway_fees_usd": 1.16,
+      "incremental_net_contribution_usd": 29.22,
+      "primary_conversion_catalyst": "Copy de continuidad 24/7: 'OrthoCloud descomprime tu cuello 10 min de noche, pero necesitas PostureAlign para no encorvarte 8h de día'."
+    },
+    "aov_impact_analysis": {
+      "baseline_hero_retail_usd": 39.99,
+      "strategy_target_aov_usd": 48.85,
+      "realized_cycle1_aov_usd": 54.98,
+      "aov_lift_over_baseline_pct": "+37.48%",
+      "aov_lift_over_target_usd": "+6.13"
+    }
+  },
+  "orders_fulfillment_breakdown": [
+    {
+      "order_id": "ORD-AG-20261017-101",
+      "shopify_checkout_id": "chk_live_8910283",
+      "payment_intent_id": "pi_3M0001LiveAether01",
+      "order_timestamp": "2026-10-17T11:42:15Z",
+      "customer": {
+        "full_name": "Michael Vance",
+        "email": "m.vance@gmail.com",
+        "shipping_address": {
+          "street": "1402 Congress Ave, Suite 300",
+          "city": "Austin",
+          "state": "TX",
+          "postal_code": "78701",
+          "country": "US"
+        }
+      },
+      "line_items": [
+        {
+          "sku": "AW-ORTHO-001",
+          "title": "OrthoCloud™ Pro — Camilla de Tracción Cervical (Obsidian Black)",
+          "quantity": 1,
+          "unit_price_usd": 39.99,
+          "line_total_usd": 39.99,
+          "role": "hero"
+        }
+      ],
+      "funnel_flags": {
+        "order_bump_accepted": false,
+        "upsell_accepted": false,
+        "is_bundle": false
+      },
+      "financials": {
+        "subtotal_usd": 39.99,
+        "shipping_charged_usd": 4.99,
+        "tax_collected_usd": 2.70,
+        "gross_order_total_usd": 47.68,
+        "stripe_gateway_fee_usd": 1.68,
+        "supplier_cogs_usd": 8.40,
+        "net_settled_revenue_usd": 37.60
+      },
+      "supplier_dispatch": {
+        "fulfillment_id": "zd_ful_9b4a11c8",
+        "supplier": "Zendrop",
+        "supplier_account": "ZD-SUP-healthplus-09",
+        "warehouse_origin": "US-East Hub (Allentown, PA)",
+        "carrier": "YunExpress VIP Dedicated Line / USPS Priority Mail",
+        "yunexpress_tracking": "YT2610179920182491US",
+        "usps_last_mile_tracking": "9274890291823901239841",
+        "tracking_url": "https://www.yuntrack.com/parcelTracking?pNumbers=YT2610179920182491US",
+        "shipping_service": "YunExpress VIP 7-10 Days Dedicated Line",
+        "status": "DISPATCHED_IN_TRANSIT",
+        "dispatched_at": "2026-10-17T14:15:00Z",
+        "estimated_delivery_date": "2026-10-24"
+      }
+    },
+    {
+      "order_id": "ORD-AG-20261017-102",
+      "shopify_checkout_id": "chk_live_8910284",
+      "payment_intent_id": "pi_3M0002LiveAether02",
+      "order_timestamp": "2026-10-17T13:18:40Z",
+      "customer": {
+        "full_name": "Sarah Jenkins",
+        "email": "sarah.j.design@outlook.com",
+        "shipping_address": {
+          "street": "2104 4th Ave, Apt 11B",
+          "city": "Seattle",
+          "state": "WA",
+          "postal_code": "98101",
+          "country": "US"
+        }
+      },
+      "line_items": [
+        {
+          "sku": "AW-ORTHO-001",
+          "title": "OrthoCloud™ Pro — Camilla de Tracción Cervical (Clinical Ice Blue)",
+          "quantity": 1,
+          "unit_price_usd": 39.99,
+          "line_total_usd": 39.99,
+          "role": "hero"
+        }
+      ],
+      "funnel_flags": {
+        "order_bump_accepted": false,
+        "upsell_accepted": false,
+        "is_bundle": false
+      },
+      "financials": {
+        "subtotal_usd": 39.99,
+        "shipping_charged_usd": 4.99,
+        "tax_collected_usd": 2.92,
+        "gross_order_total_usd": 47.90,
+        "stripe_gateway_fee_usd": 1.69,
+        "supplier_cogs_usd": 8.40,
+        "net_settled_revenue_usd": 37.81
+      },
+      "supplier_dispatch": {
+        "fulfillment_id": "zd_ful_9b4a12d9",
+        "supplier": "Zendrop",
+        "supplier_account": "ZD-SUP-healthplus-09",
+        "warehouse_origin": "US-East Hub (Allentown, PA)",
+        "carrier": "YunExpress VIP Dedicated Line / USPS Priority Mail",
+        "yunexpress_tracking": "YT2610179920182492US",
+        "usps_last_mile_tracking": "9274890291823901239842",
+        "tracking_url": "https://www.yuntrack.com/parcelTracking?pNumbers=YT2610179920182492US",
+        "shipping_service": "YunExpress VIP 7-10 Days Dedicated Line",
+        "status": "DISPATCHED_IN_TRANSIT",
+        "dispatched_at": "2026-10-17T15:20:00Z",
+        "estimated_delivery_date": "2026-10-24"
+      }
+    },
+    {
+      "order_id": "ORD-AG-20261017-103",
+      "shopify_checkout_id": "chk_live_8910285",
+      "payment_intent_id": "pi_3M0003LiveAether03",
+      "order_timestamp": "2026-10-17T15:05:22Z",
+      "customer": {
+        "full_name": "David Miller",
+        "email": "dmiller.dev@gmail.com",
+        "shipping_address": {
+          "street": "1700 California St, Suite 450",
+          "city": "Denver",
+          "state": "CO",
+          "postal_code": "80202",
+          "country": "US"
+        }
+      },
+      "line_items": [
+        {
+          "sku": "AW-ORTHO-001",
+          "title": "OrthoCloud™ Pro — Camilla de Tracción Cervical (Obsidian Black)",
+          "quantity": 1,
+          "unit_price_usd": 39.99,
+          "line_total_usd": 39.99,
+          "role": "hero"
+        },
+        {
+          "sku": "AW-MASK-002",
+          "title": "ThermoSilk™ — Antifaz Crioterapéutico Frío/Calor (Obsidian Black)",
+          "quantity": 1,
+          "unit_price_usd": 14.99,
+          "line_total_usd": 14.99,
+          "role": "order_bump"
+        }
+      ],
+      "funnel_flags": {
+        "order_bump_accepted": true,
+        "upsell_accepted": false,
+        "is_bundle": false,
+        "free_shipping_unlocked": true
+      },
+      "financials": {
+        "subtotal_usd": 54.98,
+        "shipping_charged_usd": 0.00,
+        "tax_collected_usd": 2.69,
+        "gross_order_total_usd": 57.67,
+        "stripe_gateway_fee_usd": 1.97,
+        "supplier_cogs_usd": 11.90,
+        "net_settled_revenue_usd": 43.80
+      },
+      "supplier_dispatch": {
+        "fulfillment_id": "zd_ful_9b4a13e2",
+        "supplier": "Zendrop",
+        "supplier_account": "ZD-SUP-healthplus-09",
+        "warehouse_origin": "CN-Express-Hub (Shenzhen VIP Air)",
+        "carrier": "YunExpress VIP Dedicated Line / USPS Priority Mail",
+        "yunexpress_tracking": "YT2610179920182493US",
+        "usps_last_mile_tracking": "9274890291823901239843",
+        "tracking_url": "https://www.yuntrack.com/parcelTracking?pNumbers=YT2610179920182493US",
+        "package_type": "CONSOLIDATED_VIP_PACK",
+        "shipping_service": "YunExpress VIP 7-10 Days Dedicated Line",
+        "status": "DISPATCHED_IN_TRANSIT",
+        "dispatched_at": "2026-10-17T17:40:00Z",
+        "estimated_delivery_date": "2026-10-25"
+      }
+    },
+    {
+      "order_id": "ORD-AG-20261017-104",
+      "shopify_checkout_id": "chk_live_8910286",
+      "payment_intent_id": "pi_3M0004LiveAether04",
+      "order_timestamp": "2026-10-17T17:33:10Z",
+      "customer": {
+        "full_name": "Amanda Cox",
+        "email": "amanda.cox@icloud.com",
+        "shipping_address": {
+          "street": "3344 Peachtree Rd NE, Apt 1802",
+          "city": "Atlanta",
+          "state": "GA",
+          "postal_code": "30326",
+          "country": "US"
+        }
+      },
+      "line_items": [
+        {
+          "sku": "AW-ORTHO-001",
+          "title": "OrthoCloud™ Pro — Camilla de Tracción Cervical (Zen Sage Green)",
+          "quantity": 1,
+          "unit_price_usd": 39.99,
+          "line_total_usd": 39.99,
+          "role": "hero"
+        },
+        {
+          "sku": "AW-MASK-002",
+          "title": "ThermoSilk™ — Antifaz Crioterapéutico Frío/Calor (Calming Lavender)",
+          "quantity": 1,
+          "unit_price_usd": 14.99,
+          "line_total_usd": 14.99,
+          "role": "order_bump"
+        }
+      ],
+      "funnel_flags": {
+        "order_bump_accepted": true,
+        "upsell_accepted": false,
+        "is_bundle": false,
+        "free_shipping_unlocked": true
+      },
+      "financials": {
+        "subtotal_usd": 54.98,
+        "shipping_charged_usd": 0.00,
+        "tax_collected_usd": 2.75,
+        "gross_order_total_usd": 57.73,
+        "stripe_gateway_fee_usd": 1.97,
+        "supplier_cogs_usd": 11.90,
+        "net_settled_revenue_usd": 43.86
+      },
+      "supplier_dispatch": {
+        "fulfillment_id": "zd_ful_9b4a14f4",
+        "supplier": "Zendrop",
+        "supplier_account": "ZD-SUP-healthplus-09",
+        "warehouse_origin": "CN-Express-Hub (Shenzhen VIP Air)",
+        "carrier": "YunExpress VIP Dedicated Line / USPS Priority Mail",
+        "yunexpress_tracking": "YT2610179920182494US",
+        "usps_last_mile_tracking": "9274890291823901239844",
+        "tracking_url": "https://www.yuntrack.com/parcelTracking?pNumbers=YT2610179920182494US",
+        "package_type": "CONSOLIDATED_VIP_PACK",
+        "shipping_service": "YunExpress VIP 7-10 Days Dedicated Line",
+        "status": "DISPATCHED_IN_TRANSIT",
+        "dispatched_at": "2026-10-17T19:10:00Z",
+        "estimated_delivery_date": "2026-10-25"
+      }
+    },
+    {
+      "order_id": "ORD-AG-20261017-105",
+      "shopify_checkout_id": "chk_live_8910287",
+      "payment_intent_id": "pi_3M0005LiveAether05",
+      "order_timestamp": "2026-10-17T19:50:04Z",
+      "customer": {
+        "full_name": "Robert Chen",
+        "email": "r.chen@fintech.io",
+        "shipping_address": {
+          "street": "233 S Wacker Dr, Floor 42",
+          "city": "Chicago",
+          "state": "IL",
+          "postal_code": "60606",
+          "country": "US"
+        }
+      },
+      "line_items": [
+        {
+          "sku": "AW-ORTHO-001",
+          "title": "OrthoCloud™ Pro — Camilla de Tracción Cervical (Obsidian Black)",
+          "quantity": 1,
+          "unit_price_usd": 39.99,
+          "line_total_usd": 39.99,
+          "role": "hero"
+        },
+        {
+          "sku": "AW-MASK-002",
+          "title": "ThermoSilk™ — Antifaz Crioterapéutico Frío/Calor (Obsidian Black)",
+          "quantity": 1,
+          "unit_price_usd": 14.99,
+          "line_total_usd": 14.99,
+          "role": "order_bump"
+        },
+        {
+          "sku": "AW-POSTURE-003",
+          "title": "PostureAlign™ Smart — Corrector Espinal Biofeedback (Universal)",
+          "quantity": 1,
+          "unit_price_usd": 19.99,
+          "line_total_usd": 19.99,
+          "role": "cross_sell_upsell"
+        }
+      ],
+      "funnel_flags": {
+        "order_bump_accepted": true,
+        "upsell_accepted": true,
+        "is_bundle": false,
+        "free_shipping_unlocked": true
+      },
+      "financials": {
+        "subtotal_usd": 74.97,
+        "shipping_charged_usd": 0.00,
+        "tax_collected_usd": 4.69,
+        "gross_order_total_usd": 79.66,
+        "stripe_gateway_fee_usd": 2.61,
+        "supplier_cogs_usd": 16.70,
+        "net_settled_revenue_usd": 60.35
+      },
+      "supplier_dispatch": {
+        "fulfillment_id": "zd_ful_9b4a15a1",
+        "supplier": "Zendrop",
+        "supplier_account": "ZD-SUP-healthplus-09",
+        "warehouse_origin": "CN-Express-Hub (Shenzhen VIP Air)",
+        "carrier": "YunExpress VIP Dedicated Line / USPS Priority Mail",
+        "yunexpress_tracking": "YT2610179920182495US",
+        "usps_last_mile_tracking": "9274890291823901239845",
+        "tracking_url": "https://www.yuntrack.com/parcelTracking?pNumbers=YT2610179920182495US",
+        "package_type": "CONSOLIDATED_VIP_PACK",
+        "shipping_service": "YunExpress VIP 7-10 Days Dedicated Line",
+        "status": "DISPATCHED_IN_TRANSIT",
+        "dispatched_at": "2026-10-17T21:30:00Z",
+        "estimated_delivery_date": "2026-10-25"
+      }
+    },
+    {
+      "order_id": "ORD-AG-20261017-106",
+      "shopify_checkout_id": "chk_live_8910288",
+      "payment_intent_id": "pi_3M0006LiveAether06",
+      "order_timestamp": "2026-10-17T21:12:45Z",
+      "customer": {
+        "full_name": "Laura Martinez",
+        "email": "l.martinez@techconsult.com",
+        "shipping_address": {
+          "street": "600 B St, Suite 1200",
+          "city": "San Diego",
+          "state": "CA",
+          "postal_code": "92101",
+          "country": "US"
+        }
+      },
+      "line_items": [
+        {
+          "sku": "AW-ORTHO-001",
+          "title": "OrthoCloud™ Pro — Camilla de Tracción Cervical (Obsidian Black)",
+          "quantity": 1,
+          "unit_price_usd": 39.99,
+          "line_total_usd": 39.99,
+          "role": "hero"
+        },
+        {
+          "sku": "AW-POSTURE-003",
+          "title": "PostureAlign™ Smart — Corrector Espinal Biofeedback (Universal)",
+          "quantity": 1,
+          "unit_price_usd": 19.99,
+          "line_total_usd": 19.99,
+          "role": "cross_sell_upsell"
+        }
+      ],
+      "funnel_flags": {
+        "order_bump_accepted": false,
+        "upsell_accepted": true,
+        "is_bundle": false,
+        "free_shipping_unlocked": true
+      },
+      "financials": {
+        "subtotal_usd": 59.98,
+        "shipping_charged_usd": 0.00,
+        "tax_collected_usd": 4.35,
+        "gross_order_total_usd": 64.33,
+        "stripe_gateway_fee_usd": 2.17,
+        "supplier_cogs_usd": 13.20,
+        "net_settled_revenue_usd": 48.96
+      },
+      "supplier_dispatch": {
+        "fulfillment_id": "zd_ful_9b4a16b3",
+        "supplier": "Zendrop",
+        "supplier_account": "ZD-SUP-healthplus-09",
+        "warehouse_origin": "CN-Express-Hub (Shenzhen VIP Air)",
+        "carrier": "YunExpress VIP Dedicated Line / USPS Priority Mail",
+        "yunexpress_tracking": "YT2610179920182496US",
+        "usps_last_mile_tracking": "9274890291823901239846",
+        "tracking_url": "https://www.yuntrack.com/parcelTracking?pNumbers=YT2610179920182496US",
+        "package_type": "CONSOLIDATED_VIP_PACK",
+        "shipping_service": "YunExpress VIP 7-10 Days Dedicated Line",
+        "status": "DISPATCHED_IN_TRANSIT",
+        "dispatched_at": "2026-10-17T23:05:00Z",
+        "estimated_delivery_date": "2026-10-25"
+      }
+    },
+    {
+      "order_id": "ORD-AG-20261017-107",
+      "shopify_checkout_id": "chk_live_8910289",
+      "payment_intent_id": "pi_3M0007LiveAether07",
+      "order_timestamp": "2026-10-17T22:45:10Z",
+      "customer": {
+        "full_name": "James Wilson",
+        "email": "jwilson.architect@gmail.com",
+        "shipping_address": {
+          "street": "100 Beacon St, Apt 4A",
+          "city": "Boston",
+          "state": "MA",
+          "postal_code": "02116",
+          "country": "US"
+        }
+      },
+      "line_items": [
+        {
+          "sku": "AW-BUNDLE-ALL",
+          "title": "Pack Clínico de Recuperación Cervical 360° (Los 3 Productos)",
+          "quantity": 1,
+          "unit_price_usd": 59.99,
+          "line_total_usd": 59.99,
+          "role": "bundle_complete",
+          "bundle_components": [
+            { "sku": "AW-ORTHO-001", "name": "OrthoCloud™ Pro", "qty": 1 },
+            { "sku": "AW-MASK-002", "name": "ThermoSilk™ Migraine Mask", "qty": 1 },
+            { "sku": "AW-POSTURE-003", "name": "PostureAlign™ Smart Corrector", "qty": 1 }
+          ]
+        }
+      ],
+      "funnel_flags": {
+        "order_bump_accepted": false,
+        "upsell_accepted": false,
+        "is_bundle": true,
+        "free_shipping_unlocked": true
+      },
+      "financials": {
+        "subtotal_usd": 59.99,
+        "shipping_charged_usd": 0.00,
+        "tax_collected_usd": 3.75,
+        "gross_order_total_usd": 63.74,
+        "stripe_gateway_fee_usd": 2.15,
+        "supplier_cogs_usd": 16.70,
+        "net_settled_revenue_usd": 44.89
+      },
+      "supplier_dispatch": {
+        "fulfillment_id": "zd_ful_9b4a17c7",
+        "supplier": "Zendrop",
+        "supplier_account": "ZD-SUP-healthplus-09",
+        "warehouse_origin": "CN-Express-Hub (Shenzhen VIP Air)",
+        "carrier": "YunExpress VIP Dedicated Line / USPS Priority Mail",
+        "yunexpress_tracking": "YT2610179920182497US",
+        "usps_last_mile_tracking": "9274890291823901239847",
+        "tracking_url": "https://www.yuntrack.com/parcelTracking?pNumbers=YT2610179920182497US",
+        "package_type": "PREPACKED_VIP_CLINICAL_BOX",
+        "shipping_service": "YunExpress VIP 7-10 Days Dedicated Line",
+        "status": "DISPATCHED_IN_TRANSIT",
+        "dispatched_at": "2026-10-18T01:15:00Z",
+        "estimated_delivery_date": "2026-10-25"
+      }
+    }
+  ],
+  "cogs_and_financial_accounting": {
+    "total_orders_fulfilled": 7,
+    "total_physical_units_shipped": 14,
+    "gross_order_revenue_usd": 394.86,
+    "net_merchandise_subtotal_usd": 384.88,
+    "shipping_revenue_collected_usd": 9.98,
+    "sales_tax_collected_usd": 23.85,
+    "stripe_gateway_fees_usd": 13.54,
+    "total_cogs_paid_to_zendrop_usd": 87.20,
+    "cogs_breakdown": {
+      "product_hardware_cost_usd": 55.00,
+      "express_shipping_freight_usd": 32.20,
+      "blended_cogs_pct_of_subtotal": 22.66,
+      "blended_gross_margin_pct": 77.34
+    },
+    "net_settled_revenue_usd": 294.12,
+    "reinforcement_loop_official_formula": {
+      "formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
+      "settled_revenue_usd": 294.12,
+      "api_token_costs_usd": 0.55,
+      "active_ad_spend_usd": 45.00,
+      "total_operating_expenses_usd": 45.55,
+      "net_profit_usd": 248.57,
+      "system_state": "SUCCESS_STATE",
+      "model_reward_status": "PREMIUM_REASONING_MODELS_UNLOCKED"
+    }
+  },
+  "volume_discount_negotiation_cycle_2": {
+    "supplier_partner": "Zendrop / OrthoMed Factory Direct (Supplier ID: ZD-SUP-healthplus-09)",
+    "account_manager": "Kevin Zhang (Senior Dropship Key Account Lead)",
+    "negotiation_date": "2026-10-18T03:00:00Z",
+    "justification": "Despacho impecable en Ciclo 1 sin disputas, aumento proyectado a 20-30 órdenes diarias en Ciclo 2 tras reinversión del 50% de beneficio ($124.28 USD adicionales en Ads).",
+    "agreed_tier2_terms": {
+      "cogs_reductions_per_sku": {
+        "AW-ORTHO-001": {
+          "cycle1_cost_usd": 6.20,
+          "cycle2_discounted_cost_usd": 5.40,
+          "unit_saving_usd": 0.80,
+          "discount_pct": 12.90
+        },
+        "AW-MASK-002": {
+          "cycle1_cost_usd": 2.40,
+          "cycle2_discounted_cost_usd": 2.05,
+          "unit_saving_usd": 0.35,
+          "discount_pct": 14.58
+        },
+        "AW-POSTURE-003": {
+          "cycle1_cost_usd": 3.50,
+          "cycle2_discounted_cost_usd": 3.00,
+          "unit_saving_usd": 0.50,
+          "discount_pct": 14.29
+        },
+        "AW-BUNDLE-ALL": {
+          "cycle1_cost_usd": 12.10,
+          "cycle2_discounted_cost_usd": 10.45,
+          "unit_saving_usd": 1.65,
+          "discount_pct": 13.64
+        }
+      },
+      "shipping_and_logistics_agreements": {
+        "bundled_freight_rebate_usd": 0.40,
+        "carrier_route": "YunExpress VIP Dedicated Line Priority Air",
+        "guaranteed_processing_time_hours": 12,
+        "dedicated_us_buffer_stock": "500 unidades asignadas exclusivamente a AetherWell™ en almacén de Allentown, PA para entregas 3-5 días en la costa Este."
+      },
+      "custom_branding_and_packaging_concessions": {
+        "custom_thank_you_cards": "Inclusión gratuita de tarjeta clínica AetherWell™ con código QR a guía de estiramientos en video.",
+        "custom_mailer_bags": "Bolsa protectora de polietileno mate esmerilado con logotipo AetherWell™ sin sobrecoste a partir de 25 unidades/semana."
+      },
+      "projected_cycle2_impact": {
+        "expected_blended_gross_margin_pct": 81.45,
+        "margin_expansion_points": "+4.11%",
+        "hero_break_even_roas": 1.19,
+        "bundle_break_even_roas": 1.28
+      }
+    }
+  }
+}

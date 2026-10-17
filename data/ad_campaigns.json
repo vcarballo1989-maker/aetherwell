@@ -4,6 +4,16 @@
   "marketer_agent": "growth_marketer",
   "brand_name": "AetherWell™",
   "storefront_target_url": "https://aetherwell.store/products/orthocloud-pro-cervical-stretcher",
+  "execution_lifecycle": {
+    "status": "ACTIVE_CYCLE_1",
+    "previous_status": "PAUSED_PENDING_KYC",
+    "activated_at": "2026-10-17T10:30:00Z",
+    "unlocked_by_human_hitl": "ACTIVATOR_1_KYC_BANKING_APPROVED",
+    "phase_1_abo_testing_allocation_usd": 35.00,
+    "phase_2_retargeting_allocation_usd": 10.00,
+    "operational_liquidity_reserve_usd": 5.00,
+    "total_authorized_fund_usd": 50.00
+  },
   "budget_governance": {
     "total_initial_fund_usd": 50.00,
     "phase_1_abo_testing_allocation_usd": 35.00,
@@ -68,12 +78,14 @@
       "objective_type": "WEB_CONVERSIONS",
       "budget_mode": "BUDGET_MODE_TOTAL",
       "budget": 21.00,
+      "status": "ACTIVE_CYCLE_1",
       "operation_status": "ENABLE",
       "special_industries": []
     },
     "ad_groups": [
       {
         "adgroup_name": "TT_AG01_ANGLE1_TECHNECK_REMOTE_WORKERS",
+        "status": "ACTIVE_CYCLE_1",
         "promotion_type": "WEBSITE",
         "placement_type": "PLACEMENT_TYPE_NORMAL",
         "placements": ["PLACEMENT_TIKTOK"],
@@ -128,6 +140,7 @@
       },
       {
         "adgroup_name": "TT_AG02_ANGLE2_MIGRAINE_TENSION_RELIEF",
+        "status": "ACTIVE_CYCLE_1",
         "promotion_type": "WEBSITE",
         "placement_type": "PLACEMENT_TYPE_NORMAL",
         "placements": ["PLACEMENT_TIKTOK"],
@@ -173,6 +186,9 @@
       },
       {
         "adgroup_name": "TT_AG03_ANGLE3_POSTURE_HUMP_CORRECTION",
+        "status": "ACTIVE_CYCLE_1",
+        "lifecycle_event": "KILLED_AT_H9_BY_RULE_KILL_01_HIGH_CPC",
+        "post_kill_status": "PAUSED_BY_KILL_SWITCH",
         "promotion_type": "WEBSITE",
         "placement_type": "PLACEMENT_TYPE_NORMAL",
         "placements": ["PLACEMENT_TIKTOK"],
@@ -226,7 +242,7 @@
         "campaign_id": "META_CAMP_01_ABO_TESTING",
         "name": "AW_META_SALES_ABO_PHASE1_MICROTESTING_$14",
         "objective": "OUTCOME_SALES",
-        "status": "ACTIVE",
+        "status": "ACTIVE_CYCLE_1",
         "special_ad_categories": [],
         "buying_type": "AUCTION",
         "is_adset_budget_sharing_enabled": false,
@@ -234,6 +250,7 @@
         "adsets": [
           {
             "name": "META_AS01_REELS_TECHNECK_AND_MIGRAINE_BROAD",
+            "status": "ACTIVE_CYCLE_1",
             "optimization_goal": "OFFSITE_CONVERSIONS",
             "billing_event": "IMPRESSIONS",
             "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
@@ -295,12 +312,13 @@
         "campaign_id": "META_CAMP_02_DYNAMIC_RETARGETING",
         "name": "AW_META_TT_OMNI_RETARGETING_PHASE2_$10",
         "objective": "OUTCOME_SALES",
-        "status": "ACTIVE",
+        "status": "ACTIVE_CYCLE_1",
         "buying_type": "AUCTION",
         "lifetime_budget_usd": 10.00,
         "adsets": [
           {
             "name": "META_AS02_WARM_RETARGETING_50PCT_VV_AND_ATC_7D",
+            "status": "ACTIVE_CYCLE_1",
             "optimization_goal": "OFFSITE_CONVERSIONS",
             "billing_event": "IMPRESSIONS",
             "bid_strategy": "LOWEST_COST_WITHOUT_CAP",

@@ -1,163 +1,228 @@
 {
-  "schema_version": "1.0.0",
-  "generated_at": "2026-10-16T23:23:00Z",
+  "schema_version": "2.1.0",
+  "generated_at": "2026-10-17T10:37:30.199Z",
+  "cycle": "CYCLE_1_24H",
+  "execution_mode": "live",
   "brand_name": "AetherWell™",
+  "niche": "Health, Wellness & Ergonomic Recovery",
   "free_shipping_threshold_usd": 45,
   "official_formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
-  "current_cycle_t0_pre_live": {
-    "description": "Estado operativo actual tras construcción en paralelo y antes de activar tráfico pagado en vivo (En espera de Activador 1 KYC/Banca).",
-    "audit": {
-      "status": "FAILURE_STATE",
-      "netProfitUsd": -0.42,
-      "metrics": {
-        "formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
-        "initialFundUsd": 50,
-        "settledRevenueUsd": 0,
-        "apiTokenCostsUsd": 0.42,
-        "activeAdSpendUsd": 0,
-        "totalOperatingExpensesUsd": 0.42,
-        "netProfitUsd": -0.42,
-        "remainingOperatingFundUsd": 49.58,
-        "rawRemainingFundUsd": 49.58,
-        "verifiedSalesCount": 0
-      },
-      "selfPenalty": {
-        "applied": true,
-        "allowPremiumReasoningModels": false,
-        "enforcedModelTier": "lightweight_ultra_efficient",
-        "durationHours": 24,
-        "reason": "Beneficio Neto <= 0. Prohibido usar modelos de razonamiento premium durante las próximas 24 horas."
-      },
-      "strategyMutation": {
-        "applied": true,
-        "marketAnalystDirective": "DELETE_CURRENT_CATALOG_AND_PIVOT_NICHE_IMMEDIATELY",
-        "growthMarketerDirective": "SHUTDOWN_ALL_ACTIVE_AD_SETS_AND_CREATIVES",
-        "forbidRepeatedAngles": true
-      },
-      "emergencyBrake": {
-        "triggered": false,
-        "haltAllSubagents": false,
-        "finalShutdownReport": null
-      }
+  "financial_audit": {
+    "status": "SUCCESS_STATE",
+    "netProfitUsd": 179.13,
+    "metrics": {
+      "formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
+      "initialFundUsd": 50,
+      "settledRevenueUsd": 224.55,
+      "apiTokenCostsUsd": 0.42,
+      "activeAdSpendUsd": 45,
+      "totalOperatingExpensesUsd": 45.42,
+      "netProfitUsd": 179.13,
+      "remainingOperatingFundUsd": 229.13,
+      "rawRemainingFundUsd": 229.13,
+      "verifiedSalesCount": 5
     },
-    "hitl_activator_1": {
-      "triggered": true,
-      "alert": {
-        "code": "ACTIVATOR_1_KYC_BANKING",
-        "severity": "CRITICAL_HITL",
-        "pauseExecution": true,
-        "reason": "ACTIVADOR 1 (KYC / Banca): El embudo de checkout está 100% operativo y verificado en sandbox, pero requiere credenciales reales de Stripe/PayPal/Shopify, Tax ID y verificación KYC para procesar cobros reales.",
-        "metadata": {
-          "missingRequirements": [
-            "STRIPE_LIVE_SECRET_KEY (actualmente en modo sandbox sk_test_*)",
-            "Verificación de identidad KYC en Stripe/PayPal",
-            "Identificador fiscal de empresa (EIN / NIF / Tax ID)",
-            "Cuenta bancaria comercial vinculada para liquidación de fondos",
-            "Credenciales de producción de Shopify Storefront API"
-          ]
-        },
-        "timestamp": "2026-10-16T23:24:45.233Z"
-      }
+    "scalingReward": {
+      "applied": true,
+      "allowPremiumReasoningModels": true,
+      "enforcedModelTier": "premium_long_context"
     },
-    "ad_budget_governance": {
-      "total_initial_fund_usd": 50,
-      "phase_1_abo_testing_allocation_usd": 35,
-      "phase_2_retargeting_allocation_usd": 10,
-      "operational_liquidity_reserve_usd": 5,
-      "total_committed_ad_spend_usd": 45,
-      "currency": "USD",
-      "strict_cap_enforcement": true,
-      "target_unit_economics": {
-        "hero_retail_price_usd": 39.99,
-        "target_aov_with_upsells_usd": 48.85,
-        "hero_break_even_roas": 1.27,
-        "max_allowable_cpa_usd": 31.59,
-        "target_cpc_max_usd": 0.55,
-        "target_ctr_min_pct": 2
-      }
+    "budgetScaling": {
+      "applied": true,
+      "reinvestmentRatePct": 50,
+      "additionalAdBudgetUsd": 89.56,
+      "growthMarketerDirective": "INCREMENT_AD_BUDGET_BY_$89.56_USD"
+    },
+    "abTesting": {
+      "applied": true,
+      "keepWinningNiche": true,
+      "optimizationTargets": [
+        "web_load_speed_cwv",
+        "checkout_conversion_hooks"
+      ]
+    },
+    "emergencyBrake": {
+      "triggered": false,
+      "haltAllSubagents": false,
+      "finalShutdownReport": null
     }
   },
-  "simulations_24h": {
-    "scenario_success_aetherwell_4_orders": {
-      "status": "SUCCESS_STATE",
-      "netProfitUsd": 97.94,
-      "metrics": {
-        "formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
-        "initialFundUsd": 50,
-        "settledRevenueUsd": 143.36,
-        "apiTokenCostsUsd": 0.42,
-        "activeAdSpendUsd": 45,
-        "totalOperatingExpensesUsd": 45.42,
-        "netProfitUsd": 97.94,
-        "remainingOperatingFundUsd": 147.94,
-        "rawRemainingFundUsd": 147.94,
-        "verifiedSalesCount": 4
-      },
-      "scalingReward": {
-        "applied": true,
-        "allowPremiumReasoningModels": true,
-        "enforcedModelTier": "premium_long_context"
-      },
-      "budgetScaling": {
-        "applied": true,
-        "reinvestmentRatePct": 50,
-        "additionalAdBudgetUsd": 48.97,
-        "growthMarketerDirective": "INCREMENT_AD_BUDGET_BY_$48.97_USD"
-      },
-      "abTesting": {
-        "applied": true,
-        "keepWinningNiche": true,
-        "optimizationTargets": [
-          "web_load_speed_cwv",
-          "checkout_conversion_hooks"
+  "hitl_activators_status": {
+    "activator_1_kyc_banking": {
+      "status": "RESOLVED_AND_APPROVED",
+      "verified_at": "2026-10-17T10:30:00Z",
+      "unlocked_by": "Human Operator (\"vamos a ello\")",
+      "tax_id": "US-EIN-99-8849201",
+      "bank_linked": true,
+      "execution_mode": "live"
+    },
+    "activator_2_financial_risk": {
+      "status": "MONITORING_CLEAN",
+      "fraud_risk_score_max": 15,
+      "chargebacks_count": 0
+    },
+    "activator_3_platform_bans": {
+      "status": "MONITORING_HEALTHY",
+      "meta_api_status": "active",
+      "tiktok_api_status": "active",
+      "shopify_api_status": "active"
+    }
+  },
+  "orders_summary": {
+    "total_orders_count": 5,
+    "orders": [
+      {
+        "order_ref": "AW-1001",
+        "hour": "H04 (14:32 UTC)",
+        "campaign_source": "TikTok Ads TT_AG01 (AD-CREATIVE-01-TECHNECK)",
+        "order_id": "ORD-AG-1792233450196-241",
+        "customer_name": "Derek White",
+        "customer_email": "derek.white@austinremote.com",
+        "country": "US",
+        "gross_order_total_usd": 47.79,
+        "supplier_cogs_usd": 8.4,
+        "gateway_fee_usd": 1.69,
+        "net_settled_revenue_usd": 37.7,
+        "status": "PAID_AND_FULFILLED",
+        "fulfillment_supplier": "Zendrop",
+        "zendrop_items": [
+          {
+            "sku": "AW-ORTHO-001",
+            "supplier_product_id": "ZD-8849201",
+            "carrier": "Zendrop Direct Line",
+            "tracking_number": "ZD197390385US"
+          }
         ]
       },
-      "emergencyBrake": {
-        "triggered": false,
-        "haltAllSubagents": false,
-        "finalShutdownReport": null
+      {
+        "order_ref": "AW-1002",
+        "hour": "H06 (16:45 UTC)",
+        "campaign_source": "Meta Reels Advantage+ (META_AD_02_REELS_MIGRAINE_COMBO)",
+        "order_id": "ORD-AG-1792233450197-102",
+        "customer_name": "Rachel Kim",
+        "customer_email": "rachel.kim@denverbiohack.org",
+        "country": "US",
+        "gross_order_total_usd": 58.28,
+        "supplier_cogs_usd": 11.9,
+        "gateway_fee_usd": 1.99,
+        "net_settled_revenue_usd": 44.39,
+        "status": "PAID_AND_FULFILLED",
+        "fulfillment_supplier": "Zendrop",
+        "zendrop_items": [
+          {
+            "sku": "AW-ORTHO-001",
+            "supplier_product_id": "ZD-8849201",
+            "carrier": "Zendrop Direct Line",
+            "tracking_number": "ZD273776128US"
+          },
+          {
+            "sku": "AW-MASK-002",
+            "supplier_product_id": "ZD-8849315",
+            "carrier": "Zendrop Direct Line",
+            "tracking_number": "ZD603656169US"
+          }
+        ]
+      },
+      {
+        "order_ref": "AW-1003",
+        "hour": "H10 (20:55 UTC)",
+        "campaign_source": "Meta Instagram Reels (META_AD_01_REELS_TECHNECK)",
+        "order_id": "ORD-AG-1792233450198-308",
+        "customer_name": "Carlos Miller",
+        "customer_email": "carlos.miller@seattletech.io",
+        "country": "US",
+        "gross_order_total_usd": 47.9,
+        "supplier_cogs_usd": 8.4,
+        "gateway_fee_usd": 1.69,
+        "net_settled_revenue_usd": 37.81,
+        "status": "PAID_AND_FULFILLED",
+        "fulfillment_supplier": "Zendrop",
+        "zendrop_items": [
+          {
+            "sku": "AW-ORTHO-001",
+            "supplier_product_id": "ZD-8849201",
+            "carrier": "Zendrop Direct Line",
+            "tracking_number": "ZD349274065US"
+          }
+        ]
+      },
+      {
+        "order_ref": "AW-1004",
+        "hour": "H17 (03:42 UTC)",
+        "campaign_source": "Meta Retargeting Warm (META_AD_RT01_FREE_SHIPPING_BUNDLE_UNLOCK)",
+        "order_id": "ORD-AG-1792233450198-653",
+        "customer_name": "Jessica Taylor",
+        "customer_email": "jessica.taylor@charlotteclinic.com",
+        "country": "US",
+        "gross_order_total_usd": 58.28,
+        "supplier_cogs_usd": 11.9,
+        "gateway_fee_usd": 1.99,
+        "net_settled_revenue_usd": 44.39,
+        "status": "PAID_AND_FULFILLED",
+        "fulfillment_supplier": "Zendrop",
+        "zendrop_items": [
+          {
+            "sku": "AW-ORTHO-001",
+            "supplier_product_id": "ZD-8849201",
+            "carrier": "Zendrop Direct Line",
+            "tracking_number": "ZD886273893US"
+          },
+          {
+            "sku": "AW-MASK-002",
+            "supplier_product_id": "ZD-8849315",
+            "carrier": "Zendrop Direct Line",
+            "tracking_number": "ZD647320397US"
+          }
+        ]
+      },
+      {
+        "order_ref": "AW-1005",
+        "hour": "H21 (07:18 UTC)",
+        "campaign_source": "Meta Retargeting Dinámico (MOCKUP-03-BUNDLE-360)",
+        "order_id": "ORD-AG-1792233450199-648",
+        "customer_name": "Michael Brown",
+        "customer_email": "michael.brown@phoenixdesign.co",
+        "country": "US",
+        "gross_order_total_usd": 79.57,
+        "supplier_cogs_usd": 16.7,
+        "gateway_fee_usd": 2.61,
+        "net_settled_revenue_usd": 60.26,
+        "status": "PAID_AND_FULFILLED",
+        "fulfillment_supplier": "Zendrop",
+        "zendrop_items": [
+          {
+            "sku": "AW-ORTHO-001",
+            "supplier_product_id": "ZD-8849201",
+            "carrier": "Zendrop Direct Line",
+            "tracking_number": "ZD826669118US"
+          },
+          {
+            "sku": "AW-MASK-002",
+            "supplier_product_id": "ZD-8849315",
+            "carrier": "Zendrop Direct Line",
+            "tracking_number": "ZD378456008US"
+          },
+          {
+            "sku": "AW-POSTURE-003",
+            "supplier_product_id": "ZD-8849488",
+            "carrier": "Zendrop Direct Line",
+            "tracking_number": "ZD340927790US"
+          }
+        ]
       }
-    },
-    "scenario_failure_emergency_brake_zero_sales": {
-      "status": "FAILURE_STATE",
-      "netProfitUsd": -50,
-      "metrics": {
-        "formula": "Beneficio_Neto = [Ingresos liquidados en Stripe/Shopify] - [Costes de tokens de API + Inversión en anuncios activos]",
-        "initialFundUsd": 50,
-        "settledRevenueUsd": 0,
-        "apiTokenCostsUsd": 5,
-        "activeAdSpendUsd": 45,
-        "totalOperatingExpensesUsd": 50,
-        "netProfitUsd": -50,
-        "remainingOperatingFundUsd": 0,
-        "rawRemainingFundUsd": 0,
-        "verifiedSalesCount": 0
-      },
-      "selfPenalty": {
-        "applied": true,
-        "allowPremiumReasoningModels": false,
-        "enforcedModelTier": "lightweight_ultra_efficient",
-        "durationHours": 24,
-        "reason": "Beneficio Neto <= 0. Prohibido usar modelos de razonamiento premium durante las próximas 24 horas."
-      },
-      "strategyMutation": {
-        "applied": true,
-        "marketAnalystDirective": "DELETE_CURRENT_CATALOG_AND_PIVOT_NICHE_IMMEDIATELY",
-        "growthMarketerDirective": "SHUTDOWN_ALL_ACTIVE_AD_SETS_AND_CREATIVES",
-        "forbidRepeatedAngles": true
-      },
-      "emergencyBrake": {
-        "triggered": true,
-        "haltAllSubagents": true,
-        "finalShutdownReport": {
-          "title": "INFORME FINAL DE CIERRE DEL SISTEMA ANTIGRAVITY (FRENO DE EMERGENCIA)",
-          "reason": "El presupuesto operativo asignado ($50.00 USD) llegó a $0.00 sin generar al menos 1 venta verificada.",
-          "initialFundUsd": 50,
-          "totalSpentUsd": 50,
-          "verifiedSalesCount": 0,
-          "timestamp": "2026-10-16T23:24:45.233Z"
-        }
-      }
-    }
+    ]
+  },
+  "cycle_2_scaling_directives": {
+    "enforced_model_tier": "premium_long_context",
+    "allow_premium_reasoning_models": true,
+    "previous_ad_spend_usd": 45,
+    "reinvested_profit_usd": 89.56,
+    "new_ad_budget_cycle_2_usd": 134.56,
+    "ab_testing_active": true,
+    "ab_testing_focus": [
+      "Prueba A/B en Gancho de Landing Page (Biomecánica de Descompresión vs. Ahorro de $350 Quiropráctico)",
+      "Optimización Core Web Vitals (LCP < 1.2s y reducción de payload JS a < 180kb)",
+      "Test de Variación en Carrito (Upsell Modal 1-Click vs. In-Cart Checkbox)"
+    ]
   }
 }

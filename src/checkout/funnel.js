@@ -22,7 +22,8 @@ export function executeFullCheckoutFunnel({
   fraudRiskScore = 10,
   platformApiStatus = 'active',
   ledger = null,
-  customCatalog = null
+  customCatalog = null,
+  customEnvConfig = null
 }) {
   // Paso 1: Carrito
   const step1 = buildAndValidateCart({
@@ -52,6 +53,7 @@ export function executeFullCheckoutFunnel({
   }
 
   // Paso 4: Intento de Pago (Stripe/Shopify)
+  const envConfig = customEnvConfig || ledger?.envConfig;
   const step4 = createPaymentIntentSession({
     cart: step1,
     customerValidation: step2,
@@ -60,7 +62,8 @@ export function executeFullCheckoutFunnel({
     executionMode,
     fraudRiskScore,
     platformApiStatus,
-    ledger
+    ledger,
+    customEnvConfig: envConfig
   });
   if (!step4.valid) {
     return { completed: false, failedAtStep: 4, stepName: 'payment_intent', error: step4 };
@@ -72,7 +75,8 @@ export function executeFullCheckoutFunnel({
     paymentIntentId: step4.paymentIntentId,
     amountUsd: step3.breakdown.grandTotal
   };
-  const webhookSignature = signWebhookPayload(JSON.stringify(webhookEvent));
+  const webhookSecret = envConfig?.stripe?.webhookSecret;
+  const webhookSignature = signWebhookPayload(JSON.stringify(webhookEvent), webhookSecret);
 
   const step5 = confirmOrderAndFulfill({
     cart: step1,
@@ -81,6 +85,7 @@ export function executeFullCheckoutFunnel({
     paymentIntent: step4,
     webhookEvent,
     webhookSignature,
+    webhookSecret,
     ledger
   });
   if (!step5.valid) {

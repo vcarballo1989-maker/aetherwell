@@ -264,6 +264,74 @@
         "reviews_count": 642,
         "return_rate_pct": 1.8
       }
+    },
+    {
+      "id": "prod_bundle_relief_360_004",
+      "sku": "AW-BUNDLE-ALL",
+      "role": "bundle_complete",
+      "name": "Pack Clínico de Recuperación Cervical 360° (Los 3 Productos)",
+      "short_name": "Pack Clínico 360°",
+      "slug": "complete-cervical-relief-bundle-360",
+      "badge": "PACK COMPLETO · AHORRA $100 USD · MÁXIMO VALOR",
+      "headline": "Rehabilitación cervical y postural 24/7: OrthoCloud™ Pro + ThermoSilk™ + PostureAlign™ Smart.",
+      "description": "El protocolo clínico integral definitivo. Descomprime tu cuello por la noche con OrthoCloud™ Pro, disuelve migrañas y estrés ocular con ThermoSilk™, y reeduca tu postura en la oficina con el sensor biofeedback PostureAlign™ Smart.",
+      "features": [
+        "Incluye Camilla Ergonómica OrthoCloud™ Pro con 8 nodos de acupresión",
+        "Incluye Antifaz Crioterapéutico 360° Frío/Calor ThermoSilk™",
+        "Incluye Corrector Espinal Inteligente PostureAlign™ Smart con sensor de 25°",
+        "Envío Express Prioritario y Garantía Clínica Extendida de 60 Días"
+      ],
+      "pricing": {
+        "currency": "USD",
+        "compare_at_price": 159.97,
+        "retail_price": 59.99,
+        "discount_percentage": 62,
+        "cogs_product_usd": 12.10,
+        "cogs_shipping_usd": 4.60,
+        "total_cogs_usd": 16.70,
+        "payment_gateway_fee_est_usd": 2.04,
+        "gross_profit_usd": 43.29,
+        "gross_margin_pct": 72.16,
+        "net_contribution_margin_usd": 41.25,
+        "break_even_roas": 1.39
+      },
+      "variants": [
+        {
+          "variant_id": "var_bundle_default",
+          "sku": "AW-BUNDLE-ALL-KIT",
+          "name": "Pack Clínico Completo 360°",
+          "color_hex": "#1A1D24",
+          "stock_status": "in_stock",
+          "inventory_qty": 180,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "Zendrop",
+        "zendrop": {
+          "product_id": "ZD-8849999-BUNDLE",
+          "supplier_id": "ZD-SUP-healthplus-09",
+          "warehouse_origin": "US-East / CN-Express-Hub",
+          "shipping_method": "Zendrop Consolidated Express VIP Box",
+          "processing_time_days": "1-2",
+          "shipping_time_days": "7-10",
+          "auto_fulfillment_enabled": true
+        },
+        "aliexpress_fallback": {
+          "product_id": "AE-1005006849999",
+          "store_name": "OrthoMed Factory Direct Store",
+          "store_rating": 4.9,
+          "shipping_method": "AliExpress Selection Standard (Choice)",
+          "shipping_time_days": "8-12",
+          "unit_cost_usd": 11.60,
+          "shipping_cost_usd": 4.50
+        }
+      },
+      "social_proof": {
+        "rating": 4.95,
+        "reviews_count": 320,
+        "return_rate_pct": 0.8
+      }
     }
   ],
   "bundles_and_upsell_rules": {

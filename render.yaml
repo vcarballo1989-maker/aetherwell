@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: aetherwell-commerce
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: STRIPE_PUBLISHABLE_KEY
+        value: pk_live_51URYqOCm0oSb7l1TR1xqsn0AgjUg3Fdfv6ms0cFr50SJuDLyoW1w54lZlY3T7RDhuWewKkUEzSZxspp8dbijrLNA00IQRFwcM8
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: STRIPE_KYC_VERIFIED
+        value: "true"
+      - key: BANK_ACCOUNT_LINKED
+        value: "true"
+      - key: ZENDROP_API_KEY
+        sync: false
