@@ -12,12 +12,10 @@ export function renderAdminDashboard({
   kycStatus = {},
   currentEnv = {}
 }) {
-  const availableUsd = (stripeBalance.available || [])
-    .filter((b) => b.currency === 'usd')
+  const availableEur = (stripeBalance.available || [])
     .reduce((sum, b) => sum + b.amount / 100, 0);
 
-  const pendingUsd = (stripeBalance.pending || [])
-    .filter((b) => b.currency === 'usd')
+  const pendingEur = (stripeBalance.pending || [])
     .reduce((sum, b) => sum + b.amount / 100, 0);
 
   const fin = audit.financial_summary || {};
@@ -90,24 +88,24 @@ export function renderAdminDashboard({
   <!-- KPI Cards -->
   <div class="grid-kpis">
     <div class="kpi-card">
-      <div class="kpi-title">Stripe Saldo Disponible</div>
-      <div class="kpi-value" style="color: var(--accent);">$${availableUsd.toFixed(2)} USD</div>
-      <div class="kpi-sub">Liquidación bancaria lista</div>
+      <div class="kpi-title">Stripe Saldo Disponible (BBVA)</div>
+      <div class="kpi-value" style="color: var(--accent);">${availableEur.toFixed(2)} €</div>
+      <div class="kpi-sub">Liquidación a cuenta bancaria España</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-title">Stripe Saldo Pendiente</div>
-      <div class="kpi-value" style="color: var(--primary);">$${pendingUsd.toFixed(2)} USD</div>
-      <div class="kpi-sub">En tránsito hacia balance</div>
+      <div class="kpi-value" style="color: var(--primary);">${pendingEur.toFixed(2)} €</div>
+      <div class="kpi-sub">En tránsito hacia balance bancario</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-title">Ingresos Brutos (24h)</div>
-      <div class="kpi-value">$${Number(fin.gross_revenue_usd || 0).toFixed(2)} USD</div>
-      <div class="kpi-sub">Pedidos: ${audit.orders_processed_24h || 0}</div>
+      <div class="kpi-value">${Number(fin.gross_revenue_usd || 0).toFixed(2)} €</div>
+      <div class="kpi-sub">Pedidos procesados: ${audit.orders_processed_24h || 0}</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-title">Beneficio Neto Acumulado</div>
       <div class="kpi-value" style="color: ${Number(fin.net_profit_usd || 0) >= 0 ? 'var(--accent)' : 'var(--danger)'};">
-        $${Number(fin.net_profit_usd || 0).toFixed(2)} USD
+        ${Number(fin.net_profit_usd || 0).toFixed(2)} €
       </div>
       <div class="kpi-sub">ROAS: ${fin.blended_roas || '0.00'}x</div>
     </div>
@@ -140,11 +138,12 @@ export function renderAdminDashboard({
                   const amount = (s.amount_total ? s.amount_total / 100 : 0).toFixed(2);
                   const dateStr = s.created ? new Date(s.created * 1000).toLocaleString('es-ES') : '-';
                   const email = s.customer_details?.email || s.customer_email || 'Cliente Anónimo';
+                  const currSymbol = (s.currency || 'eur').toUpperCase() === 'EUR' ? '€' : s.currency?.toUpperCase();
                   return `
             <tr>
               <td><code>${s.id}</code></td>
               <td><span class="badge-status ${isPaid ? 'badge-paid' : 'badge-unpaid'}">${s.payment_status?.toUpperCase() || 'UNPAID'}</span></td>
-              <td><strong>$${amount} ${s.currency?.toUpperCase() || 'USD'}</strong></td>
+              <td><strong>${amount} ${currSymbol}</strong></td>
               <td>${email}</td>
               <td style="color:var(--text-muted);">${dateStr}</td>
               <td><a href="${s.url}" target="_blank" style="color:var(--primary); font-weight:700;">Abrir Checkout ↗</a></td>

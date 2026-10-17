@@ -207,15 +207,16 @@ export function createCommerceServer(customLedger = null) {
 
         const params = new URLSearchParams();
         params.append('mode', 'payment');
+        params.append('locale', 'es');
         params.append('success_url', `${baseUrl}/?session_id={CHECKOUT_SESSION_ID}&payment_status=success`);
         params.append('cancel_url', `${baseUrl}/?payment_status=cancelled`);
         params.append('metadata[brand]', 'AetherWell™');
-        params.append('metadata[source]', 'antigravity_autonomous_storefront');
-        params.append('shipping_address_collection[allowed_countries][0]', 'US');
-        params.append('shipping_address_collection[allowed_countries][1]', 'ES');
-        params.append('shipping_address_collection[allowed_countries][2]', 'CA');
-        params.append('shipping_address_collection[allowed_countries][3]', 'GB');
-        params.append('shipping_address_collection[allowed_countries][4]', 'MX');
+        params.append('metadata[source]', 'aetherwell_dtc_storefront_spain');
+        params.append('shipping_address_collection[allowed_countries][0]', 'ES');
+        params.append('shipping_address_collection[allowed_countries][1]', 'PT');
+        params.append('shipping_address_collection[allowed_countries][2]', 'FR');
+        params.append('shipping_address_collection[allowed_countries][3]', 'IT');
+        params.append('shipping_address_collection[allowed_countries][4]', 'DE');
 
         let subtotalCents = 0;
         let lineIdx = 0;
@@ -234,7 +235,7 @@ export function createCommerceServer(customLedger = null) {
           const qty = Number(item.quantity || 1);
           subtotalCents += unitCents * qty;
 
-          params.append(`line_items[${lineIdx}][price_data][currency]`, 'usd');
+          params.append(`line_items[${lineIdx}][price_data][currency]`, 'eur');
           params.append(`line_items[${lineIdx}][price_data][unit_amount]`, String(unitCents));
           params.append(`line_items[${lineIdx}][price_data][product_data][name]`, product.title);
           params.append(
@@ -245,11 +246,11 @@ export function createCommerceServer(customLedger = null) {
           lineIdx++;
         }
 
-        // Si el subtotal es menor al umbral ($45.00 USD), añadir tarifa de envío
+        // Si el subtotal es menor al umbral (45.00 EUR), añadir tarifa de envío
         if (subtotalCents < 4500) {
-          params.append(`line_items[${lineIdx}][price_data][currency]`, 'usd');
+          params.append(`line_items[${lineIdx}][price_data][currency]`, 'eur');
           params.append(`line_items[${lineIdx}][price_data][unit_amount]`, '499');
-          params.append(`line_items[${lineIdx}][price_data][product_data][name]`, 'Envío Rápido Estándar con Seguimiento (Zendrop Direct)');
+          params.append(`line_items[${lineIdx}][price_data][product_data][name]`, 'Envío Rápido España Asegurado (Correos Express / CTT)');
           params.append(`line_items[${lineIdx}][quantity]`, '1');
         }
 
@@ -280,7 +281,7 @@ export function createCommerceServer(customLedger = null) {
           sessionId: stripeData.id,
           url: stripeData.url,
           publishableKey: currentEnv.stripe.publishableKey,
-          amountTotalUsd: +(stripeData.amount_total / 100).toFixed(2),
+          amountTotalEur: +(stripeData.amount_total / 100).toFixed(2),
           currency: stripeData.currency
         });
       }
