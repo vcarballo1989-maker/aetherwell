@@ -20,6 +20,7 @@ import {
 import { renderHighConvertingStorefront } from './storefront/template.js';
 import { renderAdminDashboard } from './admin/adminTemplate.js';
 import { checkCjConnection, dispatchStripeSessionToCj, createCjDropshippingOrder } from './suppliers/cjService.js';
+import { tiktokAdsService } from './marketing/tiktokAdsService.js';
 
 const processedCjSessions = new Set();
 
@@ -113,7 +114,10 @@ export function createCommerceServer(customLedger = null) {
           }
         }
 
-        const cjStatus = await checkCjConnection();
+        const [cjStatus, tiktokStatus] = await Promise.all([
+          checkCjConnection(),
+          tiktokAdsService.getStatusForAdmin()
+        ]);
         const audit = ledger.run24hAudit();
         const html = renderAdminDashboard({
           stripeBalance,
@@ -121,7 +125,8 @@ export function createCommerceServer(customLedger = null) {
           audit,
           kycStatus,
           currentEnv,
-          cjStatus
+          cjStatus,
+          tiktokStatus
         });
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         return res.end(html);
@@ -203,6 +208,19 @@ export function createCommerceServer(customLedger = null) {
           const result = await createCjDropshippingOrder(body);
           return sendJson(result.success ? 200 : 400, result);
         }
+      }
+
+      // 4.3 Estado de Automatización y Guardián de TikTok Ads (/api/marketing/tiktok-status)
+      if (req.method === 'GET' && url.pathname === '/api/marketing/tiktok-status') {
+        const tiktokStatus = await tiktokAdsService.getStatusForAdmin();
+        return sendJson(200, tiktokStatus);
+      }
+
+      // 4.4 Ejecución de Guardián de Presupuesto TikTok (Auto-Kill 9,50 € / día) (/api/marketing/tiktok-guardian)
+      if (req.method === 'POST' && url.pathname === '/api/marketing/tiktok-guardian') {
+        const body = await parseBody().catch(() => ({}));
+        const guardianResult = await tiktokAdsService.enforceDailySpendCap(body.campaignIds || []);
+        return sendJson(200, guardianResult);
       }
 
       // 5. Checkout Completo Interactivo (/api/checkout y /api/checkout/full-funnel)

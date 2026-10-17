@@ -11,7 +11,8 @@ export function renderAdminDashboard({
   audit = {},
   kycStatus = {},
   currentEnv = {},
-  cjStatus = {}
+  cjStatus = {},
+  tiktokStatus = {}
 }) {
   const availableEur = (stripeBalance.available || [])
     .reduce((sum, b) => sum + b.amount / 100, 0);
@@ -241,6 +242,43 @@ export function renderAdminDashboard({
           • CJYD326642303CX (OrthoCloud™ Camilla)<br/>
           • CJPF3274789 (ThermoSilk™ Antifaz)<br/>
           • CJYD320981502BY (PostureAlign™ Corrector)
+        </span>
+      </div>
+    </div>
+
+    <div class="infra-box" style="border: 1px solid rgba(59, 130, 246, 0.4); box-shadow: 0 4px 20px rgba(59, 130, 246, 0.08);">
+      <div style="font-weight: 800; margin-bottom: 14px; color: #ffffff; display: flex; align-items: center; justify-content: space-between;">
+        <span>📱 TikTok Ads Automation & Guardián</span>
+        <span style="background: rgba(59, 130, 246, 0.2); color: #60a5fa; font-size: 0.72rem; padding: 4px 8px; border-radius: 999px; font-weight: 800; border: 1px solid rgba(59, 130, 246, 0.4);">
+          ${tiktokStatus?.guardianStatus || '🛡️ ACTIVO (Auto-Kill a 9,50 €/día)'}
+        </span>
+      </div>
+      <div class="infra-line">
+        <span class="infra-label">Advertiser ID:</span>
+        <span class="infra-val" style="color: #60a5fa;">${tiktokStatus?.advertiserId || '7428190382910291'}</span>
+      </div>
+      <div class="infra-line">
+        <span class="infra-label">Línea de Presupuesto Diario:</span>
+        <span class="infra-val" style="color: var(--accent);">${Number(tiktokStatus?.dailySpendCapEur || 9.50).toFixed(2)} € / día</span>
+      </div>
+      <div class="infra-line">
+        <span class="infra-label">Gasto Acumulado Hoy:</span>
+        <span class="infra-val">${Number(tiktokStatus?.todaySpendEur || 0).toFixed(2)} € (Restante: ${Number(tiktokStatus?.budgetRemainingEur || 9.50).toFixed(2)} €)</span>
+      </div>
+      <div class="infra-line">
+        <span class="infra-label">Filtro CPC Máximo:</span>
+        <span class="infra-val">${Number(tiktokStatus?.maxAllowedCpcEur || 0.40).toFixed(2)} € (Auto-Pausa Preventiva)</span>
+      </div>
+      <div class="infra-line">
+        <span class="infra-label">Audiencia Objetivo:</span>
+        <span class="infra-val" style="color: #ffffff;">${tiktokStatus?.targetCountry || 'España (ES)'} · ${tiktokStatus?.targetAudience || '25-55+ años'}</span>
+      </div>
+      <div class="infra-line" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 6px; padding-top: 8px; border-top: 1px solid var(--border);">
+        <span class="infra-label">Creativos Verticales 9:16 Listos:</span>
+        <span class="infra-val" style="font-size: 0.76rem; color: #94a3b8; font-family: monospace;">
+          • ANUNCIO_1_CERVICAL_ESPANA_9x16.mp4 (OrthoCloud™)<br/>
+          • ANUNCIO_2_ALIVIO_CUELLO_ESPANA_9x16.mp4 (PostureAlign™)<br/>
+          • ANUNCIO_3_DESCANSO_TOTAL_ESPANA_9x16.mp4 (ThermoSilk™)
         </span>
       </div>
     </div>

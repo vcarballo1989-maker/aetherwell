@@ -55,6 +55,14 @@ export const DEFAULT_CONFIG = {
     bankAccountLinked: defaultIsLiveKey
       ? process.env.BANK_ACCOUNT_LINKED !== 'false'
       : process.env.BANK_ACCOUNT_LINKED === 'true'
+  },
+  marketing: {
+    tiktok: {
+      accessToken: process.env.TIKTOK_ACCESS_TOKEN || 'act_sandbox_antigravity_tiktok_token_99',
+      advertiserId: process.env.TIKTOK_ADVERTISER_ID || '7428190382910291',
+      dailySpendCapEur: Number(process.env.TIKTOK_DAILY_SPEND_CAP_EUR || 9.50),
+      maxAllowedCpcEur: Number(process.env.TIKTOK_MAX_ALLOWED_CPC_EUR || 0.40)
+    }
   }
 };
 
@@ -140,6 +148,14 @@ export function loadOperationalEnv(envFilePath = path.resolve(process.cwd(), '.e
     company: {
       taxId: companyTaxId,
       bankAccountLinked
+    },
+    marketing: {
+      tiktok: {
+        accessToken: envVars.TIKTOK_ACCESS_TOKEN || 'act_sandbox_antigravity_tiktok_token_99',
+        advertiserId: envVars.TIKTOK_ADVERTISER_ID || '7428190382910291',
+        dailySpendCapEur: Number(envVars.TIKTOK_DAILY_SPEND_CAP_EUR || 9.50),
+        maxAllowedCpcEur: Number(envVars.TIKTOK_MAX_ALLOWED_CPC_EUR || 0.40)
+      }
     }
   };
 }
