@@ -25,7 +25,10 @@ export function createCommerceServer(customLedger = null) {
   const ledger = customLedger || new FinancialLedger({ envConfig });
 
   const server = http.createServer(async (req, res) => {
-    const url = new URL(req.url || '/', `http://${req.headers.host || 'localhost'}`);
+    const forwardedProto = req.headers['x-forwarded-proto'];
+    const proto = (forwardedProto ? forwardedProto.split(',')[0].trim() : (req.socket?.encrypted ? 'https' : 'http'));
+    const host = req.headers.host || 'localhost';
+    const url = new URL(req.url || '/', `${proto}://${host}`);
 
     const sendJson = (status, data) => {
       res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8' });
@@ -202,7 +205,12 @@ export function createCommerceServer(customLedger = null) {
         const secretKey = currentEnv.stripe.secretKey;
         const catalog = loadCatalog().products;
 
-        const baseUrl = body.origin || `http://${req.headers.host || 'localhost:3000'}`;
+        const reqProto = (req.headers['x-forwarded-proto'] ? req.headers['x-forwarded-proto'].split(',')[0].trim() : (req.socket?.encrypted ? 'https' : 'http'));
+        const reqHost = req.headers.host || 'localhost:3000';
+        let baseUrl = body.origin || `${reqProto}://${reqHost}`;
+        if (reqProto === 'https' && baseUrl.startsWith('http://')) {
+          baseUrl = baseUrl.replace(/^http:\/\//, 'https://');
+        }
         const items = Array.isArray(body.items) ? body.items : [];
 
         const params = new URLSearchParams();
