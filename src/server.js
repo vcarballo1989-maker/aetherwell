@@ -133,7 +133,7 @@ export function createCommerceServer(customLedger = null) {
       }
 
       // 1. Storefront SSR Principal (Home)
-      if (req.method === 'GET' && url.pathname === '/') {
+      if ((req.method === 'GET' || req.method === 'HEAD') && url.pathname === '/') {
         const catalogData = loadCatalog();
         const currentEnv = loadOperationalEnv();
         const kycStatus = evaluateKycReadiness(currentEnv);

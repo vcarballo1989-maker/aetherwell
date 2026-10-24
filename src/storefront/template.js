@@ -1624,23 +1624,9 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
         content: '<img src="/assets/posturealign-smart.jpg" alt="Corrector Inteligente PostureAlign Smart" style="max-width:100%; max-height:260px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
       },
       {
-        badge: "DIAGRAMA BIOMECÁNICO · TRACCIÓN CERVICAL 26°",
-        caption: "Descompresión y apertura del espacio intervertebral C1 a C7 bajo gravedad pasiva",
-        content: \`<svg viewBox="0 0 320 220" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="160" cy="180" rx="120" ry="18" fill="#e2e8f0" opacity="0.5"/>
-          <path d="M 70 80 Q 110 50 150 75 Q 180 95 190 140 Q 200 160 250 160" fill="none" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
-          <g fill="#0d9488">
-            <rect x="130" y="78" width="18" height="10" rx="3"/>
-            <rect x="142" y="92" width="18" height="10" rx="3"/>
-            <rect x="154" y="106" width="18" height="10" rx="3"/>
-            <rect x="166" y="120" width="18" height="10" rx="3"/>
-            <rect x="178" y="134" width="18" height="10" rx="3"/>
-          </g>
-          <path d="M 125 65 L 105 50" stroke="#2563eb" stroke-width="3"/>
-          <path d="M 195 145 L 220 160" stroke="#2563eb" stroke-width="3"/>
-          <text x="160" y="45" font-size="12" font-weight="900" fill="#0f172a" text-anchor="middle">ESPACIO INTERVERTEBRAL +35%</text>
-          <text x="160" y="195" font-size="11" font-weight="bold" fill="#0d9488" text-anchor="middle">DESCOMPRESIÓN SUAVE C1 A C7</text>
-        </svg>\`
+        badge: "FOTOGRAFÍA 4 · BIOMECÁNICA TRACCIÓN CERVICAL 26° (4K)",
+        caption: "Descompresión y apertura del espacio intervertebral C1 a C7 (+35%) bajo gravedad pasiva",
+        content: '<img src="/assets/orthocloud-traction-26deg.jpg" alt="Biomecánica de Tracción Cervical 26° OrthoCloud Pro" style="max-width:100%; max-height:260px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
       }
     ];
 
