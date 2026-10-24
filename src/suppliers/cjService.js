@@ -28,37 +28,65 @@ export const CJ_PRODUCT_MAPPING = {
   },
   prod_bump_thermosilk_002: {
     pid: '2610170347321600400',
-    vid: '2610170347321600400',
-    sku: 'CJPF3274789',
-    title: 'Sleep Soothing Patch & Thermal Gel Mask',
+    vid: '2610170347321601300',
+    sku: 'CJPF327478901AZ',
+    title: 'Sleep Soothing Patch 30pieces (Dream Patches Valerian & Ashwagandha)',
     cogsUsd: 1.83
   },
   'AW-MASK-002': {
     pid: '2610170347321600400',
-    vid: '2610170347321600400',
-    sku: 'CJPF3274789',
-    title: 'Sleep Soothing Patch & Thermal Gel Mask',
+    vid: '2610170347321601300',
+    sku: 'CJPF327478901AZ',
+    title: 'Sleep Soothing Patch 30pieces (Dream Patches Valerian & Ashwagandha)',
     cogsUsd: 1.83
   },
   prod_upsell_posturealign_003: {
     pid: '2609291139381605400',
     vid: '2609291139381606301',
     sku: 'CJYD320981502BY',
-    title: 'Adjustable Neck Support Posture Correction Gray',
+    title: 'Adjustable Neck Brace Neck Support Forward-head Posture Correction Gray',
     cogsUsd: 4.55
   },
   'AW-POSTURE-003': {
     pid: '2609291139381605400',
     vid: '2609291139381606301',
     sku: 'CJYD320981502BY',
-    title: 'Adjustable Neck Support Posture Correction Gray',
+    title: 'Adjustable Neck Brace Neck Support Forward-head Posture Correction Gray',
     cogsUsd: 4.55
+  },
+  prod_roller_neck_005: {
+    pid: '1444929719182168064',
+    vid: '1444929719253471232',
+    sku: 'CJAM130816101AZ',
+    title: 'Six-wheel Neck Massager Swan Roller Cervical Spine Massager',
+    cogsUsd: 1.33
+  },
+  'AW-ROLLER-005': {
+    pid: '1444929719182168064',
+    vid: '1444929719253471232',
+    sku: 'CJAM130816101AZ',
+    title: 'Six-wheel Neck Massager Swan Roller Cervical Spine Massager',
+    cogsUsd: 1.33
+  },
+  prod_ems_neck_006: {
+    pid: '1573246114139222016',
+    vid: '2409110614231617900',
+    sku: 'CJJT157094913MN',
+    title: 'Smart Electric Pulse Neck Massager with Heating',
+    cogsUsd: 4.53
+  },
+  'AW-EMS-006': {
+    pid: '1573246114139222016',
+    vid: '2409110614231617900',
+    sku: 'CJJT157094913MN',
+    title: 'Smart Electric Pulse Neck Massager with Heating',
+    cogsUsd: 4.53
   },
   prod_bundle_relief_360_004: {
     bundle: true,
     items: [
       { vid: '2610151230071628101', quantity: 1 },
-      { vid: '2610170347321600400', quantity: 1 },
+      { vid: '2610170347321601300', quantity: 1 },
       { vid: '2609291139381606301', quantity: 1 }
     ]
   },
@@ -66,7 +94,7 @@ export const CJ_PRODUCT_MAPPING = {
     bundle: true,
     items: [
       { vid: '2610151230071628101', quantity: 1 },
-      { vid: '2610170347321600400', quantity: 1 },
+      { vid: '2610170347321601300', quantity: 1 },
       { vid: '2609291139381606301', quantity: 1 }
     ]
   }
@@ -168,9 +196,11 @@ export async function checkCjConnection() {
       totalCatalogProducts: data.data?.total || 1560000,
       verifiedProductsCount: Object.keys(CJ_PRODUCT_MAPPING).length,
       syncedSkus: [
-        'CJYD326642303CX (OrthoCloud™)',
-        'CJPF3274789 (ThermoSilk™)',
-        'CJYD320981502BY (PostureAlign™)'
+        'CJYD326642303CX (OrthoCloud™ 3-in-1 Electric Pillow)',
+        'CJPF327478901AZ (Dream Patches™ 30pcs)',
+        'CJYD320981502BY (PostureAlign™ Adjustable Neck Brace)',
+        'CJAM130816101AZ (RollerRelief™ 6-Wheel Neck Massager)',
+        'CJJT157094913MN (PulseNeck™ Smart EMS Massager)'
       ]
     };
   } catch (err) {
@@ -337,10 +367,14 @@ export async function dispatchStripeSessionToCj(sessionId, stripeSecretKey) {
     const products = lineItems.map((li) => {
       const desc = (li.description || '').toLowerCase();
       let productId = 'prod_hero_orthocloud_001';
-      if (desc.includes('antifaz') || desc.includes('thermosilk') || desc.includes('mask')) {
+      if (desc.includes('parche') || desc.includes('dream') || desc.includes('antifaz') || desc.includes('thermosilk') || desc.includes('mask') || desc.includes('patch')) {
         productId = 'prod_bump_thermosilk_002';
-      } else if (desc.includes('posture') || desc.includes('corrector')) {
+      } else if (desc.includes('collarín') || desc.includes('collarin') || desc.includes('brace') || desc.includes('posture') || desc.includes('corrector')) {
         productId = 'prod_upsell_posturealign_003';
+      } else if (desc.includes('rodillo') || desc.includes('roller') || desc.includes('6-wheel') || desc.includes('swan')) {
+        productId = 'prod_roller_neck_005';
+      } else if (desc.includes('ems') || desc.includes('impulso') || desc.includes('pulse')) {
+        productId = 'prod_ems_neck_006';
       } else if (desc.includes('pack completo') || desc.includes('360')) {
         productId = 'prod_bundle_relief_360_004';
       }

@@ -185,9 +185,9 @@
         "cjdropshipping": {
           "account_id": "CJ5949933",
           "product_id": "2610170347321600400",
-          "variant_id": "2610170347321600400",
-          "variant_sku": "CJPF3274789",
-          "product_name": "Sleep Soothing Patch & Gel Mask",
+          "variant_id": "2610170347321601300",
+          "variant_sku": "CJPF327478901AZ",
+          "product_name": "Sleep Soothing Patch 30pieces (Dream Patches Valerian & Ashwagandha)",
           "unit_cost_usd": 1.83,
           "shipping_method": "CJ Packet Ordinary",
           "auto_fulfillment_enabled": true
@@ -343,7 +343,7 @@
           "bundle": true,
           "bundled_vids": [
             "2610151230071628101",
-            "2610170347321600400",
+            "2610170347321601300",
             "2609291139381606301"
           ],
           "shipping_method": "CJ Packet Ordinary",
@@ -372,6 +372,126 @@
         "rating": 4.95,
         "reviews_count": 320,
         "return_rate_pct": 0.8
+      }
+    },
+    {
+      "id": "prod_roller_neck_005",
+      "sku": "AW-ROLLER-005",
+      "role": "cross_sell_upsell",
+      "name": "RollerRelief™ — Masajeador Cervical Manual de 6 Rodillos Giratorios 360°",
+      "short_name": "RollerRelief™ 6 Rodillos",
+      "slug": "rollerrelief-6-wheel-neck-massager",
+      "badge": "VIRAL EN TIKTOK · ALIVIO MANUAL INMEDIATO",
+      "headline": "Libera nudos y contracturas en el cuello al instante con presión manual controlada y 6 rodillos giratorios.",
+      "description": "Pinza ergonómica flexible tipo Swan con 2 cabezales y 6 rodillos rotatorios de TPR suave que amasan profundamente la musculatura paravertebral cervical y los trapecios sin necesidad de baterías.",
+      "features": [
+        "6 bolas/rodillos giratorios 360° con puntos de acupresión miofascial",
+        "Arco de PP flexible irrompible con apertura regulable manualmente",
+        "Ultraligero (220g), silencioso y sin cables: úsalo en el sofá o en la oficina"
+      ],
+      "pricing": {
+        "currency": "USD",
+        "compare_at_price": 39.99,
+        "retail_price": 19.99,
+        "upsell_offer_price": 14.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 1.33,
+        "cogs_shipping_usd": 1.50,
+        "total_cogs_usd": 2.83,
+        "payment_gateway_fee_est_usd": 0.58,
+        "gross_profit_usd": 17.16,
+        "gross_margin_pct": 85.84,
+        "net_contribution_margin_usd": 16.58,
+        "break_even_roas": 1.17
+      },
+      "variants": [
+        {
+          "variant_id": "var_roller_swan_blue",
+          "sku": "AW-ROLLER-005-BLU",
+          "name": "Swan Aqua Mint / Blue",
+          "color_hex": "#38BDF8",
+          "stock_status": "in_stock",
+          "inventory_qty": 850,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1444929719182168064",
+          "variant_id": "1444929719253471232",
+          "variant_sku": "CJAM130816101AZ",
+          "product_name": "Six-wheel Neck Massager Swan Roller Cervical Spine Massager",
+          "unit_cost_usd": 1.33,
+          "shipping_method": "CJ Packet Ordinary",
+          "auto_fulfillment_enabled": true
+        }
+      },
+      "social_proof": {
+        "rating": 4.9,
+        "reviews_count": 1150,
+        "return_rate_pct": 0.6
+      }
+    },
+    {
+      "id": "prod_ems_neck_006",
+      "sku": "AW-EMS-006",
+      "role": "cross_sell_upsell",
+      "name": "PulseNeck™ Smart — Masajeador Cervical Eléctrico de Impulsos EMS + Calor",
+      "short_name": "PulseNeck™ Smart EMS",
+      "slug": "pulseneck-smart-ems-neck-massager",
+      "badge": "TECNOLOGÍA TENS/EMS · COMPRESA CALIENTE 42°C",
+      "headline": "Electroestimulación TENS/EMS de baja frecuencia y compresa térmica constante de 42°C en un collarín ultraligero.",
+      "description": "Collarín ergonómico en forma de U con 2 placas flotantes de acero inoxidable 304 que transmiten microcorrientes EMS/TENS y calor constante para desbloquear la rigidez cervical profunda en sesiones de 15 minutos.",
+      "features": [
+        "2 electrodos flotantes 360° con calor constante (38°C-42°C)",
+        "Múltiples modos de pulso EMS y niveles de intensidad regulables (+ / -)",
+        "Batería recargable por USB con apagado inteligente a los 15 minutos"
+      ],
+      "pricing": {
+        "currency": "USD",
+        "compare_at_price": 49.99,
+        "retail_price": 24.99,
+        "upsell_offer_price": 19.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 4.53,
+        "cogs_shipping_usd": 1.80,
+        "total_cogs_usd": 6.33,
+        "payment_gateway_fee_est_usd": 0.65,
+        "gross_profit_usd": 18.66,
+        "gross_margin_pct": 74.67,
+        "net_contribution_margin_usd": 18.01,
+        "break_even_roas": 1.34
+      },
+      "variants": [
+        {
+          "variant_id": "var_ems_gradient",
+          "sku": "AW-EMS-006-GRD",
+          "name": "Mint & Lavender Gradient",
+          "color_hex": "#0D9488",
+          "stock_status": "in_stock",
+          "inventory_qty": 420,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1573246114139222016",
+          "variant_id": "2409110614231617900",
+          "variant_sku": "CJJT157094913MN",
+          "product_name": "Smart Electric Pulse Neck Massager with Heating",
+          "unit_cost_usd": 4.53,
+          "shipping_method": "CJ Packet Ordinary",
+          "auto_fulfillment_enabled": true
+        }
+      },
+      "social_proof": {
+        "rating": 4.85,
+        "reviews_count": 780,
+        "return_rate_pct": 1.1
       }
     }
   ],

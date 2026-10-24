@@ -1061,8 +1061,9 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
       </div>
 
       <nav class="nav-links">
+        <a href="#ficha-tecnica">Ficha Técnica Real</a>
+        <a href="#catalogo-completo">Catálogo Completo (5 Artículos)</a>
         <a href="#beneficios">Beneficios Clínicos</a>
-        <a href="#como-funciona">Cómo Funciona</a>
         <a href="#comparativa">Comparativa</a>
         <a href="#opiniones">Opiniones (1.428)</a>
         <a href="#faq">Preguntas Frecuentes</a>
@@ -1087,15 +1088,15 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
       <!-- Left Column: Interactive Clinical Gallery -->
       <div class="gallery-container">
         <div class="main-viewer" id="main-viewer-card">
-          <div class="gallery-badge" id="viewer-badge">FOTOGRAFÍA 1 · ORTHOCLOUD™ PRO (ESTUDIO 4K)</div>
+          <div class="gallery-badge" id="viewer-badge">FOTO REAL 1 · ALMOHADA ELÉCTRICA 3 EN 1 (VISTA GENERAL + USO)</div>
           <div class="gallery-discount-badge">-50% DTO</div>
 
           <div class="viewer-svg-stage" id="viewer-svg-stage">
-            <img src="/assets/orthocloud-hero.jpg" alt="OrthoCloud Pro Camilla de Tracción Cervical" style="max-width:100%; max-height:260px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />
+            <img src="/assets/pillow-1-main.jpg" alt="Almohada Cervical Eléctrica 3 en 1 OrthoCloud Pro" style="max-width:100%; max-height:290px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />
           </div>
 
           <div class="viewer-caption" id="viewer-caption">
-            OrthoCloud™ Pro — Curva de tracción de 26° y 8 nodos de acupresión médica
+            Almohada Eléctrica 3 en 1 (SKU: CJYD326642303CX) — Calor Térmico + Elevación Tracción + Masaje Vibración
           </div>
         </div>
 
@@ -1103,19 +1104,19 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
         <div class="thumbnails-row">
           <button class="thumb-btn active" onclick="switchGalleryTab(0)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span>1. OrthoCloud™ 4K</span>
+            <span>1. Vista General</span>
           </button>
           <button class="thumb-btn" onclick="switchGalleryTab(1)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            <span>2. ThermoSilk™</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            <span>2. Botones USB-C</span>
           </button>
           <button class="thumb-btn" onclick="switchGalleryTab(2)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-            <span>3. PostureAlign™</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7v4M10 7v4M14 7v4M18 7v4"/></svg>
+            <span>3. Medidas 42.5cm</span>
           </button>
           <button class="thumb-btn" onclick="switchGalleryTab(3)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/></svg>
-            <span>4. Tracción 26°</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span>4. Los 3 Modos</span>
           </button>
         </div>
 
@@ -1148,9 +1149,9 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
           <span class="verified-pill">✓ Clínicamente Verificado</span>
         </div>
 
-        <h1 class="product-title">OrthoCloud™ Pro — Camilla de Tracción Cervical 3D</h1>
+        <h1 class="product-title">OrthoCloud™ Pro — Almohada Cervical Eléctrica 3 en 1 (Tracción + Calor + Masaje)</h1>
         <p class="product-subtitle">
-          Restaura la curvatura biomecánica de 26° de tu cuello, libera nervios suboccipitales pinzados y elimina migrañas y rigidez en solo 10 minutos al día en casa.
+          <strong>Producto Real Verificado (SKU: CJYD326642303CX):</strong> Almohada ergonómica de espuma viscoelástica <em>Memory Foam</em> (42,5 × 27 cm) con <strong>3 modos eléctricos por USB-C</strong>: 🟢 Elevación de tracción cervical arriba/abajo, 🔴 Compresa térmica relajante y 🔵 Masaje por vibración profunda con apagado automático a los 30 minutos.
         </p>
 
         <!-- Pricing Section -->
@@ -1194,8 +1195,8 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
             <div class="tier-left">
               <input type="radio" name="pack_tier" id="radio-tier-1" class="tier-radio" />
               <div>
-                <div class="tier-name">1x Almohada Cervical OrthoCloud™ Pro</div>
-                <div class="tier-desc">Tratamiento de tracción cervical individual (+ 4,99 € envío)</div>
+                <div class="tier-name">1x Almohada Cervical Eléctrica 3 en 1 OrthoCloud™ Pro</div>
+                <div class="tier-desc">Incluye Almohada Eléctrica (42,5×27cm) + Cable USB-C en caja (+ 4,99 € envío)</div>
               </div>
             </div>
             <div class="tier-pricing">
@@ -1205,15 +1206,15 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
           </div>
         </div>
 
-        <!-- Option 2: Duo Hero + Mask (Pre-selected - Most Popular) -->
+        <!-- Option 2: Duo Hero + Dream Patches (Pre-selected - Most Popular) -->
         <div class="tier-card selected" id="tier-card-2" onclick="selectTier(2)">
           <div class="tier-badge-ribbon">⭐ MÁS ELEGIDO (78% DE CLIENTES EN ESPAÑA)</div>
           <div class="tier-header">
             <div class="tier-left">
               <input type="radio" name="pack_tier" id="radio-tier-2" class="tier-radio" checked />
               <div>
-                <div class="tier-name">Pack Alivio Total (OrthoCloud™ + ThermoSilk™)</div>
-                <div class="tier-desc">Incluye Antifaz de Migrañas Frío/Calor • <strong>¡ENVÍO GRATIS A TODA ESPAÑA!</strong></div>
+                <div class="tier-name">Pack Descanso Total (Almohada Eléctrica + 30 Parches Dream Patches™)</div>
+                <div class="tier-desc">Incluye Pack de 30 Parches Nocturnos con Valeriana y Ashwagandha • <strong>¡ENVÍO GRATIS A ESPAÑA!</strong></div>
               </div>
             </div>
             <div class="tier-pricing">
@@ -1230,8 +1231,8 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
             <div class="tier-left">
               <input type="radio" name="pack_tier" id="radio-tier-3" class="tier-radio" />
               <div>
-                <div class="tier-name">Pack Clínico 360° (Almohada + Antifaz + Sensor)</div>
-                <div class="tier-desc">Rehabilitación 24/7 con Corrector PostureAlign™ • <strong>¡ENVÍO PRIORITARIO GRATIS!</strong></div>
+                <div class="tier-name">Pack Clínico 360° (Almohada Eléctrica + 30 Parches + Collarín PostureAlign™)</div>
+                <div class="tier-desc">Incluye Soporte Cervical Ajustable en Altura PostureAlign™ • <strong>¡ENVÍO PRIORITARIO GRATIS!</strong></div>
               </div>
             </div>
             <div class="tier-pricing">
@@ -1262,6 +1263,293 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
 
       </div>
 
+    </section>
+
+    <!-- 3.5. Ficha Técnica Detallada: Todo lo que necesitas saber de la Almohada Eléctrica OrthoCloud™ Pro -->
+    <section class="section-spacing" id="ficha-tecnica">
+      <div class="section-header">
+        <span class="section-tag">TRANSPARENCIA TOTAL · ESPECIFICACIONES DE FÁBRICA</span>
+        <h2 class="section-title">Ficha Técnica Detallada: Todo lo que necesitas saber de la Almohada Eléctrica OrthoCloud™ Pro</h2>
+        <p class="section-desc">
+          Fotografías reales de fábrica y especificaciones exactas del modelo oficial <strong>3 in 1 Neck Massager Pillow (SKU CJ: CJYD326642303CX)</strong>. Sin dibujos confusos: esto es exactamente lo que recibes en casa.
+        </p>
+      </div>
+
+      <!-- 3 Fotos Reales de Apoyo (Comparativa, Anatomía y Alivio) -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 32px;">
+        <div style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px; box-shadow: var(--shadow-sm); text-align: center;">
+          <img src="/assets/pillow-5-compare.jpg" alt="Comparativa Almohada Eléctrica 3 en 1 vs Otras" style="width: 100%; height: 220px; object-fit: contain; border-radius: 8px;" />
+          <div style="font-size: 0.85rem; font-weight: 800; color: var(--text); margin-top: 10px;">Comparativa Real: 3 Modos Activos vs Espuma Rígida</div>
+        </div>
+        <div style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px; box-shadow: var(--shadow-sm); text-align: center;">
+          <img src="/assets/pillow-6-anatomy.jpg" alt="Anatomía de Tracción y Calor en Cuello y Hombros" style="width: 100%; height: 220px; object-fit: contain; border-radius: 8px;" />
+          <div style="font-size: 0.85rem; font-weight: 800; color: var(--text); margin-top: 10px;">Acción Focalizada en Cervicales (C1-C7) y Trapecios</div>
+        </div>
+        <div style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px; box-shadow: var(--shadow-sm); text-align: center;">
+          <img src="/assets/pillow-7-relief.jpg" alt="Alivio de Cefaleas, Dolor Cervical y Rigidez" style="width: 100%; height: 220px; object-fit: contain; border-radius: 8px;" />
+          <div style="font-size: 0.85rem; font-weight: 800; color: var(--text); margin-top: 10px;">Termoterapia + Elevación para Alivio en 10-20 Minutos</div>
+        </div>
+      </div>
+
+      <!-- Las 5 Preguntas Clave de Todo Comprador -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+        <div class="benefit-card" style="border-left: 4px solid var(--primary);">
+          <h3 style="color: var(--primary); margin-bottom: 8px;">1. ¿Qué es exactamente?</h3>
+          <p>
+            Es la <strong>Almohada Cervical Eléctrica 3 en 1 OrthoCloud™ Pro</strong> (<em>3 in 1 Neck Massager Pillow</em>, SKU verificado <code>CJYD326642303CX</code>): un cojín terapéutico motorizado diseñado para descomprimir las vértebras del cuello, aplicar calor constante relajante y realizar masaje vibratorio profundo desde la cama o el sofá.
+          </p>
+        </div>
+
+        <div class="benefit-card" style="border-left: 4px solid var(--blue-trust);">
+          <h3 style="color: var(--blue-trust); margin-bottom: 8px;">2. ¿Cómo es y qué medidas tiene?</h3>
+          <p>
+            Tiene unas dimensiones amplias de <strong>42,5 cm de largo × 27 cm de ancho</strong> (16,7" × 10,6") y un peso sólido de <strong>1.010 gramos</strong>. Presenta un diseño ergonómico dividido en <strong>dos zonas</strong>: un cilindro cervical activo que se acopla bajo la nuca y una almohadilla superior suave que sostiene la cabeza sin forzar el cuello.
+          </p>
+        </div>
+
+        <div class="benefit-card" style="border-left: 4px solid #0f766e;">
+          <h3 style="color: #0f766e; margin-bottom: 8px;">3. ¿De qué está hecha? (Materiales)</h3>
+          <p>
+            <strong>Núcleo interior:</strong> Espuma viscoelástica <em>Memory Foam</em> de alta densidad y rebote lento que no se aplasta.<br/>
+            <strong>Exterior:</strong> Tejido hipoalergénico gris jaspeado transpirable con <strong>panel central de malla térmica hexagonal</strong> y embellecedores laterales en <strong>cuero PU marrón cosido</strong> donde se aloja la botonera.
+          </p>
+        </div>
+
+        <div class="benefit-card" style="border-left: 4px solid #d97706;">
+          <h3 style="color: #d97706; margin-bottom: 8px;">4. ¿Qué lleva en la caja?</h3>
+          <p>
+            Recibes el paquete oficial de fábrica en su caja rígida protectora (<em>Cowhide Box</em>):<br/>
+            • <strong>1× Almohada Cervical Eléctrica 3 en 1 OrthoCloud™ Pro</strong> (Gris Clásico, 42,5 × 27 cm).<br/>
+            • <strong>1× Cable de alimentación USB Tipo C (5V)</strong>.<br/>
+            • <strong>1× Manual de instrucciones</strong> con guía de los modos Manual y Automático.
+          </p>
+        </div>
+
+        <div class="benefit-card" style="border-left: 4px solid #e11d48; grid-column: 1 / -1;">
+          <h3 style="color: #e11d48; margin-bottom: 8px;">5. ¿Qué funciones tiene y cómo funciona?</h3>
+          <p style="margin-bottom: 10px;">
+            En el lateral de cuero marrón incorpora el puerto USB-C y <strong>2 botones físicos muy sencillos</strong>: el botón de <strong>Modo Manual</strong> (pulsación larga para encender/apagar; pulsación corta para cambiar de función) y el botón de <strong>Ciclo Automático</strong>. Cuenta con <strong>3 funciones terapéuticas con indicador LED de color</strong> y apagado de seguridad a los <strong>30 minutos</strong>:
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 10px;">
+            <div style="background: #fef2f2; border: 1px solid #fecaca; padding: 12px; border-radius: 10px; font-size: 0.88rem;">
+              🔴 <strong>Luz Roja — Calor Térmico Constante:</strong> Aplica termoterapia suave en la nuca para dilatar los vasos sanguíneos y derretir la rigidez muscular.
+            </div>
+            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 12px; border-radius: 10px; font-size: 0.88rem;">
+              🟢 <strong>Luz Verde — Elevación y Tracción Ajustable:</strong> Inflado/elevación física arriba y abajo que estira suavemente el espacio intervertebral cervical.
+            </div>
+            <div style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 12px; border-radius: 10px; font-size: 0.88rem;">
+              🔵 <strong>Luz Azul — Masaje por Vibración:</strong> Micro-vibraciones rítmicas de tejido profundo que relajan los trapecios y alivian la fatiga acumulada.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.8. Catálogo Completo de los 5 Artículos Reales AetherWell™ (Con Fotos Reales, Vídeos y Compra Directa) -->
+    <section class="section-spacing" id="catalogo-completo">
+      <div class="section-header">
+        <span class="section-tag">CATÁLOGO OFICIAL VERIFICADO · 5 PRODUCTOS REALES</span>
+        <h2 class="section-title">Todos Nuestros Artículos de Alivio Cervical y Descanso (Compra Individual o en Pack)</h2>
+        <p class="section-desc">
+          Aquí puedes ver en detalle cada uno de los <strong>5 productos reales de nuestro almacén</strong> —incluyendo el famoso <strong>Masajeador Manual de 6 Rodillos ("el de los rodillitos")</strong> y el <strong>Collarín Eléctrico de Impulsos EMS</strong>—, con sus fotografías reales de proveedor, vídeos demostrativos y ficha técnica completa.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 32px;">
+
+        <!-- ARTÍCULO 1: ALMOHADA CERVICAL ELÉCTRICA 3 EN 1 -->
+        <div style="background: #ffffff; border: 2px solid var(--primary); border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-md);">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--border); padding-bottom: 14px;">
+            <div>
+              <span style="background: var(--primary-subtle); color: var(--primary); border: 1px solid var(--primary-border); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 999px;">PRODUCTO #1 (ESTRELLA) · SKU CJ: CJYD326642303CX</span>
+              <h3 style="font-size: 1.35rem; font-weight: 900; color: var(--text); margin-top: 6px;">1. Almohada Cervical Eléctrica 3 en 1 OrthoCloud™ Pro (Calor + Elevación + Vibración)</h3>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 1.5rem; font-weight: 900; color: var(--primary);">39,99 € <span style="font-size: 0.95rem; color: var(--text-dim); text-decoration: line-through; font-weight: 600;">79,99 €</span></div>
+              <div style="font-size: 0.76rem; color: var(--text-muted);">IVA 21% Incluido · VID: 2610151230071628101</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: start;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+              <img src="/assets/pillow-1-main.jpg" alt="Almohada Eléctrica 3 en 1 Vista Principal" style="width: 100%; height: 170px; object-fit: contain; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border); padding: 6px;" />
+              <img src="/assets/pillow-2-side-controls.jpg" alt="Panel Lateral USB-C Almohada" style="width: 100%; height: 170px; object-fit: contain; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border); padding: 6px;" />
+              <img src="/assets/pillow-3-specs.jpg" alt="Medidas Almohada 42.5x27cm" style="width: 100%; height: 170px; object-fit: contain; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border); padding: 6px;" />
+              <img src="/assets/pillow-4-modes.jpg" alt="3 Modos Eléctricos Almohada" style="width: 100%; height: 170px; object-fit: contain; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border); padding: 6px;" />
+            </div>
+
+            <div style="font-size: 0.9rem; color: #334155; display: flex; flex-direction: column; gap: 10px;">
+              <div><strong>• ¿Qué es?:</strong> Almohada ortopédica eléctrica 3 en 1 para tracción cervical pasiva y activa, termoterapia y masaje relajante en casa.</div>
+              <div><strong>• ¿Cómo es?:</strong> Mide <strong>42,5 cm × 27 cm</strong> (peso 1.010 g), color gris jaspeado clásico con zona térmica central en panal y botonera lateral en cuero PU marrón.</div>
+              <div><strong>• ¿De qué está hecha?:</strong> Núcleo de espuma viscoelástica <em>Memory Foam</em> de alta densidad indeformable y funda textil transpirable suave al tacto.</div>
+              <div><strong>• ¿Qué lleva en la caja?:</strong> 1× Almohada Eléctrica 3 en 1 en caja original, 1× Cable USB Tipo C (5V) y 1× Manual de usuario.</div>
+              <div><strong>• ¿Qué funciones tiene?:</strong>Modo Manual y Modo Automático con 3 terapias (🔴 Calor constante, 🟢 Elevación/inflado de tracción arriba-abajo, 🔵 Vibración de masaje) y apagado automático a los 30 min.</div>
+              <div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px;">
+                <button onclick="buySingleCatalogProduct('prod_hero_orthocloud_001', 39.99, this)" style="background: var(--primary); color: #ffffff; border: none; padding: 12px 20px; border-radius: 10px; font-weight: 800; cursor: pointer; font-size: 0.92rem;">
+                  🛒 Comprar Almohada Eléctrica (39,99 €)
+                </button>
+                <a href="#compra" onclick="selectTier(2)" style="background: var(--surface-subtle); color: var(--text); border: 1px solid var(--border); padding: 12px 16px; border-radius: 10px; font-weight: 700; font-size: 0.88rem;">
+                  ⭐ Ver en Pack con Envío Gratis (54,98 €)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ARTÍCULO 2: MASAJEADOR CERVICAL MANUAL DE 6 RODILLOS ("EL DE LOS RODILLITOS") -->
+        <div style="background: #ffffff; border: 2px solid #0284c7; border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-md);">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--border); padding-bottom: 14px;">
+            <div>
+              <span style="background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 999px;">PRODUCTO #2 (EL DE LOS RODILLITOS · VIRAL TIKTOK) · SKU CJ: CJAM130816101AZ</span>
+              <h3 style="font-size: 1.35rem; font-weight: 900; color: var(--text); margin-top: 6px;">2. RollerRelief™ — Masajeador Cervical Manual de 6 Rodillos Giratorios 360°</h3>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 1.5rem; font-weight: 900; color: #0284c7;">19,99 € <span style="font-size: 0.95rem; color: var(--text-dim); text-decoration: line-through; font-weight: 600;">39,99 €</span></div>
+              <div style="font-size: 0.76rem; color: var(--text-muted);">IVA 21% Incluido · VID: 1444929719253471232</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: start;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: center;">
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <img src="/assets/6roller_23WD_new_roller_swan_blue.jpg" alt="Masajeador Cervical 6 Rodillos Foto Proveedor" style="width: 100%; height: 155px; object-fit: contain; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border); padding: 4px;" />
+                <img src="/assets/roller-1-main.jpg" alt="Masajeador 6 Rodillos en Uso Real en Cuello" style="width: 100%; height: 155px; object-fit: cover; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border);" />
+              </div>
+              <div style="text-align: center;">
+                <video src="/assets/roller-demo.mp4" poster="/assets/roller-2-action.jpg" controls muted loop playsinline style="width: 100%; max-height: 320px; border-radius: 10px; border: 1px solid var(--border); background: #000;"></video>
+                <div style="font-size: 0.75rem; font-weight: 700; color: #0284c7; margin-top: 4px;">▶️ Vídeo Real: Así se pasa por el cuello</div>
+              </div>
+            </div>
+
+            <div style="font-size: 0.9rem; color: #334155; display: flex; flex-direction: column; gap: 10px;">
+              <div><strong>• ¿Qué es?:</strong> Es el famoso <strong>masajeador cervical manual con rodillos</strong> ("el cacharrito que se pasa por el cuello con rodillitos"): una pinza ergonómica con dos brazos flexibles que aprietas suavemente con las manos mientras la deslizas arriba y abajo por la nuca.</div>
+              <div><strong>• ¿Cómo es?:</strong> Diseño tipo cisne (<em>Swan Roller</em>) con asas antideslizantes y <strong>2 cabezales basculantes equipados con 6 rodillos giratorios dentados</strong> (3 a cada lado del cuello) en color Azul/Verde Menta con rodillos grises.</div>
+              <div><strong>• ¿De qué está hecho?:</strong> Arco de polímero <strong>PP elástico de alta resistencia</strong> (se abre hasta 180° sin romperse) y bolas/rodillos de <strong>elastómero TPR hipoalergénico</strong> firme pero suave con la piel.</div>
+              <div><strong>• ¿Qué lleva en la caja?:</strong> 1× Masajeador Cervical Manual de 6 Rodillos RollerRelief™ completo y listo para usar (no requiere pilas ni cables).</div>
+              <div><strong>• ¿Qué funciones tiene?:</strong> Masaje miofascial profundo de punto gatillo (<em>Trigger Point</em>) en cervicales, trapecios, hombros e incluso gemelos/piernas. Tú controlas el 100% de la fuerza apretando más o menos las asas, con rotación 360° que amasa los músculos como los dedos de un fisioterapeuta.</div>
+              <div style="margin-top: 8px;">
+                <button onclick="buySingleCatalogProduct('prod_roller_neck_005', 19.99, this)" style="background: #0284c7; color: #ffffff; border: none; padding: 12px 20px; border-radius: 10px; font-weight: 800; cursor: pointer; font-size: 0.92rem;">
+                  🛒 Comprar Masajeador de 6 Rodillos (19,99 €)
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ARTÍCULO 3: MASAJEADOR CERVICAL ELÉCTRICO DE IMPULSOS EMS + CALOR -->
+        <div style="background: #ffffff; border: 2px solid #7c3aed; border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-md);">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--border); padding-bottom: 14px;">
+            <div>
+              <span style="background: #f3e8ff; color: #6d28d9; border: 1px solid #d8b4fe; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 999px;">PRODUCTO #3 (ELECTROESTIMULACIÓN TENS/EMS) · SKU CJ: CJJT157094913MN</span>
+              <h3 style="font-size: 1.35rem; font-weight: 900; color: var(--text); margin-top: 6px;">3. PulseNeck™ Smart — Collarín Eléctrico de Impulsos EMS + Compresa Térmica</h3>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 1.5rem; font-weight: 900; color: #7c3aed;">24,99 € <span style="font-size: 0.95rem; color: var(--text-dim); text-decoration: line-through; font-weight: 600;">49,99 €</span></div>
+              <div style="font-size: 0.76rem; color: var(--text-muted);">IVA 21% Incluido · VID: 2409110614231617900</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: start;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: center;">
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <img src="/assets/ems_04DW_gradient.jpg" alt="Collarín Eléctrico Smart Neck Massager EMS" style="width: 100%; height: 155px; object-fit: contain; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border); padding: 4px;" />
+                <img src="/assets/ems-1-main.jpg" alt="Contenido de la Caja Smart Neck Massager" style="width: 100%; height: 155px; object-fit: cover; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border);" />
+              </div>
+              <div style="text-align: center;">
+                <video src="/assets/ems-demo.mp4" poster="/assets/ems-2-controls.jpg" controls muted loop playsinline style="width: 100%; max-height: 320px; border-radius: 10px; border: 1px solid var(--border); background: #000;"></video>
+                <div style="font-size: 0.75rem; font-weight: 700; color: #7c3aed; margin-top: 4px;">▶️ Vídeo Real: Unboxing y Controles LED</div>
+              </div>
+            </div>
+
+            <div style="font-size: 0.9rem; color: #334155; display: flex; flex-direction: column; gap: 10px;">
+              <div><strong>• ¿Qué es?:</strong> Un masajeador cervical inalámbrico en forma de collarín ligero que utiliza microcorrientes de baja frecuencia (EMS/TENS) y calor constante para descontracturar las cervicales mientras trabajas o descansas.</div>
+              <div><strong>• ¿Cómo es?:</strong> Diseño en U ergonómico ultraligero (160 g) en acabado degradado verde menta/lavanda con panel lateral iluminado por 2 barras LED azules y 3 botones táctiles (Encendido/Modo, <code>+</code> y <code>-</code>).</div>
+              <div><strong>• ¿De qué está hecho?:</strong> Cuerpo flexible de ABS + silicona suave y <strong>2 placas flotantes de acero inoxidable 304</strong> de alta conductividad térmica y eléctrica.</div>
+              <div><strong>• ¿Qué lleva en la caja?:</strong> 1× Collarín Eléctrico <em>Smart Neck Massager</em> en su caja original, 1× Cable de carga USB y 1× Manual en inglés/español (tal como se ve en el vídeo de unboxing).</div>
+              <div><strong>• ¿Qué funciones tiene?:</strong> Compresa caliente constante (38°C–42°C), múltiples modos de pulso eléctrico (acupuntura, golpeteo, amasado) y 15 niveles de intensidad regulables con apagado inteligente a los 15 minutos.</div>
+              <div style="margin-top: 8px;">
+                <button onclick="buySingleCatalogProduct('prod_ems_neck_006', 24.99, this)" style="background: #7c3aed; color: #ffffff; border: none; padding: 12px 20px; border-radius: 10px; font-weight: 800; cursor: pointer; font-size: 0.92rem;">
+                  🛒 Comprar Collarín Eléctrico EMS (24,99 €)
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ARTÍCULO 4: COLLARÍN / SOPORTE CERVICAL AJUSTABLE POSTUREALIGN -->
+        <div style="background: #ffffff; border: 2px solid #0f766e; border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-md);">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--border); padding-bottom: 14px;">
+            <div>
+              <span style="background: #ccfbf1; color: #115e59; border: 1px solid #5eead4; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 999px;">PRODUCTO #4 (SOPORTE CERVICAL POSTURAL) · SKU CJ: CJYD320981502BY</span>
+              <h3 style="font-size: 1.35rem; font-weight: 900; color: var(--text); margin-top: 6px;">4. PostureAlign™ — Soporte Cervical Ergonómico con Ajuste de Altura para "Cuello de Texto"</h3>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 1.5rem; font-weight: 900; color: #0f766e;">19,99 € <span style="font-size: 0.95rem; color: var(--text-dim); text-decoration: line-through; font-weight: 600;">49,99 €</span></div>
+              <div style="font-size: 0.76rem; color: var(--text-muted);">IVA 21% Incluido · VID: 2609291139381606301</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: start;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+              <img src="/assets/cj_neckbrace_gray.jpg" alt="Collarín Soporte Cervical Ajustable Gris" style="width: 100%; height: 220px; object-fit: contain; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border); padding: 6px;" />
+              <img src="/assets/cj_neckbrace_main.jpg" alt="Estructura de Ajuste de Altura Soporte Cervical" style="width: 100%; height: 220px; object-fit: contain; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border); padding: 6px;" />
+            </div>
+
+            <div style="font-size: 0.9rem; color: #334155; display: flex; flex-direction: column; gap: 10px;">
+              <div><strong>• ¿Qué es?:</strong> Un collarín / soporte biomecánico abierto y transpirable diseñado para evitar que inclines la cabeza hacia adelante (<em>Forward-Head Posture</em>) cuando trabajas con el ordenador o miras el móvil.</div>
+              <div><strong>• ¿Cómo es?:</strong> Estructura abierta de soporte dinámico en 4 direcciones con apoyo submandibular acolchado, base clavicular suave, columna frontal con cremallera de elevación milimétrica y cinta trasera elástica ajustable en color Gris Nube (<em>Cloud Light Gray</em>).</div>
+              <div><strong>• ¿De qué está hecho?:</strong> Chasis ligero de policarbonato/ABS médico con almohadillas de <strong>espuma viscoelástica <em>Memory Foam</em> respetuosa con la piel</strong> y correa tejida transpirable con cierre de velcro.</div>
+              <div><strong>• ¿Qué lleva en la caja?:</strong> 1× Soporte Cervical Ajustable PostureAlign™ completo con correa cervical integrada.</div>
+              <div><strong>• ¿Qué funciones tiene?:</strong> <strong>Ajuste de altura con un solo toque (<em>One-touch height adjustment</em>)</strong> para adaptar el ángulo exacto de tu barbilla, descargando el peso de la cabeza sobre las clavículas sin ahogar ni dar calor como los collarines cerrados antiguos.</div>
+              <div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px;">
+                <button onclick="buySingleCatalogProduct('prod_upsell_posturealign_003', 19.99, this)" style="background: #0f766e; color: #ffffff; border: none; padding: 12px 20px; border-radius: 10px; font-weight: 800; cursor: pointer; font-size: 0.92rem;">
+                  🛒 Comprar Soporte Cervical PostureAlign™ (19,99 €)
+                </button>
+                <a href="#compra" onclick="selectTier(3)" style="background: var(--surface-subtle); color: var(--text); border: 1px solid var(--border); padding: 12px 16px; border-radius: 10px; font-weight: 700; font-size: 0.88rem;">
+                  🏆 Incluido en el Pack Clínico 360°
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ARTÍCULO 5: PARCHES NOCTURNOS RELAJANTES DREAM PATCHES (30 UNIDADES) -->
+        <div style="background: #ffffff; border: 2px solid #2563eb; border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-md);">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--border); padding-bottom: 14px;">
+            <div>
+              <span style="background: #dbeafe; color: #1d4ed8; border: 1px solid #93c5fd; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 999px;">PRODUCTO #5 (DESCANSO NOCTURNO PROFUNDO) · SKU CJ: CJPF327478901AZ</span>
+              <h3 style="font-size: 1.35rem; font-weight: 900; color: var(--text); margin-top: 6px;">5. Dream Patches™ — Pack de 30 Parches Transdérmicos Nocturnos (Valeriana & Ashwagandha)</h3>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 1.5rem; font-weight: 900; color: #2563eb;">19,99 € <span style="font-size: 0.88rem; color: #059669; font-weight: 800;">(14,99 € en Pack Dúo)</span></div>
+              <div style="font-size: 0.76rem; color: var(--text-muted);">IVA 21% Incluido · VID: 2610170347321601300</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: start;">
+            <div style="text-align: center;">
+              <img src="/assets/cj_patch_CJPF3274789.jpg" alt="Dream Patches 30 Parches con Valeriana y Ashwagandha" style="width: 100%; max-height: 250px; object-fit: contain; background: #f8fafc; border-radius: 10px; border: 1px solid var(--border); padding: 8px;" />
+            </div>
+
+            <div style="font-size: 0.9rem; color: #334155; display: flex; flex-direction: column; gap: 10px;">
+              <div><strong>• ¿Qué es?:</strong> Un tratamiento mensual (30 noches) de parches transdérmicos botánicos de liberación nocturna prolongada para calmar el sistema nervioso y conciliar un sueño profundo tras tu sesión de tracción cervical.</div>
+              <div><strong>• ¿Cómo es?:</strong> Bolsa hermética con cierre zip que contiene láminas con <strong>30 parches adhesivos circulares azules hipoalergénicos</strong> de aplicación tópica en muñeca, hombro o base del cuello.</div>
+              <div><strong>• ¿De qué está hecho?:</strong> Extractos botánicos naturales de <strong>Raíz de Valeriana (<em>Valerian Root</em>) y Ashwagandha</strong> sobre matriz adhesiva transpirable suave con la piel, sin melatonina sintética ni somnolencia matutina.</div>
+              <div><strong>• ¿Qué lleva en la caja?:</strong> 1× Sobre sellado <em>Dream Patches</em> con <strong>30 parches individuales</strong> (suministro completo para 1 mes).</div>
+              <div><strong>• ¿Qué funciones tiene?:</strong> Promueve la relajación nocturna continua durante 8 horas, reduce el estrés acumulado del día y mejora la calidad del sueño profundo REM.</div>
+              <div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px;">
+                <button onclick="buySingleCatalogProduct('prod_bump_thermosilk_002', 19.99, this)" style="background: #2563eb; color: #ffffff; border: none; padding: 12px 20px; border-radius: 10px; font-weight: 800; cursor: pointer; font-size: 0.92rem;">
+                  🛒 Comprar Pack 30 Parches (19,99 €)
+                </button>
+                <a href="#compra" onclick="selectTier(2)" style="background: var(--surface-subtle); color: var(--text); border: 1px solid var(--border); padding: 12px 16px; border-radius: 10px; font-weight: 700; font-size: 0.88rem;">
+                  🔥 Llevar por 14,99 € en el Pack Descanso Total
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- 4. Section: Why Neck Pain Happens (Clinical Mechanism) -->
@@ -1606,27 +1894,27 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
 
     let selectedTier = 2; // Por defecto: Opción 2 (Pack Alivio Total)
 
-    // Diapositivas de la Galería con Fotografías Reales de Estudio 4K y Diagramas Biomecánicos
+    // Diapositivas de la Galería con las 4 Fotografías Reales de la Almohada Cervical Eléctrica 3 en 1 (SKU: CJYD326642303CX)
     const GALLERY_SLIDES = [
       {
-        badge: "FOTOGRAFÍA 1 · ORTHOCLOUD™ PRO (ESTUDIO 4K)",
-        caption: "OrthoCloud™ Pro — Curva de tracción de 26° y 8 nodos de acupresión médica",
-        content: '<img src="/assets/orthocloud-hero.jpg" alt="OrthoCloud Pro Camilla de Tracción Cervical" style="max-width:100%; max-height:260px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
+        badge: "FOTO REAL 1 · ALMOHADA ELÉCTRICA 3 EN 1 (VISTA GENERAL + USO)",
+        caption: "Almohada Eléctrica 3 en 1 (SKU: CJYD326642303CX) — Calor Térmico + Elevación Tracción + Masaje Vibración",
+        content: '<img src="/assets/pillow-1-main.jpg" alt="Almohada Cervical Eléctrica 3 en 1 OrthoCloud Pro" style="max-width:100%; max-height:290px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
       },
       {
-        badge: "FOTOGRAFÍA 2 · ANTIFAZ DE MIGRAÑAS THERMOSILK™",
-        caption: "ThermoSilk™ — Antifaz térmico de crioterapia 360° para migraña y fatiga visual",
-        content: '<img src="/assets/thermosilk-mask.jpg" alt="Antifaz de Crioterapia ThermoSilk" style="max-width:100%; max-height:260px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
+        badge: "FOTO REAL 2 · PANEL LATERAL USB-C Y BOTONES DE CONTROL",
+        caption: "Acabado lateral en cuero PU marrón con puerto USB-C y 2 botones: Ciclo Automático y Modo Manual",
+        content: '<img src="/assets/pillow-2-side-controls.jpg" alt="Panel Lateral USB-C y Controles Almohada Eléctrica" style="max-width:100%; max-height:290px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
       },
       {
-        badge: "FOTOGRAFÍA 3 · CORRECTOR POSTUREALIGN™ SMART",
-        caption: "PostureAlign™ Smart — Corrector inteligente invisible con sensor háptico 25°",
-        content: '<img src="/assets/posturealign-smart.jpg" alt="Corrector Inteligente PostureAlign Smart" style="max-width:100%; max-height:260px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
+        badge: "FOTO REAL 3 · MEDIDAS EXACTAS (42,5 × 27 CM) Y PARÁMETROS",
+        caption: "Dimensiones: 42,5 cm × 27 cm · Espuma Memory Foam · 5V USB-C · Apagado automático a los 30 minutos",
+        content: '<img src="/assets/pillow-3-specs.jpg" alt="Medidas y Especificaciones 42.5x27cm Almohada Eléctrica" style="max-width:100%; max-height:290px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
       },
       {
-        badge: "FOTOGRAFÍA 4 · BIOMECÁNICA TRACCIÓN CERVICAL 26° (4K)",
-        caption: "Descompresión y apertura del espacio intervertebral C1 a C7 (+35%) bajo gravedad pasiva",
-        content: '<img src="/assets/orthocloud-traction-26deg.jpg" alt="Biomecánica de Tracción Cervical 26° OrthoCloud Pro" style="max-width:100%; max-height:260px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
+        badge: "FOTO REAL 4 · LOS 3 MODOS ELÉCTRICOS (ROJO / VERDE / AZUL)",
+        caption: "🔴 Luz Roja: Calor Térmico · 🟢 Luz Verde: Elevación Tracción Arriba/Abajo · 🔵 Luz Azul: Masaje Vibración",
+        content: '<img src="/assets/pillow-4-modes.jpg" alt="Los 3 Modos Eléctricos de Tracción, Calor y Vibración" style="max-width:100%; max-height:290px; object-fit:contain; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.08);" />'
       }
     ];
 
@@ -1732,6 +2020,35 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
         alert('Error de conexión con la pasarela de pago: ' + err.message);
         btn.disabled = false;
         btn.innerHTML = originalText;
+      }
+    }
+
+    async function buySingleCatalogProduct(productId, unitPrice, btnEl) {
+      const originalText = btnEl.innerHTML;
+      btnEl.disabled = true;
+      btnEl.innerHTML = '⏳ Abriendo Stripe Checkout Seguro...';
+      try {
+        const response = await fetch('/api/checkout/stripe-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            items: [{ productId, quantity: 1, unitPriceOverride: unitPrice }],
+            origin: window.location.origin
+          })
+        });
+        const data = await response.json();
+        if (response.ok && data.url) {
+          btnEl.innerHTML = '🚀 Redirigiendo a Stripe...';
+          window.location.href = data.url;
+        } else {
+          alert('Error al inicializar la pasarela de Stripe: ' + (data.error || 'Por favor inténtelo nuevamente.'));
+          btnEl.disabled = false;
+          btnEl.innerHTML = originalText;
+        }
+      } catch (err) {
+        alert('Error de conexión con la pasarela de pago: ' + err.message);
+        btnEl.disabled = false;
+        btnEl.innerHTML = originalText;
       }
     }
 
