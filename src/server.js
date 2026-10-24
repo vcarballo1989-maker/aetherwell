@@ -309,7 +309,9 @@ export function createCommerceServer(customLedger = null) {
           params.append(`line_items[${lineIdx}][price_data][product_data][name]`, product.title);
           params.append(
             `line_items[${lineIdx}][price_data][product_data][description]`,
-            item.isUpsell ? `Oferta Exclusiva AetherWell™ (${product.sku})` : product.description?.slice(0, 100) || `SKU: ${product.sku}`
+            item.isUpsell
+              ? `Oferta Especial Navidad AetherWell™`
+              : product.description?.slice(0, 100) || `Edición Oficial Navidad AetherWell™`
           );
           params.append(`line_items[${lineIdx}][quantity]`, String(qty));
           lineIdx++;

@@ -1,26 +1,26 @@
 {
-  "schema_version": "2.1.0",
-  "generated_at": "2026-10-16T23:14:00Z",
+  "schema_version": "3.0.0",
+  "generated_at": "2026-10-24T19:45:00Z",
   "analyst_agent": "market_analyst",
   "budget_constraints": {
     "initial_capital_usd": 50.00,
     "paid_ads_testing_allocation_usd": 35.00,
     "retargeting_allocation_usd": 10.00,
     "operational_buffer_usd": 5.00,
-    "max_allowed_cogs_usd": 12.00,
-    "min_gross_margin_pct": 70.0,
-    "target_break_even_roas_max": 1.35
+    "max_allowed_cogs_usd": 15.00,
+    "min_gross_margin_pct": 60.0,
+    "target_break_even_roas_max": 1.45
   },
   "brand_identity": {
     "brand_name": "AetherWell™",
-    "tagline": "Alivio Cervical Clínico y Descanso Profundo en 10 Minutos al Día",
-    "niche_category": "Health, Wellness & Ergonomic Recovery",
+    "tagline": "Especial Navidad y Regalos Virales 2026 — Iluminación Mágica y Regalos Únicos en España",
+    "niche_category": "Holiday Lighting, Home Decor & Viral Christmas Gifts",
     "target_audience": {
-      "age_range": "24-58",
+      "age_range": "21-65",
       "segments": [
-        "Trabajadores remotos y profesionales de oficina (6+ horas frente a pantallas)",
-        "Usuarios con dolor cervical crónico, rigidez de hombros o migrañas tensionales",
-        "Entusiastas del bienestar postural y biohacking accesible"
+        "Familias y hogares en España buscando decoración luminosa navideña cálida y mágica",
+        "Compradores de regalos originales de Navidad, Amigo Invisible y Reyes Magos",
+        "Amantes de la iluminación ambiental LED, proyectores y detalles acogedores de invierno"
       ],
       "primary_channels": ["TikTok Ads", "Instagram Reels", "Meta Advantage+ Shopping", "TikTok Organic UGC"]
     },
@@ -29,62 +29,43 @@
   },
   "products": [
     {
-      "id": "prod_hero_orthocloud_001",
-      "sku": "AW-ORTHO-001",
+      "id": "prod_xmas_curtain_001",
+      "sku": "AW-XMAS-001",
       "role": "hero",
-      "name": "OrthoCloud™ Pro — Camilla de Tracción Cervical y Acupresión 3D",
-      "short_name": "OrthoCloud™ Pro",
-      "slug": "orthocloud-pro-cervical-stretcher",
-      "badge": "MÁS VENDIDO · RECOMENDADO POR FISIOTERAPEUTAS",
-      "headline": "Descomprime tu cuello, corrige la postura y elimina la tensión cervical en solo 10 minutos al día.",
-      "description": "Diseñada con una curva ergonómica de tracción bidireccional en C y V y 8 nodos de acupresión magnética profunda, OrthoCloud™ Pro restaura la curvatura natural de 26° de tu columna cervical, aliviando el 'cuello de texto', los nervios pinzados y las cefaleas tensionales desde la primera sesión.",
+      "name": "Cortina LED Navideña de Anillos Mágicos 3D (3×0,5m · 120 LEDs · Enchufe Europeo)",
+      "short_name": "Cortina LED Anillos Mágicos 3D",
+      "slug": "cortina-led-navidena-anillos-magicos-3d",
+      "badge": "N.º 1 EN VENTAS NAVIDAD · ENCHUFE EUROPEO 220V",
+      "headline": "Transforma cualquier ventana o salón en un escaparate navideño mágico en menos de 2 minutos.",
+      "description": "Cortina luminosa de 3 metros de ancho con 10 aros colgantes iluminados por 120 micro-LEDs blanco cálido y 10 figuras navideñas 3D intercambiables (Papá Noel, Reno, Muñeco de Nieve, Árbol de Navidad y Gorro). Con enchufe europeo directo y conector trasero empalmable.",
       "features": [
-        "Tracción bidireccional ajustable (Lado Suave para principiantes / Lado Intenso para corrección profunda)",
-        "8 nodos de acupresión terapéutica que estimulan la microcirculación suboccipital",
-        "Espuma médica de poliuretano de memoria densa auto-moldeable (soporta hasta 150 kg sin deformarse)",
-        "Resultados perceptibles en sesiones de 8 a 10 minutos diarios"
+        "3 metros de ancho × 0,5 metros de caída con 10 anillos luminosos y 120 LEDs blanco cálido",
+        "Incluye las 5 figuras navideñas 3D clásicas en el interior de los aros iluminados",
+        "Enchufe europeo 220V directo con conector hembra trasero para unir varias cortinas",
+        "Hilo de cobre recubierto en PVC transparente impermeable IP44 que no se calienta"
       ],
       "pricing": {
-        "currency": "USD",
-        "compare_at_price": 79.99,
-        "retail_price": 39.99,
+        "currency": "EUR",
+        "compare_at_price": 59.99,
+        "retail_price": 29.99,
         "discount_percentage": 50,
-        "cogs_product_usd": 6.20,
-        "cogs_shipping_usd": 2.20,
-        "total_cogs_usd": 8.40,
-        "payment_gateway_fee_est_usd": 1.46,
-        "gross_profit_usd": 31.59,
-        "gross_margin_pct": 79.00,
-        "net_contribution_margin_usd": 30.13,
-        "break_even_roas": 1.27,
-        "max_cpa_break_even_usd": 31.59
+        "cogs_product_usd": 3.86,
+        "cogs_shipping_usd": 8.28,
+        "total_cogs_usd": 12.14,
+        "payment_gateway_fee_est_usd": 1.15,
+        "gross_profit_usd": 17.85,
+        "gross_margin_pct": 59.52,
+        "net_contribution_margin_usd": 16.70,
+        "break_even_roas": 1.68
       },
       "variants": [
         {
-          "variant_id": "var_ortho_midnight",
-          "sku": "AW-ORTHO-001-BLK",
-          "name": "Obsidian Black (Terapéutico)",
-          "color_hex": "#1A1D24",
+          "variant_id": "var_curtain_warm_eu",
+          "sku": "AW-XMAS-001-EU",
+          "name": "Blanco Cálido · 3x0,5m (Enchufe Europeo 220V)",
+          "color_hex": "#F59E0B",
           "stock_status": "in_stock",
-          "inventory_qty": 450,
-          "price_override": null
-        },
-        {
-          "variant_id": "var_ortho_arctic",
-          "sku": "AW-ORTHO-001-BLU",
-          "name": "Clinical Ice Blue",
-          "color_hex": "#3B82F6",
-          "stock_status": "in_stock",
-          "inventory_qty": 320,
-          "price_override": null
-        },
-        {
-          "variant_id": "var_ortho_sage",
-          "sku": "AW-ORTHO-001-GRN",
-          "name": "Zen Sage Green",
-          "color_hex": "#10B981",
-          "stock_status": "in_stock",
-          "inventory_qty": 210,
+          "inventory_qty": 480,
           "price_override": null
         }
       ],
@@ -92,169 +73,121 @@
         "primary_provider": "CJdropshipping",
         "cjdropshipping": {
           "account_id": "CJ5949933",
-          "product_id": "2610151230071627200",
-          "variant_id": "2610151230071628101",
-          "variant_sku": "CJYD326642303CX",
-          "product_name": "English Cervical Pillow Neck Support Classic Gray Cowhide Box",
-          "unit_cost_usd": 14.24,
-          "shipping_method": "CJ Packet Ordinary",
+          "product_id": "2410010837151621500",
+          "variant_id": "2410010837151621600",
+          "variant_sku": "CJHD215087601AZ",
+          "product_name": "LED String Lights Christmas Pendant Lights Ring Lights",
+          "unit_cost_usd": 3.86,
+          "shipping_cost_usd": 8.28,
+          "shipping_method": "CJPacket Sensitive",
           "auto_fulfillment_enabled": true
-        },
-        "zendrop": {
-          "product_id": "ZD-8849201",
-          "supplier_id": "ZD-SUP-healthplus-09",
-          "warehouse_origin": "US-East / CN-Express-Hub",
-          "shipping_method": "Zendrop Select Express Line",
-          "processing_time_days": "1-2",
-          "shipping_time_days": "7-10",
+        }
+      },
+      "social_proof": {
+        "rating": 4.95,
+        "reviews_count": 1640,
+        "return_rate_pct": 0.7
+      }
+    },
+    {
+      "id": "prod_xmas_projector_002",
+      "sku": "AW-XMAS-002",
+      "role": "order_bump",
+      "name": "Proyector LED Rotatorio 360° de Copos de Nieve y 16 Figuras Navideñas (Enchufe Europeo)",
+      "short_name": "Proyector LED Navideño 360°",
+      "slug": "proyector-led-rotatorio-copos-nieve-16-figuras",
+      "badge": "COMPLEMENTO ESTRELLA · 16 PATRONES EN MOVIMIENTO",
+      "headline": "Proyecta una nevada mágica y 16 escenas navideñas animadas en alta definición sobre paredes, techos o fachadas.",
+      "description": "Lámpara proyectora LED de 4W con cabezal orientable 360° y 16 lentes caleidoscópicas de alta definición (Papá Noel, Reyes, Copos de Nieve, Renos, Muñecos de Nieve, Árboles y Campanas) en rotación automática continua.",
+      "features": [
+        "Proyección dinámica automática de 16 patrones navideños y copos de nieve en color HD",
+        "Soporte basculante 360° para colocar en mesa, suelo o fijar en pared/techo",
+        "Área de cobertura amplia de 5 a 15 m² con lámpara LED de bajo consumo (4W) y enchufe europeo"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 49.99,
+        "retail_price": 24.99,
+        "upsell_offer_price": 19.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 2.17,
+        "cogs_shipping_usd": 6.82,
+        "total_cogs_usd": 8.99,
+        "payment_gateway_fee_est_usd": 0.95,
+        "gross_profit_usd": 16.00,
+        "gross_margin_pct": 64.03,
+        "net_contribution_margin_usd": 15.05,
+        "break_even_roas": 1.56
+      },
+      "variants": [
+        {
+          "variant_id": "var_proj_16patterns_eu",
+          "sku": "AW-XMAS-002-EU",
+          "name": "16 Patrones Navideños · Enchufe Europeo",
+          "color_hex": "#1E293B",
+          "stock_status": "in_stock",
+          "inventory_qty": 520,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "5F4195DB-D9CE-4C79-BB79-88666FF1AE83",
+          "variant_id": "1446397786626068480",
+          "variant_sku": "CJJJJRHD01618-4W EU",
+          "product_name": "Christmas Lights Projector LED Rotating Snowflake Landscape Lamp",
+          "unit_cost_usd": 2.17,
+          "shipping_cost_usd": 6.82,
+          "shipping_method": "CJPacket Sensitive",
           "auto_fulfillment_enabled": true
-        },
-        "aliexpress_fallback": {
-          "product_id": "AE-1005006849201",
-          "store_name": "OrthoMed Factory Direct Store",
-          "store_rating": 4.9,
-          "shipping_method": "AliExpress Selection Standard (Choice)",
-          "shipping_time_days": "8-11",
-          "unit_cost_usd": 5.90,
-          "shipping_cost_usd": 2.30
         }
       },
       "social_proof": {
         "rating": 4.9,
-        "reviews_count": 1428,
-        "return_rate_pct": 1.2,
-        "viral_metrics": {
-          "estimated_ctr_pct": 3.45,
-          "estimated_cpc_usd": 0.38,
-          "scroll_stopper_score": 9.5
-        }
-      }
-    },
-    {
-      "id": "prod_bump_thermosilk_002",
-      "sku": "AW-MASK-002",
-      "role": "order_bump",
-      "name": "ThermoSilk™ — Antifaz de Compresión Térmica & Crioterapia para Migrañas",
-      "short_name": "ThermoSilk™ Migraine Mask",
-      "slug": "thermosilk-migraine-relief-cap",
-      "badge": "COMPLEMENTO IDEAL · 25% DTO EN CARRITO",
-      "headline": "Combina la tracción cervical con compresión 360° frío/calor para eliminar migrañas y tensión ocular al instante.",
-      "description": "Gorro-antifaz de gel de grado médico 360° que bloquea el 100% de la luz y aplica terapia fría o caliente uniforme sobre sienes, frente y nuca. El complemento perfecto mientras usas tu OrthoCloud™ Pro.",
-      "features": [
-        "Terapia dual Frío (congelador 30 min) o Calor (microondas 15 seg)",
-        "Compresión suave 360° sin presión incómoda sobre los párpados",
-        "Bloqueo total de luz 100% Blackout con tejido modal transpirable"
-      ],
-      "pricing": {
-        "currency": "USD",
-        "compare_at_price": 29.99,
-        "retail_price": 19.99,
-        "upsell_offer_price": 14.99,
-        "discount_percentage": 50,
-        "cogs_product_usd": 2.40,
-        "cogs_shipping_usd": 1.10,
-        "total_cogs_usd": 3.50,
-        "payment_gateway_fee_est_usd": 0.48,
-        "gross_profit_usd": 11.49,
-        "gross_margin_pct": 76.65,
-        "net_contribution_margin_usd": 11.01,
-        "break_even_roas": 1.30
-      },
-      "variants": [
-        {
-          "variant_id": "var_mask_obsidian",
-          "sku": "AW-MASK-002-BLK",
-          "name": "Obsidian Black",
-          "color_hex": "#1A1D24",
-          "stock_status": "in_stock",
-          "inventory_qty": 600,
-          "price_override": null
-        },
-        {
-          "variant_id": "var_mask_lavender",
-          "sku": "AW-MASK-002-LAV",
-          "name": "Calming Lavender",
-          "color_hex": "#A855F7",
-          "stock_status": "in_stock",
-          "inventory_qty": 380,
-          "price_override": null
-        }
-      ],
-      "supplier_mapping": {
-        "primary_provider": "CJdropshipping",
-        "cjdropshipping": {
-          "account_id": "CJ5949933",
-          "product_id": "2610170347321600400",
-          "variant_id": "2610170347321601300",
-          "variant_sku": "CJPF327478901AZ",
-          "product_name": "Sleep Soothing Patch 30pieces (Dream Patches Valerian & Ashwagandha)",
-          "unit_cost_usd": 1.83,
-          "shipping_method": "CJ Packet Ordinary",
-          "auto_fulfillment_enabled": true
-        },
-        "zendrop": {
-          "product_id": "ZD-8849315",
-          "supplier_id": "ZD-SUP-healthplus-09",
-          "warehouse_origin": "US-East / CN-Express-Hub",
-          "shipping_method": "Zendrop Bundled Express (Mismo Paquete)",
-          "processing_time_days": "1-2",
-          "shipping_time_days": "7-10",
-          "auto_fulfillment_enabled": true
-        },
-        "aliexpress_fallback": {
-          "product_id": "AE-1005006849315",
-          "store_name": "OrthoMed Factory Direct Store",
-          "store_rating": 4.9,
-          "shipping_method": "AliExpress Selection Standard (Choice)",
-          "shipping_time_days": "8-11",
-          "unit_cost_usd": 2.30,
-          "shipping_cost_usd": 1.10
-        }
-      },
-      "social_proof": {
-        "rating": 4.8,
-        "reviews_count": 894,
+        "reviews_count": 1120,
         "return_rate_pct": 0.9
       }
     },
     {
-      "id": "prod_upsell_posturealign_003",
-      "sku": "AW-POSTURE-003",
+      "id": "prod_xmas_crystal_003",
+      "sku": "AW-XMAS-003",
       "role": "cross_sell_upsell",
-      "name": "PostureAlign™ Smart — Corrector Espinal Invisible con Vibración Biofeedback",
-      "short_name": "PostureAlign™ Smart",
-      "slug": "posturealign-smart-corrector",
-      "badge": "OFERTA EXCLUSIVA POST-COMPRA · 33% DTO",
-      "headline": "Mantén la alineación perfecta durante tus 8 horas de trabajo con recordatorios hápticos inteligentes.",
-      "description": "Mientras OrthoCloud™ Pro descomprime tu cuello en casa, PostureAlign™ Smart entrena tu memoria muscular durante el día. Su sensor giroscópico detecta cuando te encorvas más de 25° y emite una suave vibración silenciosa para que corrijas tu postura al instante.",
+      "name": "Esfera de Cristal K9 3D Grabada con Láser + Base de Madera Maciza LED USB",
+      "short_name": "Esfera Cristal K9 3D LED",
+      "slug": "esfera-cristal-k9-3d-base-madera-led",
+      "badge": "REGALO INOLVIDABLE · CRISTAL ÓPTICO K9 + MADERA",
+      "headline": "Una joya luminosa tallada en cristal macizo 3D que ilumina dormitorios y salones con elegancia.",
+      "description": "Bola de cristal óptico K9 transparente de 6 cm con escultura interior tridimensional grabada mediante láser de alta precisión, reposando sobre un pedestal de madera natural de haya con iluminación LED cálida USB.",
       "features": [
-        "Sensor inteligente de ángulo de inclinación (25° de precisión)",
-        "Diseño ultraligero de 85g invisible bajo la ropa con correas transpirables",
-        "Batería USB-C de larga duración (15 días por carga de 1.5 horas)"
+        "Cristal óptico K9 100% macizo y transparente sin burbujas con grabado láser 3D eterno",
+        "Base artesanal de madera de haya maciza con luz LED cálida integrada (3000K)",
+        "Cable USB con interruptor de encendido/apagado incluido, ideal como lámpara de noche y regalo"
       ],
       "pricing": {
-        "currency": "USD",
+        "currency": "EUR",
         "compare_at_price": 49.99,
-        "retail_price": 29.99,
+        "retail_price": 24.99,
         "upsell_offer_price": 19.99,
-        "discount_percentage": 60,
-        "cogs_product_usd": 3.50,
-        "cogs_shipping_usd": 1.30,
-        "total_cogs_usd": 4.80,
-        "payment_gateway_fee_est_usd": 0.64,
-        "gross_profit_usd": 15.19,
-        "gross_margin_pct": 75.99,
-        "net_contribution_margin_usd": 14.55,
-        "break_even_roas": 1.32
+        "discount_percentage": 50,
+        "cogs_product_usd": 2.19,
+        "cogs_shipping_usd": 7.37,
+        "total_cogs_usd": 9.56,
+        "payment_gateway_fee_est_usd": 0.95,
+        "gross_profit_usd": 15.43,
+        "gross_margin_pct": 61.74,
+        "net_contribution_margin_usd": 14.48,
+        "break_even_roas": 1.62
       },
       "variants": [
         {
-          "variant_id": "var_posture_universal",
-          "sku": "AW-POSTURE-003-UNI",
-          "name": "Talla Universal Ajustable (Unisex)",
-          "color_hex": "#334155",
+          "variant_id": "var_crystal_warm_wood",
+          "sku": "AW-XMAS-003-STD",
+          "name": "Esfera Cristal 3D + Base Madera Haya LED",
+          "color_hex": "#D97706",
           "stock_status": "in_stock",
-          "inventory_qty": 510,
+          "inventory_qty": 390,
           "price_override": null
         }
       ],
@@ -262,77 +195,481 @@
         "primary_provider": "CJdropshipping",
         "cjdropshipping": {
           "account_id": "CJ5949933",
-          "product_id": "2609291139381605400",
-          "variant_id": "2609291139381606301",
-          "variant_sku": "CJYD320981502BY",
-          "product_name": "Adjustable Neck Support Posture Correction Gray",
-          "unit_cost_usd": 4.55,
-          "shipping_method": "CJ Packet Ordinary",
+          "product_id": "1772557137365970944",
+          "variant_id": "1772557138200637440",
+          "variant_sku": "CJJT199669907GT",
+          "product_name": "3D Crystal Ball Night Light Wooden Base LED Lamp",
+          "unit_cost_usd": 2.19,
+          "shipping_cost_usd": 7.37,
+          "shipping_method": "CJPacket Ordinary",
           "auto_fulfillment_enabled": true
-        },
-        "zendrop": {
-          "product_id": "ZD-8849488",
-          "supplier_id": "ZD-SUP-healthplus-09",
-          "warehouse_origin": "US-East / CN-Express-Hub",
-          "shipping_method": "Zendrop Bundled Express (Mismo Paquete)",
-          "processing_time_days": "1-2",
-          "shipping_time_days": "7-10",
-          "auto_fulfillment_enabled": true
-        },
-        "aliexpress_fallback": {
-          "product_id": "AE-1005006849488",
-          "store_name": "OrthoMed Factory Direct Store",
-          "store_rating": 4.8,
-          "shipping_method": "AliExpress Selection Standard (Choice)",
-          "shipping_time_days": "8-12",
-          "unit_cost_usd": 3.40,
-          "shipping_cost_usd": 1.30
         }
       },
       "social_proof": {
-        "rating": 4.8,
-        "reviews_count": 642,
-        "return_rate_pct": 1.8
+        "rating": 4.95,
+        "reviews_count": 945,
+        "return_rate_pct": 0.5
       }
     },
     {
-      "id": "prod_bundle_relief_360_004",
-      "sku": "AW-BUNDLE-ALL",
-      "role": "bundle_complete",
-      "name": "Pack Clínico de Recuperación Cervical 360° (Los 3 Productos)",
-      "short_name": "Pack Clínico 360°",
-      "slug": "complete-cervical-relief-bundle-360",
-      "badge": "PACK COMPLETO · AHORRA $100 USD · MÁXIMO VALOR",
-      "headline": "Rehabilitación cervical y postural 24/7: OrthoCloud™ Pro + ThermoSilk™ + PostureAlign™ Smart.",
-      "description": "El protocolo clínico integral definitivo. Descomprime tu cuello por la noche con OrthoCloud™ Pro, disuelve migrañas y estrés ocular con ThermoSilk™, y reeduca tu postura en la oficina con el sensor biofeedback PostureAlign™ Smart.",
+      "id": "prod_xmas_tree_004",
+      "sku": "AW-XMAS-004",
+      "role": "standard",
+      "name": "Árbol de Navidad LED Espiral de Mesa en Hierro Forjado Dorado con Estrella",
+      "short_name": "Árbol LED Espiral Dorado",
+      "slug": "arbol-navidad-led-espiral-mesa-dorado",
+      "badge": "DECORACIÓN DE MESA PREMIUM · SIN CABLES",
+      "headline": "El centro de mesa navideño más elegante para tu comedor, recibidor o mesita de noche.",
+      "description": "Árbol decorativo de diseño en espiral fabricado en hierro forjado dorado con estrella superior y guirnalda de perlas y micro-LEDs cálidos entrelazados. Funciona sin enchufes para lucir en cualquier rincón.",
       "features": [
-        "Incluye Camilla Ergonómica OrthoCloud™ Pro con 8 nodos de acupresión",
-        "Incluye Antifaz Crioterapéutico 360° Frío/Calor ThermoSilk™",
-        "Incluye Corrector Espinal Inteligente PostureAlign™ Smart con sensor de 25°",
-        "Envío Express Prioritario y Garantía Clínica Extendida de 60 Días"
+        "Estructura metálica dorada en espiral de 29 cm de altura × 13 cm de diámetro",
+        "Coronado por estrella luminosa con micro-LEDs blanco cálido de alto brillo",
+        "Base estable con interruptor inferior sin cables a la vista (3 pilas AAA)"
       ],
       "pricing": {
-        "currency": "USD",
-        "compare_at_price": 159.97,
-        "retail_price": 59.99,
-        "discount_percentage": 62,
-        "cogs_product_usd": 12.10,
-        "cogs_shipping_usd": 4.60,
-        "total_cogs_usd": 16.70,
-        "payment_gateway_fee_est_usd": 2.04,
-        "gross_profit_usd": 43.29,
-        "gross_margin_pct": 72.16,
-        "net_contribution_margin_usd": 41.25,
-        "break_even_roas": 1.39
+        "currency": "EUR",
+        "compare_at_price": 54.99,
+        "retail_price": 29.99,
+        "discount_percentage": 45,
+        "cogs_product_usd": 4.70,
+        "cogs_shipping_usd": 8.28,
+        "total_cogs_usd": 12.98,
+        "payment_gateway_fee_est_usd": 1.15,
+        "gross_profit_usd": 17.01,
+        "gross_margin_pct": 56.72,
+        "net_contribution_margin_usd": 15.86,
+        "break_even_roas": 1.76
       },
       "variants": [
         {
-          "variant_id": "var_bundle_default",
-          "sku": "AW-BUNDLE-ALL-KIT",
-          "name": "Pack Clínico Completo 360°",
-          "color_hex": "#1A1D24",
+          "variant_id": "var_tree_gold_warm",
+          "sku": "AW-XMAS-004-GLD",
+          "name": "Dorado Cálido · 29 cm",
+          "color_hex": "#EAB308",
           "stock_status": "in_stock",
-          "inventory_qty": 180,
+          "inventory_qty": 310,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2409270619361600100",
+          "variant_id": "2409270619361600300",
+          "variant_sku": "CJHD214824101AZ",
+          "product_name": "Spiral Wrought Iron LED Christmas Tree Night Light",
+          "unit_cost_usd": 4.70,
+          "shipping_cost_usd": 8.28,
+          "shipping_method": "CJPacket Sensitive",
+          "auto_fulfillment_enabled": true
+        }
+      },
+      "social_proof": {
+        "rating": 4.88,
+        "reviews_count": 530,
+        "return_rate_pct": 0.8
+      }
+    },
+    {
+      "id": "prod_xmas_acrylic_005",
+      "sku": "AW-XMAS-005",
+      "role": "cross_sell_upsell",
+      "name": "Lámpara Acrílica 3D \"Merry Christmas\" de Luz Cálida LED",
+      "short_name": "Lámpara Acrílica 3D Navidad",
+      "slug": "lampara-acrilica-3d-merry-christmas-led",
+      "badge": "DETALLE NAVIDEÑO IDEAL · EFECTO HOLOGRAMA 3D",
+      "headline": "Ilusión óptica 3D con grabado láser navideño que llena de calidez cualquier habitación infantil o salón.",
+      "description": "Lámpara decorativa con placa acrílica PMMA grabada por láser que proyecta un árbol de Navidad, campanas y trineo de Papá Noel con efecto tridimensional flotante al encender su base LED blanca.",
+      "features": [
+        "Placa acrílica óptica de alta transmitancia con grabado láser \"Merry Christmas\"",
+        "Dimensiones de 20 cm de alto × 15 cm de ancho sobre base ABS de 8,5 cm",
+        "Luz LED cálida suave que no deslumbra la vista y alimentación dual (USB o pilas)"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 39.99,
+        "retail_price": 19.99,
+        "upsell_offer_price": 14.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 1.69,
+        "cogs_shipping_usd": 5.59,
+        "total_cogs_usd": 7.28,
+        "payment_gateway_fee_est_usd": 0.80,
+        "gross_profit_usd": 12.71,
+        "gross_margin_pct": 63.58,
+        "net_contribution_margin_usd": 11.91,
+        "break_even_roas": 1.57
+      },
+      "variants": [
+        {
+          "variant_id": "var_acrylic_xmas_tree",
+          "sku": "AW-XMAS-005-STD",
+          "name": "Árbol y Trineo Merry Christmas",
+          "color_hex": "#F59E0B",
+          "stock_status": "in_stock",
+          "inventory_qty": 640,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1718542483283521536",
+          "variant_id": "1718542483350630400",
+          "variant_sku": "CJYS188276401AZ",
+          "product_name": "Christmas 3D Acrylic LED Night Light Merry Christmas",
+          "unit_cost_usd": 1.69,
+          "shipping_cost_usd": 5.59,
+          "shipping_method": "CJPacket Ordinary",
+          "auto_fulfillment_enabled": true
+        }
+      },
+      "social_proof": {
+        "rating": 4.9,
+        "reviews_count": 780,
+        "return_rate_pct": 0.6
+      }
+    },
+    {
+      "id": "prod_xmas_diffuser_006",
+      "sku": "AW-XMAS-006",
+      "role": "standard",
+      "name": "Difusor de Aromas y Humidificador Ultrasónico Efecto Llama de Chimenea 7 Colores",
+      "short_name": "Difusor Efecto Llama Chimenea",
+      "slug": "difusor-aromas-humidificador-efecto-llama-chimenea",
+      "badge": "AMBIENTE INVERNAL ACOGEDOR · LLAMA FRÍA 7 COLORES",
+      "headline": "Recrea el calor visual de una chimenea encendida mientras perfumas y humidificas tu hogar este invierno.",
+      "description": "Humidificador ultrasónico y difusor de aceites esenciales que combina niebla fría micronizada con luces LED inteligentes para generar un efecto de llama ardiente ultra-realista en 7 colores seleccionables.",
+      "features": [
+        "Efecto visual de llama de chimenea realista seguro al tacto (vapor frío ultrasónico)",
+        "Iluminación ambiental en 7 colores (llama ámbar cálida, azul hielo, púrpura, verde...)",
+        "Depósito de 180 ml con sensor de seguridad que se apaga solo al agotarse el agua"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 59.99,
+        "retail_price": 29.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 4.19,
+        "cogs_shipping_usd": 6.59,
+        "total_cogs_usd": 10.78,
+        "payment_gateway_fee_est_usd": 1.15,
+        "gross_profit_usd": 19.21,
+        "gross_margin_pct": 64.05,
+        "net_contribution_margin_usd": 18.06,
+        "break_even_roas": 1.56
+      },
+      "variants": [
+        {
+          "variant_id": "var_diffuser_black",
+          "sku": "AW-XMAS-006-BLK",
+          "name": "Negro Mate · 7 Colores de Llama",
+          "color_hex": "#18181B",
+          "stock_status": "in_stock",
+          "inventory_qty": 410,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2409120357171620500",
+          "variant_id": "2409120357171620600",
+          "variant_sku": "CJJT213542601AZ",
+          "product_name": "7 Color Flame Aroma Diffuser Ultrasonic Humidifier",
+          "unit_cost_usd": 4.19,
+          "shipping_cost_usd": 6.59,
+          "shipping_method": "CJPacket Sensitive",
+          "auto_fulfillment_enabled": true
+        }
+      },
+      "social_proof": {
+        "rating": 4.92,
+        "reviews_count": 1290,
+        "return_rate_pct": 0.9
+      }
+    },
+    {
+      "id": "prod_xmas_scarf_007",
+      "sku": "AW-XMAS-007",
+      "role": "standard",
+      "name": "Bufanda Térmica Calefactable USB con 3 Temperaturas (42°C/48°C/55°C) Lavable",
+      "short_name": "Bufanda Térmica Calefactable USB",
+      "slug": "bufanda-termica-calefactable-usb-3-temperaturas",
+      "badge": "REGALO PRÁCTICO DE INVIERNO · CALOR EN 5 SEGUNDOS",
+      "headline": "El regalo más cálido para padres, pareja o abuelos: calor regulable en el cuello con solo pulsar un botón.",
+      "description": "Bufanda unisex de tacto cachemir/peluche ultrasuave con lámina calefactora interna de fibra de carbono y bolsillo oculto con cremallera para batería externa USB. Lavable en agua sin desmontar.",
+      "features": [
+        "3 niveles de temperatura con indicador LED: 42°C (Azul), 48°C (Blanco) y 55°C (Rojo)",
+        "Dimensiones de 80 × 10 cm con pasador cruzado y bolsillo oculto para Powerbank USB",
+        "100% lavable a mano o a máquina (sellado impermeable en el conector USB)"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 49.99,
+        "retail_price": 24.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 4.53,
+        "cogs_shipping_usd": 5.42,
+        "total_cogs_usd": 9.95,
+        "payment_gateway_fee_est_usd": 0.95,
+        "gross_profit_usd": 15.04,
+        "gross_margin_pct": 60.18,
+        "net_contribution_margin_usd": 14.09,
+        "break_even_roas": 1.66
+      },
+      "variants": [
+        {
+          "variant_id": "var_scarf_grey",
+          "sku": "AW-XMAS-007-GRY",
+          "name": "Gris Invernal Elegante (Unisex)",
+          "color_hex": "#64748B",
+          "stock_status": "in_stock",
+          "inventory_qty": 360,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2410090540211619700",
+          "variant_id": "2410090540221612100",
+          "variant_sku": "CJYD215515205EV",
+          "product_name": "USB Heated Scarf 3 Heating Levels Washable Winter Warm Scarf",
+          "unit_cost_usd": 4.53,
+          "shipping_cost_usd": 5.42,
+          "shipping_method": "CJPacket Ordinary",
+          "auto_fulfillment_enabled": true
+        }
+      },
+      "social_proof": {
+        "rating": 4.89,
+        "reviews_count": 860,
+        "return_rate_pct": 1.0
+      }
+    },
+    {
+      "id": "prod_xmas_camera_008",
+      "sku": "AW-XMAS-008",
+      "role": "standard",
+      "name": "Minicámara Digital Infantil 4K HD con Zoom 16x (Especial Regalo Navidad y Reyes)",
+      "short_name": "Minicámara Digital Infantil 4K",
+      "slug": "minicamara-digital-infantil-4k-hd-zoom-16x",
+      "badge": "REGALO ESTRELLA REYES Y PAPÁ NOEL · PANTALLA IPS 2.4\"",
+      "headline": "La primera cámara fotográfica real de bolsillo para niños y adolescentes: fotos de 48MP y vídeo HD.",
+      "description": "Cámara compacta digital con pantalla IPS de 2.4 pulgadas, sensor CMOS con interpolación 48MP, grabación de vídeo con sonido, zoom digital 16x, flash LED, filtros creativos y batería de litio recargable por USB-C.",
+      "features": [
+        "Captura fotografías reales de hasta 48MP y graba vídeo HD con micrófono integrado",
+        "Pantalla trasera a color IPS de 2.4\" con protección ocular, Zoom 16x y Flash LED",
+        "Incluye batería recargable, cable USB-C y correa de muñeca anticaídas (62 × 97 × 23 mm)"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 69.99,
+        "retail_price": 34.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 10.61,
+        "cogs_shipping_usd": 6.02,
+        "total_cogs_usd": 16.63,
+        "payment_gateway_fee_est_usd": 1.25,
+        "gross_profit_usd": 18.36,
+        "gross_margin_pct": 52.47,
+        "net_contribution_margin_usd": 17.11,
+        "break_even_roas": 1.91
+      },
+      "variants": [
+        {
+          "variant_id": "var_camera_black",
+          "sku": "AW-XMAS-008-BLK",
+          "name": "Edición Compacta Digital",
+          "color_hex": "#0F172A",
+          "stock_status": "in_stock",
+          "inventory_qty": 290,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2408070402051618100",
+          "variant_id": "2408070402051618400",
+          "variant_sku": "CJYD210394201AZ",
+          "product_name": "4K HD Kids Digital Camera 16X Zoom Student Compact Camera",
+          "unit_cost_usd": 10.61,
+          "shipping_cost_usd": 6.02,
+          "shipping_method": "CJPacket Sensitive",
+          "auto_fulfillment_enabled": true
+        }
+      },
+      "social_proof": {
+        "rating": 4.91,
+        "reviews_count": 715,
+        "return_rate_pct": 1.1
+      }
+    },
+    {
+      "id": "prod_xmas_galaxy_009",
+      "sku": "AW-XMAS-009",
+      "role": "standard",
+      "name": "Proyector LED de Galaxia, Nebulosa Boreal y Estrellas 360° UFO",
+      "short_name": "Proyector Galaxia y Nebulosa 360°",
+      "slug": "proyector-led-galaxia-nebulosa-estrellas-360",
+      "badge": "VIRAL EN TIKTOK · CIELO ESTRELLADO Y AURORA BOREAL",
+      "headline": "Convierte el techo del dormitorio en un planetario de auroras boreales, nebulosas multicolor y estrellas.",
+      "description": "Proyector galáctico de diseño UFO con rotación 360° que baña paredes y techos completos con ondas de nebulosa RGBW combinables y un manto de estrellas láser verdes con temporizador y ajuste de brillo.",
+      "features": [
+        "14 combinaciones de nebulosa y aurora boreal RGBW + estrellas láser con efecto respiración",
+        "Rotación fluida 360° con velocidad e intensidad de brillo regulables",
+        "Temporizador de apagado automático para dormir bajo las estrellas (15,5 × 15,5 × 8 cm)"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 59.99,
+        "retail_price": 29.99,
+        "discount_percentage": 50,
+        "cogs_product_usd": 6.97,
+        "cogs_shipping_usd": 6.82,
+        "total_cogs_usd": 13.79,
+        "payment_gateway_fee_est_usd": 1.15,
+        "gross_profit_usd": 16.20,
+        "gross_margin_pct": 54.02,
+        "net_contribution_margin_usd": 15.05,
+        "break_even_roas": 1.85
+      },
+      "variants": [
+        {
+          "variant_id": "var_galaxy_ufo",
+          "sku": "AW-XMAS-009-UFO",
+          "name": "Edición Galaxia UFO 360°",
+          "color_hex": "#4F46E5",
+          "stock_status": "in_stock",
+          "inventory_qty": 340,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2408210642591619700",
+          "variant_id": "2408210643001610400",
+          "variant_sku": "CJYD211644701AZ",
+          "product_name": "UFO Galaxy Starry Sky Projector LED Night Light",
+          "unit_cost_usd": 6.97,
+          "shipping_cost_usd": 6.82,
+          "shipping_method": "CJPacket Sensitive",
+          "auto_fulfillment_enabled": true
+        }
+      },
+      "social_proof": {
+        "rating": 4.93,
+        "reviews_count": 1080,
+        "return_rate_pct": 0.8
+      }
+    },
+    {
+      "id": "prod_xmas_hat_010",
+      "sku": "AW-XMAS-010",
+      "role": "standard",
+      "name": "Gorro Navideño Animado Interactivo con Orejas Móviles por Airbag y Luces LED 7 Colores",
+      "short_name": "Gorro Navideño Orejas Móviles LED",
+      "slug": "gorro-navideno-animado-orejas-moviles-airbag-led",
+      "badge": "DIVERSIÓN EN CENAS DE NAVIDAD · OREJAS QUE SALTAN + LED",
+      "headline": "El gorro navideño más divertido para Nochebuena y vídeos familiares: aprieta las patitas y sus orejas saltan al ritmo.",
+      "description": "Gorro de felpa suave con bombas de aire (airbags) ocultas en las dos patas colgantes que levantan las orejas/cuernos al presionarlas, acompañado de luces LED multicolores integradas con 3 modos de parpadeo.",
+      "features": [
+        "Sistema mecánico de airbag en las patitas: aprieta y las orejas se levantan al instante",
+        "Guirnalda LED interior de 7 colores con 3 modos (parpadeo rápido, lento y luz fija)",
+        "Tejido de felpa hipoalergénica ultra-suave (58 × 28 cm, válido para niños y adultos)"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 34.99,
+        "retail_price": 19.99,
+        "discount_percentage": 43,
+        "cogs_product_usd": 2.28,
+        "cogs_shipping_usd": 5.10,
+        "total_cogs_usd": 7.38,
+        "payment_gateway_fee_est_usd": 0.80,
+        "gross_profit_usd": 12.61,
+        "gross_margin_pct": 63.08,
+        "net_contribution_margin_usd": 11.81,
+        "break_even_roas": 1.59
+      },
+      "variants": [
+        {
+          "variant_id": "var_hat_led",
+          "sku": "AW-XMAS-010-RED",
+          "name": "Rojo Navideño con Orejas Móviles + LED",
+          "color_hex": "#DC2626",
+          "stock_status": "in_stock",
+          "inventory_qty": 720,
+          "price_override": null
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1698975667251064832",
+          "variant_id": "1698975667280424960",
+          "variant_sku": "CJMR183978001AZ",
+          "product_name": "Glowing Moving Ears Christmas Hat Airbag Plush Cap",
+          "unit_cost_usd": 2.28,
+          "shipping_cost_usd": 5.10,
+          "shipping_method": "CJPacket Ordinary",
+          "auto_fulfillment_enabled": true
+        }
+      },
+      "social_proof": {
+        "rating": 4.94,
+        "reviews_count": 890,
+        "return_rate_pct": 0.5
+      }
+    },
+    {
+      "id": "prod_xmas_bundle_all",
+      "sku": "AW-XMAS-BUNDLE",
+      "role": "bundle_complete",
+      "name": "Pack Mágico Navidad 3 en 1 (Cortina LED 3D + Proyector Nieve 360° + Esfera Cristal 3D)",
+      "short_name": "Pack Mágico Navidad 3 en 1",
+      "slug": "pack-magico-navidad-3-en-1",
+      "badge": "PACK AHORRO NAVIDAD · AHORRA 100 € · ENVÍO GRATIS",
+      "headline": "Decoración luminosa completa para tu salón + el regalo navideño más especial en un solo pedido.",
+      "description": "Incluye la Cortina LED de Anillos Mágicos 3D (3×0,5m), el Proyector LED Rotatorio 360° de 16 Figuras Navideñas y la Esfera de Cristal K9 3D con Base de Madera LED.",
+      "features": [
+        "1× Cortina LED Navideña de Anillos Mágicos 3D (3×0,5m · 120 LEDs · Enchufe Europeo)",
+        "1× Proyector LED Rotatorio 360° de Copos de Nieve y 16 Figuras Navideñas",
+        "1× Esfera de Cristal K9 3D Grabada con Láser + Base de Madera Maciza LED USB",
+        "Envío Rápido Prioritario GRATIS a toda España y Garantía Extendida hasta después de Reyes"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 159.97,
+        "retail_price": 59.99,
+        "discount_percentage": 62,
+        "cogs_product_usd": 8.22,
+        "cogs_shipping_usd": 14.50,
+        "total_cogs_usd": 22.72,
+        "payment_gateway_fee_est_usd": 2.04,
+        "gross_profit_usd": 37.27,
+        "gross_margin_pct": 62.13,
+        "net_contribution_margin_usd": 35.23,
+        "break_even_roas": 1.61
+      },
+      "variants": [
+        {
+          "variant_id": "var_xmas_bundle_kit",
+          "sku": "AW-XMAS-BUNDLE-KIT",
+          "name": "Pack Mágico Navidad 3 en 1 Completo",
+          "color_hex": "#B91C1C",
+          "stock_status": "in_stock",
+          "inventory_qty": 220,
           "price_override": null
         }
       ],
@@ -342,190 +679,19 @@
           "account_id": "CJ5949933",
           "bundle": true,
           "bundled_vids": [
-            "2610151230071628101",
-            "2610170347321601300",
-            "2609291139381606301"
+            "2410010837151621600",
+            "1446397786626068480",
+            "1772557138200637440"
           ],
-          "shipping_method": "CJ Packet Ordinary",
-          "auto_fulfillment_enabled": true
-        },
-        "zendrop": {
-          "product_id": "ZD-8849999-BUNDLE",
-          "supplier_id": "ZD-SUP-healthplus-09",
-          "warehouse_origin": "US-East / CN-Express-Hub",
-          "shipping_method": "Zendrop Consolidated Express VIP Box",
-          "processing_time_days": "1-2",
-          "shipping_time_days": "7-10",
-          "auto_fulfillment_enabled": true
-        },
-        "aliexpress_fallback": {
-          "product_id": "AE-1005006849999",
-          "store_name": "OrthoMed Factory Direct Store",
-          "store_rating": 4.9,
-          "shipping_method": "AliExpress Selection Standard (Choice)",
-          "shipping_time_days": "8-12",
-          "unit_cost_usd": 11.60,
-          "shipping_cost_usd": 4.50
-        }
-      },
-      "social_proof": {
-        "rating": 4.95,
-        "reviews_count": 320,
-        "return_rate_pct": 0.8
-      }
-    },
-    {
-      "id": "prod_roller_neck_005",
-      "sku": "AW-ROLLER-005",
-      "role": "cross_sell_upsell",
-      "name": "RollerRelief™ — Masajeador Cervical Manual de 6 Rodillos Giratorios 360°",
-      "short_name": "RollerRelief™ 6 Rodillos",
-      "slug": "rollerrelief-6-wheel-neck-massager",
-      "badge": "VIRAL EN TIKTOK · ALIVIO MANUAL INMEDIATO",
-      "headline": "Libera nudos y contracturas en el cuello al instante con presión manual controlada y 6 rodillos giratorios.",
-      "description": "Pinza ergonómica flexible tipo Swan con 2 cabezales y 6 rodillos rotatorios de TPR suave que amasan profundamente la musculatura paravertebral cervical y los trapecios sin necesidad de baterías.",
-      "features": [
-        "6 bolas/rodillos giratorios 360° con puntos de acupresión miofascial",
-        "Arco de PP flexible irrompible con apertura regulable manualmente",
-        "Ultraligero (220g), silencioso y sin cables: úsalo en el sofá o en la oficina"
-      ],
-      "pricing": {
-        "currency": "USD",
-        "compare_at_price": 39.99,
-        "retail_price": 19.99,
-        "upsell_offer_price": 14.99,
-        "discount_percentage": 50,
-        "cogs_product_usd": 1.33,
-        "cogs_shipping_usd": 1.50,
-        "total_cogs_usd": 2.83,
-        "payment_gateway_fee_est_usd": 0.58,
-        "gross_profit_usd": 17.16,
-        "gross_margin_pct": 85.84,
-        "net_contribution_margin_usd": 16.58,
-        "break_even_roas": 1.17
-      },
-      "variants": [
-        {
-          "variant_id": "var_roller_swan_blue",
-          "sku": "AW-ROLLER-005-BLU",
-          "name": "Swan Aqua Mint / Blue",
-          "color_hex": "#38BDF8",
-          "stock_status": "in_stock",
-          "inventory_qty": 850,
-          "price_override": null
-        }
-      ],
-      "supplier_mapping": {
-        "primary_provider": "CJdropshipping",
-        "cjdropshipping": {
-          "account_id": "CJ5949933",
-          "product_id": "1444929719182168064",
-          "variant_id": "1444929719253471232",
-          "variant_sku": "CJAM130816101AZ",
-          "product_name": "Six-wheel Neck Massager Swan Roller Cervical Spine Massager",
-          "unit_cost_usd": 1.33,
-          "shipping_method": "CJ Packet Ordinary",
+          "shipping_method": "CJPacket Sensitive",
           "auto_fulfillment_enabled": true
         }
       },
       "social_proof": {
-        "rating": 4.9,
-        "reviews_count": 1150,
-        "return_rate_pct": 0.6
-      }
-    },
-    {
-      "id": "prod_ems_neck_006",
-      "sku": "AW-EMS-006",
-      "role": "cross_sell_upsell",
-      "name": "PulseNeck™ Smart — Masajeador Cervical Eléctrico de Impulsos EMS + Calor",
-      "short_name": "PulseNeck™ Smart EMS",
-      "slug": "pulseneck-smart-ems-neck-massager",
-      "badge": "TECNOLOGÍA TENS/EMS · COMPRESA CALIENTE 42°C",
-      "headline": "Electroestimulación TENS/EMS de baja frecuencia y compresa térmica constante de 42°C en un collarín ultraligero.",
-      "description": "Collarín ergonómico en forma de U con 2 placas flotantes de acero inoxidable 304 que transmiten microcorrientes EMS/TENS y calor constante para desbloquear la rigidez cervical profunda en sesiones de 15 minutos.",
-      "features": [
-        "2 electrodos flotantes 360° con calor constante (38°C-42°C)",
-        "Múltiples modos de pulso EMS y niveles de intensidad regulables (+ / -)",
-        "Batería recargable por USB con apagado inteligente a los 15 minutos"
-      ],
-      "pricing": {
-        "currency": "USD",
-        "compare_at_price": 49.99,
-        "retail_price": 24.99,
-        "upsell_offer_price": 19.99,
-        "discount_percentage": 50,
-        "cogs_product_usd": 4.53,
-        "cogs_shipping_usd": 1.80,
-        "total_cogs_usd": 6.33,
-        "payment_gateway_fee_est_usd": 0.65,
-        "gross_profit_usd": 18.66,
-        "gross_margin_pct": 74.67,
-        "net_contribution_margin_usd": 18.01,
-        "break_even_roas": 1.34
-      },
-      "variants": [
-        {
-          "variant_id": "var_ems_gradient",
-          "sku": "AW-EMS-006-GRD",
-          "name": "Mint & Lavender Gradient",
-          "color_hex": "#0D9488",
-          "stock_status": "in_stock",
-          "inventory_qty": 420,
-          "price_override": null
-        }
-      ],
-      "supplier_mapping": {
-        "primary_provider": "CJdropshipping",
-        "cjdropshipping": {
-          "account_id": "CJ5949933",
-          "product_id": "1573246114139222016",
-          "variant_id": "2409110614231617900",
-          "variant_sku": "CJJT157094913MN",
-          "product_name": "Smart Electric Pulse Neck Massager with Heating",
-          "unit_cost_usd": 4.53,
-          "shipping_method": "CJ Packet Ordinary",
-          "auto_fulfillment_enabled": true
-        }
-      },
-      "social_proof": {
-        "rating": 4.85,
-        "reviews_count": 780,
-        "return_rate_pct": 1.1
+        "rating": 4.97,
+        "reviews_count": 410,
+        "return_rate_pct": 0.4
       }
     }
-  ],
-  "bundles_and_upsell_rules": {
-    "cart_order_bump": {
-      "trigger_product_skus": ["AW-ORTHO-001"],
-      "offer_product_sku": "AW-MASK-002",
-      "offer_price_usd": 14.99,
-      "regular_price_usd": 19.99,
-      "Copy_hook": "🔥 ¡Añade el Antifaz de Migraña ThermoSilk™ por solo $14.99 (Ahorra 25%) y desbloquea ENVÍO GRATIS ASEGURADO hoy!",
-      "expected_take_rate_pct": 38.0,
-      "resulting_cart_total_usd": 54.98,
-      "resulting_gross_margin_pct": 78.36
-    },
-    "one_click_upsell": {
-      "trigger_condition": "cart_contains_AW-ORTHO-001",
-      "offer_product_sku": "AW-POSTURE-003",
-      "offer_price_usd": 19.99,
-      "regular_price_usd": 29.99,
-      "copy_hook": "⚡ Completa tu rehabilitación postural 24/7: Lleva el Corrector Inteligente PostureAlign™ con 33% DTO adicional.",
-      "expected_take_rate_pct": 22.0
-    },
-    "complete_relief_bundle": {
-      "bundle_sku": "AW-BUNDLE-ALL",
-      "name": "Pack Clínico de Recuperación Cervical 360° (Los 3 Productos)",
-      "included_skus": ["AW-ORTHO-001", "AW-MASK-002", "AW-POSTURE-003"],
-      "compare_at_total_usd": 159.97,
-      "regular_total_usd": 89.97,
-      "bundle_price_usd": 59.99,
-      "total_cogs_usd": 16.70,
-      "gross_profit_usd": 43.29,
-      "gross_margin_pct": 72.16,
-      "break_even_roas": 1.39,
-      "free_shipping_included": true
-    }
-  }
+  ]
 }

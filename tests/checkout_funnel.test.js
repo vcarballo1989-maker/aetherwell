@@ -60,7 +60,7 @@ describe('Catálogo Dinámico (market_analyst integration & fallback)', () => {
     assert.equal(norm.stock, 95);
   });
 
-  it('Procesa los productos reales de data/catalog.json (AetherWell OrthoCloud Pro + ThermoSilk) de principio a fin', () => {
+  it('Procesa los productos reales de data/catalog.json (AetherWell Navidad) de principio a fin', () => {
     const liveCatalog = loadCatalog();
     const hero = liveCatalog.products[0];
     assert.ok(hero.price > 0);
@@ -219,18 +219,18 @@ describe('PASO 3: Cálculo de Impuestos y Tarifas de Envío (shipping_tax)', () 
     assert.equal(res.breakdown.grandTotal, 47.68);
   });
 
-  it('Desbloquea envío estándar GRATIS al superar el umbral de $45.00 USD (Combo OrthoCloud $39.99 + Order Bump ThermoSilk $14.99 = $54.98)', () => {
+  it('Desbloquea envío estándar GRATIS al superar el umbral de $45.00 USD (Combo Cortina LED $29.99 + Proyector Nieve $19.99 = $49.98)', () => {
     const liveCatalog = loadCatalog().products;
     const cart = buildAndValidateCart({
       items: [
-        { productId: 'prod_hero_orthocloud_001', quantity: 1 },
-        { productId: 'prod_bump_thermosilk_002', quantity: 1, isUpsell: true }
+        { productId: 'prod_xmas_curtain_001', quantity: 1 },
+        { productId: 'prod_xmas_projector_002', quantity: 1, isUpsell: true }
       ],
       customCatalog: liveCatalog
     });
 
     assert.equal(cart.valid, true);
-    assert.equal(cart.subtotalAfterDiscounts, 54.98); // $39.99 + $14.99 (25% off $19.99)
+    assert.equal(cart.subtotalAfterDiscounts, 49.98); // $29.99 + $19.99 (20% off $24.99)
 
     const res = calculateShippingAndTax({
       cart,
