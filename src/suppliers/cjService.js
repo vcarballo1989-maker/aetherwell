@@ -178,7 +178,14 @@ export const CJ_PRODUCT_MAPPING = {
     items: [
       { vid: '2410010837151621600', quantity: 1 },
       { vid: '1446397786626068480', quantity: 1 },
-      { vid: '1772557138200637440', quantity: 1 }
+      { vid: '1772557138200637440', quantity: 1 },
+      { vid: '2409270619361600300', quantity: 1 },
+      { vid: '1718542483350630400', quantity: 1 },
+      { vid: '2409120357171620600', quantity: 1 },
+      { vid: '2410090540221612100', quantity: 1 },
+      { vid: '2408070402051618400', quantity: 1 },
+      { vid: '2408210643001610400', quantity: 1 },
+      { vid: '1698975667280424960', quantity: 1 }
     ]
   },
   'AW-XMAS-BUNDLE': {
@@ -187,7 +194,14 @@ export const CJ_PRODUCT_MAPPING = {
     items: [
       { vid: '2410010837151621600', quantity: 1 },
       { vid: '1446397786626068480', quantity: 1 },
-      { vid: '1772557138200637440', quantity: 1 }
+      { vid: '1772557138200637440', quantity: 1 },
+      { vid: '2409270619361600300', quantity: 1 },
+      { vid: '1718542483350630400', quantity: 1 },
+      { vid: '2409120357171620600', quantity: 1 },
+      { vid: '2410090540221612100', quantity: 1 },
+      { vid: '2408070402051618400', quantity: 1 },
+      { vid: '2408210643001610400', quantity: 1 },
+      { vid: '1698975667280424960', quantity: 1 }
     ]
   }
 };

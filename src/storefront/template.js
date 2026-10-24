@@ -13,7 +13,7 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
   const heroPrice = 29.99;
   const projectorUpsellPrice = 19.99;
   const duoPrice = +(heroPrice + projectorUpsellPrice).toFixed(2); // 49.98
-  const bundlePrice = 59.99;
+  const bundlePrice = 199.99;
 
   return `<!DOCTYPE html>
 <html lang="es">
@@ -1141,20 +1141,20 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
           </div>
         </div>
 
-        <!-- Option 3: Pack Mágico Navidad 3 en 1 -->
+        <!-- Option 3: Pack Colección Completa 10 Artículos -->
         <div class="tier-card" id="tier-card-3" onclick="selectTier(3)">
-          <div class="tier-badge-ribbon">🏆 PACK MÁGICO 3 EN 1 · DECORACIÓN + REGALO ESTRELLA</div>
+          <div class="tier-badge-ribbon">🏆 PACK COLECCIÓN COMPLETA · LOS 10 ARTÍCULOS ESTRELLA</div>
           <div class="tier-header">
             <div class="tier-left">
               <input type="radio" name="pack_tier" id="radio-tier-3" class="tier-radio" />
               <div>
-                <div class="tier-name">Pack Mágico 3 en 1 (Cortina LED 3D + Proyector Nieve + Esfera Cristal 3D)</div>
-                <div class="tier-desc">Incluye además la Esfera de Cristal K9 3D con Base de Madera LED • <strong>¡ENVÍO PRIORITARIO GRATIS!</strong></div>
+                <div class="tier-name">Pack Colección Completa 10 Artículos (Decoración + Regalos Reyes)</div>
+                <div class="tier-desc">Incluye los 10 productos completos del catálogo Navidad 2026 • <strong>¡ENVÍO PRIORITARIO GRATIS!</strong></div>
               </div>
             </div>
             <div class="tier-pricing">
-              <span class="tier-price-main">59,99 €</span>
-              <span class="tier-price-compare">159,97 €</span>
+              <span class="tier-price-main">199,99 €</span>
+              <span class="tier-price-compare">399,99 €</span>
             </div>
           </div>
         </div>
@@ -1811,13 +1811,13 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
         fill.style.width = '100%';
         msg.innerHTML = '🎉 <strong>¡ENHORABUENA!</strong> Has desbloqueado el <strong>ENVÍO RÁPIDO GRATIS A TODA ESPAÑA (0,00 €)</strong>.';
       } else if (tierNum === 3) {
-        priceCur.textContent = '59,99 €';
-        priceCmp.textContent = '159,97 €';
-        savings.textContent = 'Ahorras 100 € + Envío Gratis';
-        mobileVal.textContent = '59,99 €';
-        amtLabel.textContent = '59,99 € / 45,00 €';
+        priceCur.textContent = '199,99 €';
+        priceCmp.textContent = '399,99 €';
+        savings.textContent = 'Ahorras 200 € + Envío Gratis';
+        mobileVal.textContent = '199,99 €';
+        amtLabel.textContent = '199,99 € / 45,00 €';
         fill.style.width = '100%';
-        msg.innerHTML = '🏆 <strong>¡PACK MÁGICO 3 EN 1 SELECCIONADO!</strong> Envío Prioritario Gratis a toda España incluido.';
+        msg.innerHTML = '🏆 <strong>¡PACK COLECCIÓN COMPLETA 10 ARTÍCULOS SELECCIONADO!</strong> Envío Prioritario Gratis a toda España incluido.';
       }
     }
 
