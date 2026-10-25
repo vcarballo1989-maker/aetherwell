@@ -1,14 +1,14 @@
 {
-  "schema_version": "3.1.0",
+  "schema_version": "3.2.0",
   "generated_at": "2026-10-25T08:40:00Z",
   "analyst_agent": "market_analyst",
   "budget_constraints": {
-    "initial_capital_usd": 50.00,
-    "paid_ads_testing_allocation_usd": 35.00,
-    "retargeting_allocation_usd": 10.00,
-    "operational_buffer_usd": 5.00,
-    "max_allowed_cogs_usd": 15.00,
-    "min_gross_margin_pct": 60.0,
+    "initial_capital_usd": 50,
+    "paid_ads_testing_allocation_usd": 35,
+    "retargeting_allocation_usd": 10,
+    "operational_buffer_usd": 5,
+    "max_allowed_cogs_usd": 15,
+    "min_gross_margin_pct": 60,
     "target_break_even_roas_max": 1.45
   },
   "brand_identity": {
@@ -22,9 +22,14 @@
         "Compradores de electrónica ligera, gadgets prácticos y detalles originales",
         "Usuarios que valoran el diseño limpio, materiales duraderos y envío a España"
       ],
-      "primary_channels": ["TikTok Ads", "Instagram Reels", "Meta Advantage+ Shopping", "Organic Search"]
+      "primary_channels": [
+        "TikTok Ads",
+        "Instagram Reels",
+        "Meta Advantage+ Shopping",
+        "Organic Search"
+      ]
     },
-    "free_shipping_threshold_usd": 45.00,
+    "free_shipping_threshold_usd": 45,
     "standard_shipping_fee_usd": 4.99
   },
   "products": [
@@ -32,7 +37,7 @@
       "id": "prod_xmas_curtain_001",
       "sku": "AW-XMAS-001",
       "role": "hero",
-      "category": "Iluminación & Ambiente",
+      "category": "Hogar, Confort & Navidad",
       "name": "Cortina LED de Anillos Luminosos 3D (3 × 0,5 m · Enchufe Europeo)",
       "short_name": "Cortina LED Anillos 3D",
       "slug": "cortina-led-anillos-luminosos-3d",
@@ -69,7 +74,7 @@
         "payment_gateway_fee_est_usd": 1.15,
         "gross_profit_usd": 17.85,
         "gross_margin_pct": 59.52,
-        "net_contribution_margin_usd": 16.70,
+        "net_contribution_margin_usd": 16.7,
         "break_even_roas": 1.68
       },
       "variants": [
@@ -107,7 +112,7 @@
       "id": "prod_xmas_projector_002",
       "sku": "AW-XMAS-002",
       "role": "order_bump",
-      "category": "Iluminación & Ambiente",
+      "category": "Hogar, Confort & Navidad",
       "name": "Proyector LED Rotatorio 360° de Copos de Nieve y 16 Patrones",
       "short_name": "Proyector LED Rotatorio 360°",
       "slug": "proyector-led-rotatorio-copos-nieve-16-figuras",
@@ -140,7 +145,7 @@
         "cogs_shipping_usd": 6.82,
         "total_cogs_usd": 8.99,
         "payment_gateway_fee_est_usd": 0.95,
-        "gross_profit_usd": 16.00,
+        "gross_profit_usd": 16,
         "gross_margin_pct": 64.03,
         "net_contribution_margin_usd": 15.05,
         "break_even_roas": 1.56
@@ -180,7 +185,7 @@
       "id": "prod_xmas_crystal_003",
       "sku": "AW-XMAS-003",
       "role": "cross_sell_upsell",
-      "category": "Iluminación & Ambiente",
+      "category": "Lámparas & Diseño Sklum",
       "name": "Esfera de Cristal Óptico K9 3D con Base de Madera de Haya LED",
       "short_name": "Esfera Cristal K9 3D LED",
       "slug": "esfera-cristal-k9-3d-base-madera-led",
@@ -253,7 +258,7 @@
       "id": "prod_xmas_tree_004",
       "sku": "AW-XMAS-004",
       "role": "standard",
-      "category": "Iluminación & Ambiente",
+      "category": "Hogar, Confort & Navidad",
       "name": "Lámpara de Mesa en Espiral de Hierro Forjado Dorado con Micro-LEDs",
       "short_name": "Lámpara Espiral Dorada LED",
       "slug": "lampara-mesa-espiral-hierro-forjado-dorado-led",
@@ -281,7 +286,7 @@
         "compare_at_price": 54.99,
         "retail_price": 29.99,
         "discount_percentage": 45,
-        "cogs_product_usd": 4.70,
+        "cogs_product_usd": 4.7,
         "cogs_shipping_usd": 8.28,
         "total_cogs_usd": 12.98,
         "payment_gateway_fee_est_usd": 1.15,
@@ -309,7 +314,7 @@
           "variant_id": "2409270619361600300",
           "variant_sku": "CJHD214824101AZ",
           "product_name": "Wrought Iron Spiral LED Christmas Tree Ornament Night Light",
-          "unit_cost_usd": 4.70,
+          "unit_cost_usd": 4.7,
           "shipping_cost_usd": 8.28,
           "shipping_method": "CJPacket Sensitive",
           "auto_fulfillment_enabled": true
@@ -325,7 +330,7 @@
       "id": "prod_xmas_acrylic_005",
       "sku": "AW-XMAS-005",
       "role": "standard",
-      "category": "Iluminación & Ambiente",
+      "category": "Hogar, Confort & Navidad",
       "name": "Lámpara Acrílica Grabada 3D de Luz Cálida LED (USB / Inalámbrica)",
       "short_name": "Lámpara Acrílica 3D LED",
       "slug": "lampara-acrilica-grabada-3d-luz-calida-led",
@@ -356,7 +361,7 @@
         "cogs_product_usd": 1.69,
         "cogs_shipping_usd": 6.45,
         "total_cogs_usd": 8.14,
-        "payment_gateway_fee_est_usd": 0.80,
+        "payment_gateway_fee_est_usd": 0.8,
         "gross_profit_usd": 11.85,
         "gross_margin_pct": 59.28,
         "net_contribution_margin_usd": 11.05,
@@ -397,7 +402,7 @@
       "id": "prod_xmas_diffuser_006",
       "sku": "AW-XMAS-006",
       "role": "standard",
-      "category": "Confort & Hogar",
+      "category": "Hogar, Confort & Navidad",
       "name": "Humidificador y Difusor de Aromas Ultrasónico Efecto Llama (180 ml · 7 Tonos)",
       "short_name": "Difusor Ultrasónico Efecto Llama",
       "slug": "humidificador-difusor-aromas-ultrasonico-efecto-llama",
@@ -431,7 +436,7 @@
         "payment_gateway_fee_est_usd": 1.15,
         "gross_profit_usd": 17.55,
         "gross_margin_pct": 58.52,
-        "net_contribution_margin_usd": 16.40,
+        "net_contribution_margin_usd": 16.4,
         "break_even_roas": 1.71
       },
       "variants": [
@@ -469,7 +474,7 @@
       "id": "prod_xmas_scarf_007",
       "sku": "AW-XMAS-007",
       "role": "standard",
-      "category": "Confort & Hogar",
+      "category": "Hogar, Confort & Navidad",
       "name": "Bufanda Térmica Calefactable USB con 3 Niveles de Temperatura",
       "short_name": "Bufanda Térmica Calefactable USB",
       "slug": "bufanda-termica-calefactable-usb-3-temperaturas",
@@ -541,7 +546,7 @@
       "id": "prod_xmas_camera_008",
       "sku": "AW-XMAS-008",
       "role": "standard",
-      "category": "Gadgets & Electrónica",
+      "category": "Audio & Gadgets Tech",
       "name": "Minicámara Digital Compacta 4K HD con Zoom 16x y Pantalla IPS 2.4\"",
       "short_name": "Minicámara Digital 4K HD",
       "slug": "minicamara-digital-compacta-4k-hd-zoom-16x",
@@ -572,7 +577,7 @@
         "cogs_product_usd": 10.61,
         "cogs_shipping_usd": 7.42,
         "total_cogs_usd": 18.03,
-        "payment_gateway_fee_est_usd": 1.30,
+        "payment_gateway_fee_est_usd": 1.3,
         "gross_profit_usd": 16.96,
         "gross_margin_pct": 48.47,
         "net_contribution_margin_usd": 15.66,
@@ -613,7 +618,7 @@
       "id": "prod_xmas_galaxy_009",
       "sku": "AW-XMAS-009",
       "role": "standard",
-      "category": "Gadgets & Electrónica",
+      "category": "Lámparas & Diseño Sklum",
       "name": "Proyector Planetario LED de Galaxia, Nebulosa Boreal y Estrellas 360°",
       "short_name": "Proyector Galaxia y Nebulosa 360°",
       "slug": "proyector-led-galaxia-nebulosa-estrellas-360",
@@ -685,7 +690,7 @@
       "id": "prod_xmas_hat_010",
       "sku": "AW-XMAS-010",
       "role": "standard",
-      "category": "Confort & Hogar",
+      "category": "Nieve, Fiesta & Humor Viral",
       "name": "Gorro Interactivo de Felpa Suave con Orejas Móviles y Luz LED",
       "short_name": "Gorro Animado con Luz LED",
       "slug": "gorro-interactivo-orejas-moviles-luces-led",
@@ -714,9 +719,9 @@
         "retail_price": 19.99,
         "discount_percentage": 43,
         "cogs_product_usd": 2.28,
-        "cogs_shipping_usd": 5.60,
+        "cogs_shipping_usd": 5.6,
         "total_cogs_usd": 7.88,
-        "payment_gateway_fee_est_usd": 0.80,
+        "payment_gateway_fee_est_usd": 0.8,
         "gross_profit_usd": 12.11,
         "gross_margin_pct": 60.58,
         "net_contribution_margin_usd": 11.31,
@@ -742,7 +747,7 @@
           "variant_sku": "CJMR183978001AZ",
           "product_name": "Electric Moving Ears glowing Santa Hat Plush LED Christmas Hat",
           "unit_cost_usd": 2.28,
-          "shipping_cost_usd": 5.60,
+          "shipping_cost_usd": 5.6,
           "shipping_method": "CJPacket Ordinary",
           "auto_fulfillment_enabled": true
         }
@@ -751,6 +756,1248 @@
         "rating": 4.9,
         "reviews_count": 89,
         "return_rate_pct": 0.5
+      }
+    },
+    {
+      "id": "prod_viral_011",
+      "sku": "AW-VIRAL-011",
+      "role": "standard",
+      "category": "Nieve, Fiesta & Humor Viral",
+      "name": "Pasamontañas 3D Hiperrealista Esquí y Moto (Edición Humor & Husky)",
+      "short_name": "Pasamontañas 3D Hiperrealista",
+      "slug": "pasamontanas-3d-hiperrealista-esqui-moto",
+      "short_summary": "Pasamontañas térmico cortavientos de impresión fotográfica 3D hiperrealista (60 g, transpirable y elástico).",
+      "description": "Pasamontañas térmico y transpirable con impresión digital 3D de alta definición para nieve, esquí, moto y eventos al aire libre. Tejido elástico de secado rápido adaptable bajo cualquier casco.",
+      "images": [
+        "/assets/viral-11-balaclava-3d.jpg",
+        "/assets/viral-11-balaclava-3d-human.jpg",
+        "/assets/viral-11-balaclava-3d-husky.jpg"
+      ],
+      "specs": {
+        "que_es": "Un pasamontañas térmico y cortavientos con estampación fotográfica tridimensional hiperrealista de 360 grados para deportes de invierno, rutas en moto o fiestas.",
+        "como_es": "Talla única elástica adaptable (40 × 25 cm) con un peso ultraligero de solo 60 gramos. Diseño anatómico sin costuras gruesas para llevar cómodamente debajo del casco de esquí o moto.",
+        "materiales": "Microfibra de poliéster técnico transpirable con elastano de alta elasticidad e impresión por sublimación digital indeleble que no pierde color al lavar.",
+        "caja": "1 pasamontañas 3D hiperrealista en empaque individual sellado.",
+        "funciones": "Protege rostro, orejas y cuello frente al viento frío y la nieve manteniendo la transpirabilidad, evita que se empañen las gafas y aporta un efecto visual hiperrealista inmediato."
+      },
+      "features": [
+        "Impresión digital 3D hiperrealista indeleble de alta resolución",
+        "Tejido técnico cortavientos, transpirable y ultraligero (60 g)",
+        "Ajuste elástico compatible bajo casco de esquí, snowboard, bici o moto"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 29.9,
+        "retail_price": 18.9,
+        "discount_percentage": 37,
+        "cogs_product_usd": 1.1,
+        "cogs_shipping_usd": 3.87,
+        "total_cogs_usd": 4.97,
+        "payment_gateway_fee_est_usd": 0.58,
+        "gross_profit_usd": 13.93,
+        "gross_margin_pct": 73.7,
+        "net_contribution_margin_usd": 13.35,
+        "break_even_roas": 1.42
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_011",
+          "sku": "AW-VIRAL-011-STD",
+          "name": "Edición 3D · Talla Única Elástica",
+          "inventory_qty": 420
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2609290358281623700",
+          "variant_id": "2610160136531626809",
+          "variant_sku": "CJMZ320782836JQ",
+          "unit_cost_usd": 1.1,
+          "shipping_cost_usd": 3.87,
+          "shipping_method": "CJPacket Eub",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_012",
+      "sku": "AW-VIRAL-012",
+      "role": "standard",
+      "category": "Linternas, Motor & EDC",
+      "name": "Mini Linterna LED COB de Llavero con Mosquetón Ultraligera (38 g)",
+      "short_name": "Mini Linterna Llavero Mosquetón",
+      "slug": "mini-linterna-led-llavero-mosqueton",
+      "short_summary": "Linterna de bolsillo ultracompacta de 38 gramos con enganche de mosquetón metálico para llaves, mochila o coche.",
+      "description": "Mini linterna portátil de bolsillo con cuerpo metálico y mosquetón integrado. Ideal para llevar siempre en el llavero, guantera del coche, paseos nocturnos o emergencias.",
+      "images": [
+        "/assets/viral-12-keychain-torch.jpg",
+        "/assets/viral-12-keychain-torch-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una linterna LED ultracompacta de uso diario (EDC) con mosquetón integrado para enganchar directamente en el llavero, cinturón o cremallera de la mochila.",
+        "como_es": "Mide apenas 6 cm de longitud con un peso pluma de 38 gramos, diseñada para no abultar en el bolsillo.",
+        "materiales": "Cuerpo en aleación de aluminio anodizado resistente a caídas y salpicaduras con cierre de mosquetón de muelle metálico.",
+        "caja": "1 mini linterna LED con mosquetón integrado lista para usar.",
+        "funciones": "Encendido instantáneo con haz luminoso concentrado para abrir cerraduras de noche, buscar objetos en el maletero, pasear al perro o afrontar cortes de luz."
+      },
+      "features": [
+        "Peso pluma de 38 gramos con mosquetón de enganche rápido",
+        "Chasis de aleación metálica resistente a golpes y uso diario",
+        "Formato de llavero ideal para coche, camping y emergencias"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 24.9,
+        "retail_price": 14.9,
+        "discount_percentage": 40,
+        "cogs_product_usd": 0.59,
+        "cogs_shipping_usd": 3.55,
+        "total_cogs_usd": 4.14,
+        "payment_gateway_fee_est_usd": 0.5,
+        "gross_profit_usd": 10.76,
+        "gross_margin_pct": 72.21,
+        "net_contribution_margin_usd": 10.26,
+        "break_even_roas": 1.45
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_012",
+          "sku": "AW-VIRAL-012-STD",
+          "name": "Aluminio Compacto · 38 g",
+          "inventory_qty": 500
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1393043039106240512",
+          "variant_id": "1393043040461000704",
+          "variant_sku": "CJSD112822601AZ",
+          "unit_cost_usd": 0.59,
+          "shipping_cost_usd": 3.55,
+          "shipping_method": "CJPacket Eub",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_013",
+      "sku": "AW-VIRAL-013",
+      "role": "standard",
+      "category": "Linternas, Motor & EDC",
+      "name": "Linterna Táctica LED Zoom Ultrapotente USB con Indicador de Batería",
+      "short_name": "Linterna Táctica LED Zoom USB",
+      "slug": "linterna-tactica-led-zoom-ultrapotente-usb",
+      "short_summary": "Linterna recargable por USB con zoom telescópico de largo alcance, batería 18650 e indicador LED de carga.",
+      "description": "Linterna táctica de alto brillo con cabezal de enfoque telescópico regulable (haz abierto o largo alcance), batería de litio recargable por USB y pantalla indicadora de nivel de carga.",
+      "images": [
+        "/assets/viral-13-tactical-flashlight.jpg",
+        "/assets/viral-13-tactical-flashlight-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una linterna táctica recargable de alta potencia con lente convexa de zoom telescópico y pantalla digital de porcentaje de batería.",
+        "como_es": "Cuerpo ergonómico antideslizante de 16,5 cm × 4 cm con un peso equilibrado de 220 gramos y correa de sujeción para muñeca.",
+        "materiales": "Aleación de aluminio aeroespacial más polímero técnico ABS de alta resistencia e impermeabilidad IPX4 frente a lluvia.",
+        "caja": "1 linterna táctica LED con zoom, 1 batería recargable 18650 integrada y 1 cable de carga USB.",
+        "funciones": "Zoom deslizante para alternar entre foco de largo alcance y reflector panorámico de área amplia, múltiples modos de luz (alto, medio, estroboscópico y SOS) e indicador luminoso de batería restante."
+      },
+      "features": [
+        "Cabezal con zoom telescópico para foco lejano o iluminación panorámica",
+        "Indicador luminoso de nivel de batería y recarga directa por USB",
+        "Varios modos de iluminación incluyendo modo emergencia SOS"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 39.9,
+        "retail_price": 24.9,
+        "discount_percentage": 38,
+        "cogs_product_usd": 2.99,
+        "cogs_shipping_usd": 6.28,
+        "total_cogs_usd": 9.27,
+        "payment_gateway_fee_est_usd": 0.68,
+        "gross_profit_usd": 15.63,
+        "gross_margin_pct": 62.77,
+        "net_contribution_margin_usd": 14.95,
+        "break_even_roas": 1.66
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_013",
+          "sku": "AW-VIRAL-013-STD",
+          "name": "Pack Completo con Batería USB",
+          "inventory_qty": 360
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1398152856363732992",
+          "variant_id": "2605210623341625300",
+          "variant_sku": "CJSD114825308HS",
+          "unit_cost_usd": 2.99,
+          "shipping_cost_usd": 6.28,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_014",
+      "sku": "AW-VIRAL-014",
+      "role": "standard",
+      "category": "Audio & Gadgets Tech",
+      "name": "Cascos Inalámbricos Bluetooth Plegables Extra Bass Ultraligeros",
+      "short_name": "Cascos Bluetooth Plegables Extra Bass",
+      "slug": "cascos-inalambricos-bluetooth-plegables-extra-bass",
+      "short_summary": "Auriculares de diadema inalámbricos Bluetooth de estética minimalista, almohadillas suaves y diseño plegable (203 g).",
+      "description": "Cascos circumaurales inalámbricos Bluetooth con transductores dinámicos Extra Bass, diadema ajustable plegable, almohadillas acolchadas de aislamiento pasivo y micrófono integrado.",
+      "images": [
+        "/assets/viral-14-bluetooth-headphones.jpg",
+        "/assets/viral-14-bluetooth-headphones-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Auriculares inalámbricos de diadema cerrada con conectividad Bluetooth estable para escuchar música, podcasts, entrenar o teletrabajar sin cables.",
+        "como_es": "Diseño ergonómico plegable de 18 × 16 × 7,5 cm y solo 203 gramos de peso para guardarlos fácilmente en cualquier bolso o mochila.",
+        "materiales": "Estructura de polímero ABS mate flexible con almohadillas circumaurales recubiertas en piel sintética suave transpirable y espuma con memoria.",
+        "caja": "1 cascos inalámbricos Bluetooth plegables, 1 cable de carga USB y 1 manual de usuario.",
+        "funciones": "Conexión inalámbrica rápida con móviles iOS/Android y ordenadores, controles integrados en el auricular (volumen, cambio de pista y llamadas manos libres) y batería recargable de larga duración."
+      },
+      "features": [
+        "Sonido estéreo envolvente Extra Bass con almohadillas suaves de aislamiento",
+        "Diseño plegable y ultraligero (203 g) con diadema regulable",
+        "Micrófono y botonera de control integrados para llamadas y música"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 39.9,
+        "retail_price": 24.9,
+        "discount_percentage": 38,
+        "cogs_product_usd": 1.65,
+        "cogs_shipping_usd": 6.07,
+        "total_cogs_usd": 7.72,
+        "payment_gateway_fee_est_usd": 0.68,
+        "gross_profit_usd": 17.18,
+        "gross_margin_pct": 69,
+        "net_contribution_margin_usd": 16.5,
+        "break_even_roas": 1.51
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_014",
+          "sku": "AW-VIRAL-014-WHT",
+          "name": "Blanco Minimalista · Plegable",
+          "inventory_qty": 410
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1760197513509871616",
+          "variant_id": "1760197513576980480",
+          "variant_sku": "CJYP197300601AZ",
+          "unit_cost_usd": 1.65,
+          "shipping_cost_usd": 6.07,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_015",
+      "sku": "AW-VIRAL-015",
+      "role": "standard",
+      "category": "Audio & Gadgets Tech",
+      "name": "Auriculares Inalámbricos TWS con Pantalla LED Digital Inteligente",
+      "short_name": "Auriculares TWS Pantalla LED",
+      "slug": "auriculares-inalambricos-tws-pantalla-led-digital",
+      "short_summary": "Auriculares intraurales Bluetooth TWS con estuche de carga dotado de pantalla digital de porcentaje de batería.",
+      "description": "Auriculares inalámbricos True Wireless Stereo (TWS) con emparejamiento automático al abrir el estuche, control táctil, micrófono con reducción de ruido ambiental y pantalla LED digital de carga.",
+      "images": [
+        "/assets/viral-15-tws-earbuds-led.jpg",
+        "/assets/viral-15-tws-earbuds-led-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Un par de auriculares inalámbricos in-ear Bluetooth acompañados de un estuche cargador magnético con pantalla LED que indica la carga exacta de la base y de cada auricular.",
+        "como_es": "Estuche de bolsillo compacto de 8 × 5 × 3 cm con un peso total de 134 gramos y auriculares anatómicos ultraligeros que no se caen al correr.",
+        "materiales": "Carcasa en policarbonato ABS con visor translúcido digital y almohadillas de silicona médica hipoalergénica.",
+        "caja": "2 auriculares inalámbricos TWS (izquierdo y derecho), 1 estuche de carga con pantalla LED, 1 cable de carga USB y juego de almohadillas.",
+        "funciones": "Emparejamiento instantáneo Bluetooth 5.3, control táctil para reproducir/pausar música, responder llamadas o activar el asistente de voz, y resistencia al sudor para uso deportivo."
+      },
+      "features": [
+        "Pantalla LED digital en el estuche que muestra el % exacto de batería",
+        "Emparejamiento automático Bluetooth y controles táctiles en ambos oídos",
+        "Ajuste anatómico ligero resistente al sudor con micrófono manos libres"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 42.9,
+        "retail_price": 24.9,
+        "discount_percentage": 42,
+        "cogs_product_usd": 3.69,
+        "cogs_shipping_usd": 5.21,
+        "total_cogs_usd": 8.9,
+        "payment_gateway_fee_est_usd": 0.68,
+        "gross_profit_usd": 16,
+        "gross_margin_pct": 64.26,
+        "net_contribution_margin_usd": 15.32,
+        "break_even_roas": 1.63
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_015",
+          "sku": "AW-VIRAL-015-BLK",
+          "name": "Negro Mate · Pantalla LED",
+          "inventory_qty": 390
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1544596715590922240",
+          "variant_id": "1544596715666419712",
+          "variant_sku": "CJEJ151918601AZ",
+          "unit_cost_usd": 3.69,
+          "shipping_cost_usd": 5.21,
+          "shipping_method": "CJPacket Sensitive",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_016",
+      "sku": "AW-VIRAL-016",
+      "role": "standard",
+      "category": "Audio & Gadgets Tech",
+      "name": "Gorro y Diadema Musical Bluetooth para Dormir y Running",
+      "short_name": "Diadema Musical Bluetooth",
+      "slug": "gorro-diadema-musical-bluetooth-dormir-running",
+      "short_summary": "Prenda textil transpirable con altavoces extrafinos integrados para escuchar música o relajarse sin auriculares que molesten.",
+      "description": "Gorro/visera deportiva y de descanso con módulo Bluetooth 5.0 integrado y altavoces planos acolchados que permiten apoyar la cabeza en la almohada o correr al aire libre sin presión en el oído.",
+      "images": [
+        "/assets/viral-16-sleep-music-hat.jpg",
+        "/assets/viral-16-sleep-music-hat-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una prenda multifunción con sistema de audio inalámbrico Bluetooth y micrófono ocultos en su interior para escuchar música, audiolibros o ruido blanco con total comodidad.",
+        "como_es": "Talla única ajustable con cierre trasero adaptable (peso total de 182 gramos) y botonera lateral discreta de fácil acceso.",
+        "materiales": "Tejido de algodón y fibra transpirable suave al tacto con módulo electrónico extraíble para permitir el lavado de la prenda.",
+        "caja": "1 gorro/diadema con sistema de audio Bluetooth integrado y 1 cable de carga USB.",
+        "funciones": "Reproducción inalámbrica de música y llamadas manos libres sin introducir auriculares dentro del canal auditivo, ideal para caminar, entrenar en invierno o relajarse antes de dormir."
+      },
+      "features": [
+        "Altavoces estéreo extrafinos integrados que no presionan las orejas",
+        "Conectividad Bluetooth con micrófono para llamadas y control de pistas",
+        "Tejido transpirable y lavable (módulo electrónico extraíble)"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 45.9,
+        "retail_price": 29.9,
+        "discount_percentage": 35,
+        "cogs_product_usd": 6.63,
+        "cogs_shipping_usd": 5.78,
+        "total_cogs_usd": 12.41,
+        "payment_gateway_fee_est_usd": 0.78,
+        "gross_profit_usd": 17.49,
+        "gross_margin_pct": 58.49,
+        "net_contribution_margin_usd": 16.71,
+        "break_even_roas": 1.79
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_016",
+          "sku": "AW-VIRAL-016-BLK",
+          "name": "Negro Ajustable · Bluetooth",
+          "inventory_qty": 280
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1784859045673836544",
+          "variant_id": "1784859045757722624",
+          "variant_sku": "CJBQ202388401AZ",
+          "unit_cost_usd": 6.63,
+          "shipping_cost_usd": 5.78,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_017",
+      "sku": "AW-VIRAL-017",
+      "role": "standard",
+      "category": "Lámparas & Diseño Sklum",
+      "name": "Lámpara de Mesa Inalámbrica Táctil Seta en Madera Nogal",
+      "short_name": "Lámpara Seta Madera Nogal",
+      "slug": "lampara-mesa-inalambrica-tactil-seta-madera-nogal",
+      "short_summary": "Lámpara nórdica inalámbrica con acabado en madera tono nogal, encendido táctil superior y regulación continua de brillo.",
+      "description": "Lámpara de sobremesa de inspiración orgánica con silueta de seta en acabado madera de nogal, batería recargable interna para uso sin cables y sensor táctil con atenuación progresiva.",
+      "images": [
+        "/assets/viral-17-mushroom-lamp-sklum.jpg",
+        "/assets/viral-17-mushroom-lamp-sklum-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una lámpara de diseño escandinavo portátil y sin cables que combina la calidez de la veta de madera tono nogal con una cúpula difusora de luz ambiental.",
+        "como_es": "Formato compacto de mesita o estantería (16 × 10 × 10 cm, peso sólido de 350 gramos) libre de cables durante su uso diario.",
+        "materiales": "Cuerpo torneado con acabado en madera de nogal natural y difusor superior metálico/acrílico de tacto sedoso.",
+        "caja": "1 lámpara inalámbrica táctil Seta en tono nogal, 1 cable de carga USB y 1 guía de uso.",
+        "funciones": "Encendido y apagado con un toque suave en la parte superior, regulación continua de intensidad (manteniendo pulsado) y batería recargable integrada para moverla del salón al dormitorio o terraza."
+      },
+      "features": [
+        "Diseño orgánico estilo nórdico en acabado madera de nogal",
+        "Funcionamiento 100% inalámbrico con batería recargable por USB",
+        "Sensor táctil superior con regulación progresiva de intensidad luminosa"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 59.9,
+        "retail_price": 39.9,
+        "discount_percentage": 33,
+        "cogs_product_usd": 9.68,
+        "cogs_shipping_usd": 8.02,
+        "total_cogs_usd": 17.7,
+        "payment_gateway_fee_est_usd": 0.95,
+        "gross_profit_usd": 22.2,
+        "gross_margin_pct": 55.64,
+        "net_contribution_margin_usd": 21.25,
+        "break_even_roas": 1.88
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_017",
+          "sku": "AW-VIRAL-017-WAL",
+          "name": "Madera Nogal · Táctil Inalámbrica",
+          "inventory_qty": 240
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1605139484134354944",
+          "variant_id": "1605139484176297985",
+          "variant_sku": "CJSN164392805EV",
+          "unit_cost_usd": 9.68,
+          "shipping_cost_usd": 8.02,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_018",
+      "sku": "AW-VIRAL-018",
+      "role": "standard",
+      "category": "Lámparas & Diseño Sklum",
+      "name": "Aplique de Pared LED Magnético con Sensor Inteligente sin Cables",
+      "short_name": "Aplique LED Magnético con Sensor",
+      "slug": "aplique-pared-led-magnetico-sensor-movimiento",
+      "short_summary": "Luz nocturna de pared o armario con sensor infrarrojo PIR de presencia, fijación magnética sin taladros y carga USB.",
+      "description": "Aplique LED circular inalámbrico con detector de movimiento por infrarrojos que se enciende automáticamente al pasar en la oscuridad. Instalación magnética en 10 segundos sin obras ni enchufes.",
+      "images": [
+        "/assets/viral-18-sensor-wall-light.jpg",
+        "/assets/viral-18-sensor-wall-light-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Un aplique de iluminación autónoma con sensor de presencia y crepuscular pensado para pasillos, escaleras, interior de armarios o cabeceros de cama.",
+        "como_es": "Disco compacto extrafino de 8,5 cm de diámetro × 2 cm de grosor (peso de 168 g con embalaje) con 6 diodos SMD de alta eficiencia.",
+        "materiales": "Carcasa en polímero ABS blanco mate ignífugo con lente Fresnel central detectora de movimiento y base imantada de neodimio.",
+        "caja": "1 aplique LED con sensor infrarrojo, 1 base magnética adhesiva 3M de alta fijación y 1 cable de carga USB.",
+        "funciones": "Detecta el paso de personas en un ángulo de 120° hasta 3-5 metros solo cuando la estancia está a oscuras, apagándose solo tras 20 segundos sin movimiento para ahorrar batería."
+      },
+      "features": [
+        "Encendido automático al detectar paso en la oscuridad (sensor PIR 120°)",
+        "Instalación magnética sin taladros ni cables (se retira fácil para cargar)",
+        "Ideal para pasillos, escaleras, vestidores e interior de armarios"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 34.9,
+        "retail_price": 22.9,
+        "discount_percentage": 34,
+        "cogs_product_usd": 2.69,
+        "cogs_shipping_usd": 5.13,
+        "total_cogs_usd": 7.82,
+        "payment_gateway_fee_est_usd": 0.65,
+        "gross_profit_usd": 15.08,
+        "gross_margin_pct": 65.85,
+        "net_contribution_margin_usd": 14.43,
+        "break_even_roas": 1.59
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_018",
+          "sku": "AW-VIRAL-018-WHT",
+          "name": "Blanco Puro · Sensor PIR USB",
+          "inventory_qty": 440
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "F91CA00A-6403-435D-8E5A-5555B4D78FFA",
+          "variant_id": "401F84AD-0F3A-4955-9DF8-48DCF734D9FB",
+          "variant_sku": "CJJZSNSN00255-Positive white 6LED-1pcs",
+          "unit_cost_usd": 2.69,
+          "shipping_cost_usd": 5.13,
+          "shipping_method": "YunExpress Ordinary",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_019",
+      "sku": "AW-VIRAL-019",
+      "role": "standard",
+      "category": "Lámparas & Diseño Sklum",
+      "name": "Proyector Astronauta de Galaxia y Nebulosa 360° con Mando",
+      "short_name": "Proyector Astronauta Galaxia 360°",
+      "slug": "proyector-astronauta-galaxia-nebulosa-360-mando",
+      "short_summary": "Figura decorativa de astronauta con casco magnético orientable 360°, proyección de nebulosas y mando a distancia.",
+      "description": "Lámpara proyectora con forma de astronauta sosteniendo una luna iluminada. Su casco unido magnéticamente gira 360° para proyectar nebulosas de colores y estrellas en cualquier pared o techo.",
+      "images": [
+        "/assets/viral-19-astronaut-projector.jpg",
+        "/assets/viral-19-astronaut-projector-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Un proyector espacial de alta definición integrado en una figura decorativa de astronauta con luna luminosa y control remoto completo.",
+        "como_es": "Mide 22,5 cm de alto × 12 cm de ancho (peso de 448 g) con cabeza magnética articulada capaz de girar 360 grados sin límites.",
+        "materiales": "Cuerpo moldeado en ABS y PVC de acabado mate suave al tacto con lente óptica de proyección de gran angular en el visor del casco.",
+        "caja": "1 proyector Astronauta con luna luminosa, 1 mando a distancia, 1 cable de alimentación USB y 1 manual en español/inglés.",
+        "funciones": "8 efectos de nebulosa multicolor combinables con estrellas verdes, control de velocidad de movimiento y brillo desde el mando, y temporizador de apagado automático (45 o 90 minutos)."
+      },
+      "features": [
+        "Cabeza con unión magnética 360° para orientar la proyección a techo o pared",
+        "8 modos de nebulosa galáctica más estrellas y luna ambiental",
+        "Incluye mando a distancia con control de brillo, giro y temporizador"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 64.9,
+        "retail_price": 39.9,
+        "discount_percentage": 39,
+        "cogs_product_usd": 7.96,
+        "cogs_shipping_usd": 9.33,
+        "total_cogs_usd": 17.29,
+        "payment_gateway_fee_est_usd": 0.95,
+        "gross_profit_usd": 22.61,
+        "gross_margin_pct": 56.67,
+        "net_contribution_margin_usd": 21.66,
+        "break_even_roas": 1.84
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_019",
+          "sku": "AW-VIRAL-019-AST",
+          "name": "Edición Luna Iluminada + Mando",
+          "inventory_qty": 310
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2408020738341606800",
+          "variant_id": "2408020738341607100",
+          "variant_sku": "CJSN209979302BY",
+          "unit_cost_usd": 7.96,
+          "shipping_cost_usd": 9.33,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_020",
+      "sku": "AW-VIRAL-020",
+      "role": "standard",
+      "category": "Lámparas & Diseño Sklum",
+      "name": "Lámpara Proyector Puesta de Sol Sunset Lamp 180° RGB con Mando",
+      "short_name": "Lámpara Puesta de Sol Sunset RGB",
+      "slug": "lampara-proyector-puesta-de-sol-sunset-rgb",
+      "short_summary": "Lámpara de ambiente con lente óptica de cristal que proyecta un halo cálido de atardecer y 16 tonos RGB regulables.",
+      "description": "Proyector ambiental Sunset Lamp con cabezal abatible 180° y rotación 360°, lente gruesa de alta refracción y 16 tonalidades cálidas y multicolor controlables desde mando o aplicación.",
+      "images": [
+        "/assets/viral-20-sunset-lamp-rgb.jpg",
+        "/assets/viral-20-sunset-lamp-rgb-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una lámpara de proyección óptica diseñada para recrear en cualquier estancia la luz dorada de la hora mágica del atardecer (Golden Hour) y ambientes cromáticos relajantes.",
+        "como_es": "Altura de 26 cm con base circular estable de 10 cm de diámetro (470 g de peso) y rótula orientable 180° vertical y 360° horizontal.",
+        "materiales": "Lente óptica convexa de cristal de alta transmisión luminosa, disipador térmico metálico y pedestal estable en polímero ABS reforzado.",
+        "caja": "1 lámpara proyector Sunset Lamp RGB de 6W, 1 mando a distancia multimodo y cable de alimentación USB con interruptor.",
+        "funciones": "Proyecta círculos degradados de puesta de sol cuyo tamaño aumenta al alejar la lámpara de la pared, con selección de 16 colores fijos, ajuste de intensidad y modos de transición suave."
+      },
+      "features": [
+        "Lente óptica de cristal que proyecta el degradado cálido de puesta de sol",
+        "16 tonos de luz seleccionables (Dorado Sunset, Rojo Atardecer, Nórdico, RGB)",
+        "Cabezal articulado 180° y mando a distancia incluido"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 59.9,
+        "retail_price": 39.9,
+        "discount_percentage": 33,
+        "cogs_product_usd": 8.6,
+        "cogs_shipping_usd": 9.88,
+        "total_cogs_usd": 18.48,
+        "payment_gateway_fee_est_usd": 0.95,
+        "gross_profit_usd": 21.42,
+        "gross_margin_pct": 53.68,
+        "net_contribution_margin_usd": 20.47,
+        "break_even_roas": 1.95
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_020",
+          "sku": "AW-VIRAL-020-SUN",
+          "name": "16 Colores RGB + Mando · 6W USB",
+          "inventory_qty": 270
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1392396647220252672",
+          "variant_id": "1603215010296246272",
+          "variant_sku": "CJSN112543561IR",
+          "unit_cost_usd": 8.6,
+          "shipping_cost_usd": 9.88,
+          "shipping_method": "CJPacket Sensitive",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_021",
+      "sku": "AW-VIRAL-021",
+      "role": "standard",
+      "category": "Nieve, Fiesta & Humor Viral",
+      "name": "Bola Voladora Boomerang RGB 360° con Sensor de Inducción",
+      "short_name": "Bola Voladora Boomerang RGB",
+      "slug": "bola-voladora-boomerang-rgb-360-induccion",
+      "short_summary": "Esfera aerodinámica motorizada con tiras LED RGB que flota, esquiva obstáculos y regresa a la mano como un boomerang.",
+      "description": "Esfera voladora interactiva con giroscopio inteligente, hélices internas protegidas por jaula flexible de polipropileno, iluminación LED RGB de 360° y recarga rápida por USB.",
+      "images": [
+        "/assets/viral-21-flying-orb-ball.jpg",
+        "/assets/viral-21-flying-orb-ball-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Un gadget volador motorizado con sensores de inducción e iluminación RGB que levita en el aire y realiza trayectorias curvas de ida y vuelta al lanzarlo con la mano.",
+        "como_es": "Esfera de 9,5 cm de diámetro y solo 103 gramos de peso con rejilla esférica flexible que protege los dedos y los muebles.",
+        "materiales": "Polipropileno PP de alta elasticidad resistente a caídas y choques, con rotor interno equilibrado y diodos LED multicolor.",
+        "caja": "1 bola voladora Boomerang RGB, 1 cable de carga rápida USB y 1 guía de trucos de lanzamiento.",
+        "funciones": "Al inclinarla 30° hacia arriba y lanzarla, describe un arco en el aire y vuelve sola a tu mano; al inclinarla hacia abajo vuela en línea recta hacia otro jugador. Se detiene al instante al agitarla."
+      },
+      "features": [
+        "Vuelo tipo boomerang que regresa a la mano según el ángulo de lanzamiento",
+        "Carcasa esférica flexible y cerrada que protege manos y paredes",
+        "Iluminación LED RGB brillante y recarga rápida USB en 25 minutos"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 49.9,
+        "retail_price": 34.9,
+        "discount_percentage": 30,
+        "cogs_product_usd": 10.06,
+        "cogs_shipping_usd": 4.72,
+        "total_cogs_usd": 14.78,
+        "payment_gateway_fee_est_usd": 0.85,
+        "gross_profit_usd": 20.12,
+        "gross_margin_pct": 57.65,
+        "net_contribution_margin_usd": 19.27,
+        "break_even_roas": 1.81
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_021",
+          "sku": "AW-VIRAL-021-BLU",
+          "name": "Azul Galáctico RGB · USB",
+          "inventory_qty": 350
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "F79E18C1-CA52-49E2-8309-3308C6C04D05",
+          "variant_id": "0BBE0C99-5F88-4FB7-ACFA-E9CD0593E121",
+          "variant_sku": "CJWJWJDZ00176-Blue",
+          "unit_cost_usd": 10.06,
+          "shipping_cost_usd": 4.72,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_022",
+      "sku": "AW-VIRAL-022",
+      "role": "standard",
+      "category": "Nieve, Fiesta & Humor Viral",
+      "name": "Lámpara Táctil de Silicona Suave Rebel Duck Recargable USB",
+      "short_name": "Lámpara Silicona Rebel Duck",
+      "slug": "lampara-tactil-silicona-rebel-duck-usb",
+      "short_summary": "Lámpara de escritorio irreverente y divertida en silicona blanda que se enciende y cambia de brillo al darle un toque.",
+      "description": "Lámpara nocturna de diseño humorístico Rebel Duck fabricada en silicona suave antiestrés, con 3 niveles de brillo táctil, temporizador de apagado y batería recargable por USB.",
+      "images": [
+        "/assets/viral-22-rebel-duck-lamp.jpg",
+        "/assets/viral-22-rebel-duck-lamp-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una lámpara ambiental de escritorio o mesita de noche con forma de pato irreverente que se ilumina con luz cálida al presionarla o darle un pequeño toque.",
+        "como_es": "Mide 14 × 11 × 13 cm (peso de 340 g con embalaje), con cuerpo blandito recuperable que también sirve como soporte para apoyar el teléfono móvil.",
+        "materiales": "Silicona flexible libre de BPA de tacto aterciopelado combinada con base inferior en ABS resistente.",
+        "caja": "1 lámpara táctil de silicona Rebel Duck, 1 cable de carga USB Tipo C y 1 manual.",
+        "funciones": "Control táctil de 3 intensidades de luz cálida (baja, media y alta) al apretar su cuerpo, modo temporizador de apagado automático a los 30 minutos y batería recargable sin cables."
+      },
+      "features": [
+        "Encendido y cambio de brillo en 3 niveles dándole un toque suave",
+        "Silicona blanda antiestrés con luz cálida relajante y temporizador 30 min",
+        "Regalo original de escritorio y amigo invisible con batería USB-C"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 49.9,
+        "retail_price": 32.9,
+        "discount_percentage": 34,
+        "cogs_product_usd": 5.69,
+        "cogs_shipping_usd": 7.89,
+        "total_cogs_usd": 13.58,
+        "payment_gateway_fee_est_usd": 0.82,
+        "gross_profit_usd": 19.32,
+        "gross_margin_pct": 58.72,
+        "net_contribution_margin_usd": 18.5,
+        "break_even_roas": 1.78
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_022",
+          "sku": "AW-VIRAL-022-DCK",
+          "name": "Edición Rebel Duck · Táctil USB",
+          "inventory_qty": 290
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2406120927071614600",
+          "variant_id": "2406120927071614800",
+          "variant_sku": "CJYD205893901AZ",
+          "unit_cost_usd": 5.69,
+          "shipping_cost_usd": 7.89,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_023",
+      "sku": "AW-VIRAL-023",
+      "role": "standard",
+      "category": "Audio & Gadgets Tech",
+      "name": "Mini Impresora Térmica Portátil Bluetooth sin Tinta para Fotos y Notas",
+      "short_name": "Mini Impresora Térmica Bluetooth",
+      "slug": "mini-impresora-termica-portatil-bluetooth-sin-tinta",
+      "short_summary": "Impresora de bolsillo inalámbrica que imprime al instante fotos en blanco y negro, etiquetas, listas y apuntes desde el móvil sin usar tinta.",
+      "description": "Mini impresora térmica portátil con conexión Bluetooth para iOS y Android. Imprime fotografías estilo retro, etiquetas adhesivas, esquemas de estudio, códigos QR y listas sin necesidad de cartuchos de tinta.",
+      "images": [
+        "/assets/viral-23-mini-thermal-printer.jpg",
+        "/assets/viral-23-mini-thermal-printer-clean.png",
+        "/assets/viral-23-mini-thermal-printer-lifestyle.jpg"
+      ],
+      "specs": {
+        "que_es": "Una impresora térmica de bolsillo conectada por Bluetooth al teléfono móvil capaz de imprimir al instante sobre papel térmico normal o adhesivo sin gastar nunca en tinta ni tóner.",
+        "como_es": "Formato cuadrado de bolsillo de 11 × 8 × 3,5 cm y 288 gramos de peso, con cuchilla dentada integrada para cortar las impresiones limpiamente.",
+        "materiales": "Carcasa en policarbonato ABS de acabado suave con cabezal térmico japonés de alta resolución (200 DPI) y batería de litio de 1000 mAh.",
+        "caja": "1 mini impresora térmica Bluetooth, 1 rollo de papel térmico instalado, 1 cable de carga USB y 1 manual con código QR de la aplicación gratuita.",
+        "funciones": "Desde su app gratuita en español permite imprimir fotos de la galería del móvil, notas, listas de la compra, etiquetas para tarros de cocina, plantillas de estudio y dibujos infantiles en 2 segundos."
+      },
+      "features": [
+        "Tecnología térmica directa: funciona toda la vida sin cartuchos de tinta",
+        "Conexión Bluetooth inmediata con iPhone y Android mediante app en español",
+        "Imprime fotos estilo instantáneo, etiquetas, apuntes y listas de tareas"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 69.9,
+        "retail_price": 44.9,
+        "discount_percentage": 36,
+        "cogs_product_usd": 15.28,
+        "cogs_shipping_usd": 7.19,
+        "total_cogs_usd": 22.47,
+        "payment_gateway_fee_est_usd": 1.05,
+        "gross_profit_usd": 22.43,
+        "gross_margin_pct": 49.96,
+        "net_contribution_margin_usd": 21.38,
+        "break_even_roas": 2.1
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_023",
+          "sku": "AW-VIRAL-023-PRT",
+          "name": "Blanco Compacto · Bluetooth + Rollo",
+          "inventory_qty": 230
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1465145114119770112",
+          "variant_id": "1465145114186878976",
+          "variant_sku": "CJJT136588001AZ",
+          "unit_cost_usd": 15.28,
+          "shipping_cost_usd": 7.19,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_024",
+      "sku": "AW-VIRAL-024",
+      "role": "standard",
+      "category": "Nieve, Fiesta & Humor Viral",
+      "name": "Máscara LED Luminosa Reactiva al Sonido para Fiestas y Eventos",
+      "short_name": "Máscara LED Reactiva al Sonido",
+      "slug": "mascara-led-luminosa-reactiva-sonido-fiestas",
+      "short_summary": "Máscara ligera con panel electroluminiscente que se ilumina y anima al ritmo de tu voz o de la música del entorno.",
+      "description": "Máscara facial luminosa con sensor acústico integrado que sincroniza sus animaciones LED con el ritmo de la música o al hablar. Ultraligera (40 g), transpirable y recargable.",
+      "images": [
+        "/assets/viral-24-led-voice-mask.jpg",
+        "/assets/viral-24-led-voice-mask-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una máscara interactiva con panel luminoso frontal que reacciona en tiempo real a las ondas de sonido de la música o de la propia voz.",
+        "como_es": "Mide 21,5 × 15,5 cm con un peso ultraligero de solo 40 gramos y correas elásticas regulables para las orejas.",
+        "materiales": "Tejido transpirable negro de algodón suave con lámina electroluminiscente flexible de luz fría que no da calor en la cara.",
+        "caja": "1 máscara LED reactiva al sonido con controlador integrado y cable de carga USB.",
+        "funciones": "Captación automática del ritmo musical en fiestas, conciertos, festivales, sesiones DJ o vídeos de TikTok, moviendo el ecualizador luminoso cada vez que hablas o suena el bajo."
+      },
+      "features": [
+        "Sensor de voz y música que mueve la animación LED en tiempo real",
+        "Lámina de luz fría flexible y ultraligera (40 g) cómoda durante horas",
+        "Ideal para festivales, fiestas, disfraces y creación de contenido"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 44.9,
+        "retail_price": 29.9,
+        "discount_percentage": 33,
+        "cogs_product_usd": 7.16,
+        "cogs_shipping_usd": 3.77,
+        "total_cogs_usd": 10.93,
+        "payment_gateway_fee_est_usd": 0.78,
+        "gross_profit_usd": 18.97,
+        "gross_margin_pct": 63.44,
+        "net_contribution_margin_usd": 18.19,
+        "break_even_roas": 1.64
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_024",
+          "sku": "AW-VIRAL-024-MSK",
+          "name": "Edición Reactiva al Sonido · 21,5×15,5 cm",
+          "inventory_qty": 310
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1454623662098485248",
+          "variant_id": "1454623662304006144",
+          "variant_sku": "CJFM133625601AZ",
+          "unit_cost_usd": 7.16,
+          "shipping_cost_usd": 3.77,
+          "shipping_method": "CJPacket Eub Special Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_025",
+      "sku": "AW-VIRAL-025",
+      "role": "standard",
+      "category": "Hogar, Confort & Navidad",
+      "name": "Quitapelusas Eléctrico Recargable USB con Pantalla Digital LED",
+      "short_name": "Quitapelusas Eléctrico Pantalla LED",
+      "slug": "quitapelusas-electrico-recargable-usb-pantalla-led",
+      "short_summary": "Renovador textil de 6 cuchillas de acero inoxidable con 3 velocidades y visor LED de batería para jerséis, abrigos y sofás.",
+      "description": "Quitapelusas eléctrico de alta revolución con cabezal de malla de acero inoxidable, depósito colector extraíble, 3 velocidades regulables y pantalla digital LED con indicador de carga.",
+      "images": [
+        "/assets/viral-25-lint-remover-led.jpg",
+        "/assets/viral-25-lint-remover-led-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Un dispositivo eléctrico de cuidado textil que elimina en segundos las bolitas y pelusas de jerséis de lana, abrigos, bufandas, mantas y tapicerías dejándolos como recién comprados.",
+        "como_es": "Diseño cilíndrico ergonómico en tono beige piedra de 15,8 × 8 × 8 cm y 320 gramos de peso.",
+        "materiales": "Cuerpo en polímero ABS mate con rejilla protectora biónica en panal y cabezal rotatorio interno de acero inoxidable.",
+        "caja": "1 quitapelusas eléctrico con pantalla LED, 1 cepillo de limpieza, 1 cable de carga USB y 1 manual.",
+        "funciones": "3 velocidades adaptadas según la delicadeza del tejido, pantalla digital que muestra la batería exacta y la marcha activa, y sistema de bloqueo de seguridad si se desenrosca el cabezal."
+      },
+      "features": [
+        "Renueva jerséis, abrigos y sofás en segundos sin dañar las fibras",
+        "Pantalla digital LED con indicador de batería y 3 niveles de potencia",
+        "Recargable por USB con depósito de pelusas de vaciado rápido"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 42.9,
+        "retail_price": 27.9,
+        "discount_percentage": 35,
+        "cogs_product_usd": 3.35,
+        "cogs_shipping_usd": 7.62,
+        "total_cogs_usd": 10.97,
+        "payment_gateway_fee_est_usd": 0.74,
+        "gross_profit_usd": 16.93,
+        "gross_margin_pct": 60.68,
+        "net_contribution_margin_usd": 16.19,
+        "break_even_roas": 1.72
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_025",
+          "sku": "AW-VIRAL-025-BGE",
+          "name": "Beige Piedra · Pantalla LED USB",
+          "inventory_qty": 340
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1737785083941105664",
+          "variant_id": "1737785084066934784",
+          "variant_sku": "CJYD192666301AZ",
+          "unit_cost_usd": 3.35,
+          "shipping_cost_usd": 7.62,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_026",
+      "sku": "AW-VIRAL-026",
+      "role": "standard",
+      "category": "Hogar, Confort & Navidad",
+      "name": "Mini Sellador Térmico Magnético 2 en 1 Recargable USB para Bolsas",
+      "short_name": "Mini Sellador Térmico 2 en 1 USB",
+      "slug": "mini-sellador-termico-magnetico-2-en-1-usb",
+      "short_summary": "Sellador y abridor de bolsas de cocina recargable por USB con imán trasero para dejarlo siempre a mano en la nevera.",
+      "description": "Gadget de cocina 2 en 1 que sella herméticamente por calor cualquier bolsa de aperitivos, frutos secos, café o congelados en una pasada, e incorpora cuchilla oculta en el extremo opuesto para abrirlas.",
+      "images": [
+        "/assets/viral-26-mini-bag-sealer.jpg",
+        "/assets/viral-26-mini-bag-sealer-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Un termosellador portátil recargable que vuelve a cerrar herméticamente las bolsas de alimentos abiertas para que conserven su textura crujiente y frescura durante semanas.",
+        "como_es": "Formato de bolsillo de 11 × 4 × 3,5 cm y 90 gramos de peso con dorso magnético para pegarlo en la puerta del frigorífico.",
+        "materiales": "Polímero ABS resistente al calor, filamento térmico cerámico de calentamiento instantáneo y cuchilla de acero inoxidable retraíble.",
+        "caja": "1 mini sellador y cortador 2 en 1 recargable y 1 cable de carga USB.",
+        "funciones": "Doble cabezal: un extremo sella por calor bolsas de plástico o aluminio en 3 segundos sin tiempo de precalentamiento, y el otro extremo desliza una micro-cuchilla segura para abrir paquetes nuevos."
+      },
+      "features": [
+        "Doble función 2 en 1: sella herméticamente por calor y abre bolsas",
+        "Batería recargable por USB (sin pilas desechables) y calentamiento al instante",
+        "Base magnética integrada para colocarlo en la puerta de la nevera"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 29.9,
+        "retail_price": 19.9,
+        "discount_percentage": 33,
+        "cogs_product_usd": 1.65,
+        "cogs_shipping_usd": 4.55,
+        "total_cogs_usd": 6.2,
+        "payment_gateway_fee_est_usd": 0.6,
+        "gross_profit_usd": 13.7,
+        "gross_margin_pct": 68.84,
+        "net_contribution_margin_usd": 13.1,
+        "break_even_roas": 1.52
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_026",
+          "sku": "AW-VIRAL-026-SLR",
+          "name": "Edición Magnética 2 en 1 · USB",
+          "inventory_qty": 460
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2408160514451617700",
+          "variant_id": "2408160514451617900",
+          "variant_sku": "CJYD211196101AZ",
+          "unit_cost_usd": 1.65,
+          "shipping_cost_usd": 4.55,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_027",
+      "sku": "AW-VIRAL-027",
+      "role": "standard",
+      "category": "Lámparas & Diseño Sklum",
+      "name": "Barra LED Magnética Ultrafina 50 cm con Sensor de Movimiento USB",
+      "short_name": "Barra LED Magnética 50 cm Sensor",
+      "slug": "barra-led-magnetica-ultrafina-50cm-sensor-usb",
+      "short_summary": "Regleta de iluminación cálida sin cables de 50 cm con sensor de presencia para bajo muebles de cocina, vestidores y escritorios.",
+      "description": "Barra lineal LED de 50 centímetros de longitud con detector de movimiento PIR integrado, luz cálida ambiental, batería recargable por USB y fijación magnética invisible sin cables ni enchufes.",
+      "images": [
+        "/assets/viral-27-led-sensor-bar.jpg",
+        "/assets/viral-27-led-sensor-bar-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una regleta de iluminación arquitectónica inalámbrica de 50 cm que ilumina encimeras de cocina, estanterías o interiores de armario automáticamente al acercarte.",
+        "como_es": "Barra estilizada de 50 cm de largo (500 mm) y solo 130 gramos de peso con difusor continuo que evita puntos de luz deslumbrantes.",
+        "materiales": "Perfil ligero con difusor acrílico opalizado, sensor óptico central y soportes magnéticos adhesivos.",
+        "caja": "1 barra LED de 50 cm con sensor de movimiento, 2 placas magnéticas adhesivas y 1 cable de carga USB.",
+        "funciones": "Modo sensor automático (se enciende al detectar presencia y se apaga sola a los 20 segundos) o modo luz fija continua. Se despega del imán en un segundo para recargarla por USB."
+      },
+      "features": [
+        "Gran longitud de 50 cm ideal para encimeras de cocina y armarios roperos",
+        "Sensor de movimiento inteligente + modo de encendido fijo continuo",
+        "Fijación magnética sin obras ni cables y batería recargable USB"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 34.9,
+        "retail_price": 22.9,
+        "discount_percentage": 34,
+        "cogs_product_usd": 1.06,
+        "cogs_shipping_usd": 5.82,
+        "total_cogs_usd": 6.88,
+        "payment_gateway_fee_est_usd": 0.65,
+        "gross_profit_usd": 16.02,
+        "gross_margin_pct": 69.96,
+        "net_contribution_margin_usd": 15.37,
+        "break_even_roas": 1.49
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_027",
+          "sku": "AW-VIRAL-027-50C",
+          "name": "Luz Cálida · 50 cm Sensor USB",
+          "inventory_qty": 380
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "10A2E8CF-227C-49D0-AF4E-FAE2945E2D3D",
+          "variant_id": "2608060254151617200",
+          "variant_sku": "CJJZLELE00235-Charging sensing yellow light-500mm",
+          "unit_cost_usd": 1.06,
+          "shipping_cost_usd": 5.82,
+          "shipping_method": "CJPacket Sensitive",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_028",
+      "sku": "AW-VIRAL-028",
+      "role": "standard",
+      "category": "Lámparas & Diseño Sklum",
+      "name": "Lámpara Acrílica 3D Táctil Tricolor con Control Remoto",
+      "short_name": "Lámpara 3D Táctil Tricolor",
+      "slug": "lampara-acrilica-3d-tactil-tricolor-control-remoto",
+      "short_summary": "Lámpara de ilusión óptica tridimensional grabada por láser con botón táctil en la base y 3 temperaturas de luz.",
+      "description": "Lámpara de sobremesa con placa óptica grabada en retícula 3D sobre base negra con pulsador táctil capacitativo para alternar entre luz cálida, neutra y blanca.",
+      "images": [
+        "/assets/viral-28-3d-touch-lamp.jpg",
+        "/assets/viral-28-3d-touch-lamp-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una lámpara escultórica de efecto holográfico 3D que crea la ilusión visual de una figura suspendida en el aire cuando se ilumina desde su base.",
+        "como_es": "Conjunto de 22 × 15 × 8,5 cm con un peso de 270 gramos y botón táctil frontal integrado en el pedestal.",
+        "materiales": "Lámina de metacrilato óptico PMMA grabada con láser de alta precisión y base en ABS negro mate con ranura iluminada.",
+        "caja": "1 placa óptica grabada en 3D, 1 base táctil tricolor y 1 cable de alimentación USB.",
+        "funciones": "Permite cambiar con un toque entre 3 tonalidades de iluminación (blanco cálido relajante, blanco neutro y blanco día) y alimentarse tanto por cable USB como con 3 pilas AA."
+      },
+      "features": [
+        "Grabado láser de alta densidad con efecto de volumen tridimensional",
+        "Base con sensor táctil para alternar entre 3 temperaturas de color",
+        "Doble alimentación: mediante cable USB incluido o sin cables con pilas"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 39.9,
+        "retail_price": 26.9,
+        "discount_percentage": 33,
+        "cogs_product_usd": 2.42,
+        "cogs_shipping_usd": 6.95,
+        "total_cogs_usd": 9.37,
+        "payment_gateway_fee_est_usd": 0.72,
+        "gross_profit_usd": 17.53,
+        "gross_margin_pct": 65.17,
+        "net_contribution_margin_usd": 16.81,
+        "break_even_roas": 1.6
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_028",
+          "sku": "AW-VIRAL-028-3DT",
+          "name": "Base Negra Táctil · Tricolor",
+          "inventory_qty": 310
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "2406090246571623400",
+          "variant_id": "2406090246571624000",
+          "variant_sku": "CJJT205645303CX",
+          "unit_cost_usd": 2.42,
+          "shipping_cost_usd": 6.95,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_029",
+      "sku": "AW-VIRAL-029",
+      "role": "standard",
+      "category": "Linternas, Motor & EDC",
+      "name": "Proyector LED Láser Inalámbrico de Bienvenida para Puerta de Coche",
+      "short_name": "Proyector LED Puerta de Coche",
+      "slug": "proyector-led-laser-inalambrico-puerta-coche",
+      "short_summary": "Luz de cortesía inalámbrica con sensor magnético que proyecta un emblema luminoso en el suelo cada vez que abres la puerta del coche.",
+      "description": "Proyector LED de bienvenida para puertas de automóvil con encendido automático por sensor magnético al abrir la puerta. Instalación adhesiva en 1 minuto sin tocar el cableado del vehículo.",
+      "images": [
+        "/assets/viral-29-car-door-laser.jpg",
+        "/assets/viral-29-car-door-laser-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Un proyector óptico de cortesía para la parte inferior de la puerta del coche que ilumina el asfalto al abrir la puerta de noche mejorando la visibilidad y la estética.",
+        "como_es": "Módulo compacto de 6,5 × 6,3 × 2 cm y apenas 70 gramos de peso, universal para cualquier marca y modelo de coche.",
+        "materiales": "Carcasa en polímero ABS acabado fibra de carbono con lente de proyección de alta definición y sensor magnético de proximidad.",
+        "caja": "1 proyector LED inalámbrico para puerta de coche, 1 imán sensor y cintas adhesivas de doble cara de alta adherencia.",
+        "funciones": "Al abrir la puerta el proyector se separa del imán del marco y enciende automáticamente la proyección sobre el suelo; al cerrar la puerta se apaga al instante sin intervención manual."
+      },
+      "features": [
+        "Encendido y apagado 100% automático al abrir y cerrar la puerta del coche",
+        "Instalación limpia en 60 segundos sin cables ni modificaciones eléctricas",
+        "Aumenta la visibilidad nocturna al bajar del vehículo y evita pisar charcos"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 29.9,
+        "retail_price": 18.9,
+        "discount_percentage": 37,
+        "cogs_product_usd": 1.41,
+        "cogs_shipping_usd": 4.02,
+        "total_cogs_usd": 5.43,
+        "payment_gateway_fee_est_usd": 0.58,
+        "gross_profit_usd": 13.47,
+        "gross_margin_pct": 71.27,
+        "net_contribution_margin_usd": 12.89,
+        "break_even_roas": 1.47
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_029",
+          "sku": "AW-VIRAL-029-CAR",
+          "name": "Negro Universal · Sensor Magnético",
+          "inventory_qty": 420
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1359670736125562880",
+          "variant_id": "1359670737455157248",
+          "variant_sku": "CJQC101111901AZ",
+          "unit_cost_usd": 1.41,
+          "shipping_cost_usd": 4.02,
+          "shipping_method": "CJPacket Eub",
+          "auto_fulfillment_enabled": true
+        }
+      }
+    },
+    {
+      "id": "prod_viral_030",
+      "sku": "AW-VIRAL-030",
+      "role": "standard",
+      "category": "Lámparas & Diseño Sklum",
+      "name": "Lámpara de Noche Táctil de Silicona Suave Recargable LED",
+      "short_name": "Lámpara Noche Silicona Táctil",
+      "slug": "lampara-noche-tactil-silicona-suave-recargable",
+      "short_summary": "Luminaria ambiental inalámbrica en silicona suave con sensor táctil de brillo, luz cálida confortable y carga USB.",
+      "description": "Lámpara de mesita de noche fabricada en silicona blanda de tacto agradable con iluminación LED cálida antideslumbrante, control táctil por toque y batería recargable por USB.",
+      "images": [
+        "/assets/viral-30-silicone-touch-lamp.jpg",
+        "/assets/viral-30-silicone-touch-lamp-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Una lámpara de noche portátil y flexible que se ilumina y regula su intensidad al tocar suavemente su superficie de silicona.",
+        "como_es": "Mide 11 × 11 × 12 cm con un peso de 283 gramos, sin bordes duros ni cristales frágiles.",
+        "materiales": "Silicona ecológica de grado suave lavable y recuperable ante la presión, sobre base inferior en ABS con batería de litio.",
+        "caja": "1 lámpara táctil de silicona suave, 1 cable de carga USB y 1 manual de usuario.",
+        "funciones": "Luz cálida relajante que no interfiere con el descanso nocturno, cambio de nivel de brillo mediante un toque con la mano y autonomía inalámbrica para llevarla a cualquier habitación."
+      },
+      "features": [
+        "Cuerpo de silicona suave al tacto seguro para dormitorios y mesitas",
+        "Control táctil de brillo con luz cálida sin parpadeos",
+        "Batería recargable por USB para usarla sin enchufes cercanos"
+      ],
+      "pricing": {
+        "currency": "EUR",
+        "compare_at_price": 44.9,
+        "retail_price": 29.9,
+        "discount_percentage": 33,
+        "cogs_product_usd": 5.47,
+        "cogs_shipping_usd": 7.13,
+        "total_cogs_usd": 12.6,
+        "payment_gateway_fee_est_usd": 0.78,
+        "gross_profit_usd": 17.3,
+        "gross_margin_pct": 57.86,
+        "net_contribution_margin_usd": 16.52,
+        "break_even_roas": 1.81
+      },
+      "variants": [
+        {
+          "variant_id": "var_viral_030",
+          "sku": "AW-VIRAL-030-SIL",
+          "name": "Edición Silicona Táctil · USB",
+          "inventory_qty": 310
+        }
+      ],
+      "supplier_mapping": {
+        "primary_provider": "CJdropshipping",
+        "cjdropshipping": {
+          "account_id": "CJ5949933",
+          "product_id": "1694541389201154048",
+          "variant_id": "1694541389276651520",
+          "variant_sku": "CJJT182943504DW",
+          "unit_cost_usd": 5.47,
+          "shipping_cost_usd": 7.13,
+          "shipping_method": "CJPacket Liquid Line",
+          "auto_fulfillment_enabled": true
+        }
       }
     },
     {
@@ -786,12 +2033,12 @@
         "retail_price": 199.99,
         "discount_percentage": 50,
         "cogs_product_usd": 43.19,
-        "cogs_shipping_usd": 48.00,
+        "cogs_shipping_usd": 48,
         "total_cogs_usd": 91.19,
-        "payment_gateway_fee_est_usd": 6.10,
-        "gross_profit_usd": 108.80,
-        "gross_margin_pct": 54.40,
-        "net_contribution_margin_usd": 102.70,
+        "payment_gateway_fee_est_usd": 6.1,
+        "gross_profit_usd": 108.8,
+        "gross_margin_pct": 54.4,
+        "net_contribution_margin_usd": 102.7,
         "break_even_roas": 1.84
       },
       "variants": [

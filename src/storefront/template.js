@@ -422,9 +422,187 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
       background-color: var(--bg-stone-hover);
     }
 
-    /* 4. Catalog Toolbar & Filter Pills */
+    /* 4. Sklum-Style Visual Subfolders & Catalog Toolbar */
     .catalog-section {
       padding: 40px 0 64px;
+    }
+
+    .sklum-folders-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .sklum-folders-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+
+    .sklum-folders-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-light);
+    }
+
+    .sklum-folders-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .sklum-folder-card {
+      background-color: var(--bg-stone);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 14px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .sklum-folder-card:hover {
+      background-color: var(--bg-white);
+      border-color: var(--border-medium);
+      box-shadow: var(--shadow-card);
+      transform: translateY(-2px);
+    }
+
+    .sklum-folder-card.active {
+      background-color: var(--bg-white);
+      border-color: var(--accent-dark);
+      box-shadow: 0 0 0 1px var(--accent-dark), var(--shadow-subtle);
+    }
+
+    .sklum-folder-thumb {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-light);
+      padding: 6px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .sklum-folder-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .sklum-folder-name {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+
+    .sklum-folder-count {
+      font-size: 0.72rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    /* Cross-sell row inside Product Modal */
+    .modal-cross-sell {
+      border-top: 1px solid var(--border-light);
+      padding: 20px 24px 24px;
+      background-color: var(--bg-stone);
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    }
+
+    .modal-cross-sell-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .modal-cross-sell-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .cross-sell-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cross-sell-card img {
+      width: 54px;
+      height: 54px;
+      object-fit: contain;
+      background-color: var(--bg-stone);
+      border-radius: var(--radius-sm);
+      padding: 4px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .cross-sell-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .cross-sell-name {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      margin-bottom: 2px;
+    }
+
+    .cross-sell-price {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .cross-sell-add-btn {
+      background-color: var(--accent-dark);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      padding: 4px 9px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    @media (max-width: 980px) {
+      .sklum-folders-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .modal-cross-sell-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .sklum-folders-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     .catalog-toolbar {
@@ -1404,10 +1582,12 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
       </div>
 
       <nav class="header-nav" aria-label="Categorías principales">
-        <button type="button" class="nav-cat-btn active" data-cat="all" onclick="filterByCategory('all')">Todos los artículos</button>
-        <button type="button" class="nav-cat-btn" data-cat="Iluminación & Ambiente" onclick="filterByCategory('Iluminación & Ambiente')">Iluminación &amp; Ambiente</button>
-        <button type="button" class="nav-cat-btn" data-cat="Gadgets & Electrónica" onclick="filterByCategory('Gadgets & Electrónica')">Gadgets &amp; Electrónica</button>
-        <button type="button" class="nav-cat-btn" data-cat="Confort & Hogar" onclick="filterByCategory('Confort & Hogar')">Confort &amp; Hogar</button>
+        <button type="button" class="nav-cat-btn active" data-cat="all" onclick="filterByCategory('all')">Todos (${clientCatalog.length})</button>
+        <button type="button" class="nav-cat-btn" data-cat="Nieve, Fiesta & Humor Viral" onclick="filterByCategory('Nieve, Fiesta & Humor Viral')">Nieve &amp; Humor Viral</button>
+        <button type="button" class="nav-cat-btn" data-cat="Audio & Gadgets Tech" onclick="filterByCategory('Audio & Gadgets Tech')">Audio &amp; Tech</button>
+        <button type="button" class="nav-cat-btn" data-cat="Linternas, Motor & EDC" onclick="filterByCategory('Linternas, Motor & EDC')">Linternas &amp; Motor</button>
+        <button type="button" class="nav-cat-btn" data-cat="Lámparas & Diseño Sklum" onclick="filterByCategory('Lámparas & Diseño Sklum')">Lámparas &amp; Diseño</button>
+        <button type="button" class="nav-cat-btn" data-cat="Hogar, Confort & Navidad" onclick="filterByCategory('Hogar, Confort & Navidad')">Hogar &amp; Confort</button>
       </nav>
 
       <div class="header-actions">
@@ -1443,14 +1623,71 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
     </div>
   </section>
 
-  <!-- 4. Dynamic Product Grid -->
+  <!-- 4. Dynamic Product Grid with Sklum-Style Visual Subfolders -->
   <main class="container catalog-section" id="catalogo">
+    <div class="sklum-folders-header">
+      <h2 class="sklum-folders-title">Explora por colecciones</h2>
+      <span class="sklum-folders-subtitle">Selecciona una carpeta para filtrar el catálogo</span>
+    </div>
+
+    <div class="sklum-folders-grid" role="navigation" aria-label="Subcarpetas visuales del catálogo">
+      <div class="sklum-folder-card active" data-folder="all" onclick="filterByCategory('all')">
+        <div class="sklum-folder-thumb">
+          <img src="/assets/viral-17-mushroom-lamp-sklum.jpg" alt="Todos los Artículos" loading="lazy" />
+        </div>
+        <div class="sklum-folder-name">Todos los Artículos</div>
+        <div class="sklum-folder-count">${clientCatalog.length} artículos</div>
+      </div>
+
+      <div class="sklum-folder-card" data-folder="Nieve, Fiesta & Humor Viral" onclick="filterByCategory('Nieve, Fiesta & Humor Viral')">
+        <div class="sklum-folder-thumb">
+          <img src="/assets/viral-11-balaclava-3d.jpg" alt="Nieve, Fiesta y Humor Viral" loading="lazy" />
+        </div>
+        <div class="sklum-folder-name">Nieve, Fiesta &amp; Humor Viral</div>
+        <div class="sklum-folder-count">5 artículos</div>
+      </div>
+
+      <div class="sklum-folder-card" data-folder="Audio & Gadgets Tech" onclick="filterByCategory('Audio & Gadgets Tech')">
+        <div class="sklum-folder-thumb">
+          <img src="/assets/viral-14-bluetooth-headphones.jpg" alt="Audio y Gadgets Tech" loading="lazy" />
+        </div>
+        <div class="sklum-folder-name">Audio &amp; Gadgets Tech</div>
+        <div class="sklum-folder-count">5 artículos</div>
+      </div>
+
+      <div class="sklum-folder-card" data-folder="Linternas, Motor & EDC" onclick="filterByCategory('Linternas, Motor & EDC')">
+        <div class="sklum-folder-thumb">
+          <img src="/assets/viral-12-keychain-torch.jpg" alt="Linternas, Motor y EDC" loading="lazy" />
+        </div>
+        <div class="sklum-folder-name">Linternas, Motor &amp; EDC</div>
+        <div class="sklum-folder-count">3 artículos</div>
+      </div>
+
+      <div class="sklum-folder-card" data-folder="Lámparas & Diseño Sklum" onclick="filterByCategory('Lámparas & Diseño Sklum')">
+        <div class="sklum-folder-thumb">
+          <img src="/assets/viral-19-astronaut-projector.jpg" alt="Lámparas y Diseño Sklum" loading="lazy" />
+        </div>
+        <div class="sklum-folder-name">Lámparas &amp; Diseño Sklum</div>
+        <div class="sklum-folder-count">9 artículos</div>
+      </div>
+
+      <div class="sklum-folder-card" data-folder="Hogar, Confort & Navidad" onclick="filterByCategory('Hogar, Confort & Navidad')">
+        <div class="sklum-folder-thumb">
+          <img src="/assets/xmas-01-curtain-lights.jpg" alt="Hogar, Confort y Navidad" loading="lazy" />
+        </div>
+        <div class="sklum-folder-name">Hogar, Confort &amp; Navidad</div>
+        <div class="sklum-folder-count">8 artículos</div>
+      </div>
+    </div>
+
     <div class="catalog-toolbar">
       <div class="filter-pills">
         <button type="button" class="filter-pill active" data-pill="all" onclick="filterByCategory('all')">Todos (${clientCatalog.length})</button>
-        <button type="button" class="filter-pill" data-pill="Iluminación & Ambiente" onclick="filterByCategory('Iluminación & Ambiente')">Iluminación &amp; Ambiente</button>
-        <button type="button" class="filter-pill" data-pill="Gadgets & Electrónica" onclick="filterByCategory('Gadgets & Electrónica')">Gadgets &amp; Electrónica</button>
-        <button type="button" class="filter-pill" data-pill="Confort & Hogar" onclick="filterByCategory('Confort & Hogar')">Confort &amp; Hogar</button>
+        <button type="button" class="filter-pill" data-pill="Nieve, Fiesta & Humor Viral" onclick="filterByCategory('Nieve, Fiesta & Humor Viral')">Nieve, Fiesta &amp; Humor Viral (5)</button>
+        <button type="button" class="filter-pill" data-pill="Audio & Gadgets Tech" onclick="filterByCategory('Audio & Gadgets Tech')">Audio &amp; Gadgets Tech (5)</button>
+        <button type="button" class="filter-pill" data-pill="Linternas, Motor & EDC" onclick="filterByCategory('Linternas, Motor & EDC')">Linternas, Motor &amp; EDC (3)</button>
+        <button type="button" class="filter-pill" data-pill="Lámparas & Diseño Sklum" onclick="filterByCategory('Lámparas & Diseño Sklum')">Lámparas &amp; Diseño Sklum (9)</button>
+        <button type="button" class="filter-pill" data-pill="Hogar, Confort & Navidad" onclick="filterByCategory('Hogar, Confort & Navidad')">Hogar, Confort &amp; Navidad (8)</button>
       </div>
       <div class="catalog-count" id="catalog-count-label">Mostrando ${clientCatalog.length} artículos</div>
     </div>
@@ -1556,12 +1793,14 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
         </div>
 
         <div class="footer-col">
-          <h4>Categorías</h4>
+          <h4>Colecciones</h4>
           <ul class="footer-links">
-            <li><button type="button" onclick="filterByCategory('all')">Todos los artículos</button></li>
-            <li><button type="button" onclick="filterByCategory('Iluminación & Ambiente')">Iluminación &amp; Ambiente</button></li>
-            <li><button type="button" onclick="filterByCategory('Gadgets & Electrónica')">Gadgets &amp; Electrónica</button></li>
-            <li><button type="button" onclick="filterByCategory('Confort & Hogar')">Confort &amp; Hogar</button></li>
+            <li><button type="button" onclick="filterByCategory('all')">Todos los artículos (${clientCatalog.length})</button></li>
+            <li><button type="button" onclick="filterByCategory('Nieve, Fiesta & Humor Viral')">Nieve, Fiesta &amp; Humor Viral</button></li>
+            <li><button type="button" onclick="filterByCategory('Audio & Gadgets Tech')">Audio &amp; Gadgets Tech</button></li>
+            <li><button type="button" onclick="filterByCategory('Linternas, Motor & EDC')">Linternas, Motor &amp; EDC</button></li>
+            <li><button type="button" onclick="filterByCategory('Lámparas & Diseño Sklum')">Lámparas &amp; Diseño Sklum</button></li>
+            <li><button type="button" onclick="filterByCategory('Hogar, Confort & Navidad')">Hogar, Confort &amp; Navidad</button></li>
           </ul>
         </div>
 
@@ -1637,6 +1876,11 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
             <button type="button" class="btn-quick-buy" id="modal-quick-buy-btn">Compra rápida</button>
           </div>
         </div>
+      </div>
+
+      <div class="modal-cross-sell">
+        <div class="modal-cross-sell-title">Completa tu cesta para Envío Gratis (&gt;45 €) — Otros virales que te encantarán</div>
+        <div class="modal-cross-sell-grid" id="modal-cross-sell-grid"></div>
       </div>
     </div>
   </div>
@@ -1756,6 +2000,10 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
         pill.className = pill.getAttribute('data-pill') === category ? 'filter-pill active' : 'filter-pill';
       });
 
+      document.querySelectorAll('.sklum-folder-card').forEach((folder) => {
+        folder.className = folder.getAttribute('data-folder') === category ? 'sklum-folder-card active' : 'sklum-folder-card';
+      });
+
       applyCatalogFilters();
     }
 
@@ -1850,6 +2098,54 @@ export function renderHighConvertingStorefront(catalogData = {}, kycStatus = {},
       buyBtn.onclick = function () {
         buySingleCatalogProduct(item.id, item.price, buyBtn);
       };
+
+      // Sugerencias cruzadas de otras subcarpetas para desbloquear Envío Gratis (>45 €)
+      const crossGrid = document.getElementById('modal-cross-sell-grid');
+      if (crossGrid) {
+        const others = CATALOG_ITEMS.filter((p) => p.id !== item.id && p.category !== item.category);
+        const picks = [];
+        const seenCats = new Set();
+        for (const cand of others) {
+          if (!seenCats.has(cand.category)) {
+            seenCats.add(cand.category);
+            picks.push(cand);
+          }
+          if (picks.length === 3) break;
+        }
+        while (picks.length < 3 && others.length > picks.length) {
+          const next = others.find((o) => !picks.some((pk) => pk.id === o.id));
+          if (next) picks.push(next);
+          else break;
+        }
+
+        crossGrid.innerHTML = picks
+          .map(
+            (cr) =>
+              '<div class="cross-sell-card">' +
+              '<img src="' +
+              cr.images[0] +
+              '" alt="' +
+              cr.shortName +
+              '" onclick="openProductModal(\\'' +
+              cr.id +
+              '\\')" />' +
+              '<div class="cross-sell-info">' +
+              '<div class="cross-sell-name" onclick="openProductModal(\\'' +
+              cr.id +
+              '\\')">' +
+              cr.shortName +
+              '</div>' +
+              '<div class="cross-sell-price">' +
+              formatEurJs(cr.price) +
+              '</div>' +
+              '<button type="button" class="cross-sell-add-btn" onclick="addToCart(\\'' +
+              cr.id +
+              '\\', 1)">+ Añadir a la cesta</button>' +
+              '</div>' +
+              '</div>'
+          )
+          .join('');
+      }
 
       document.getElementById('product-modal-overlay').style.display = 'flex';
     }

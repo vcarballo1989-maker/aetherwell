@@ -203,6 +203,326 @@ export const CJ_PRODUCT_MAPPING = {
       { vid: '2408210643001610400', quantity: 1 },
       { vid: '1698975667280424960', quantity: 1 }
     ]
+  },
+  prod_viral_011: {
+    pid: '2609290358281623700',
+    vid: '2610160136531626809',
+    sku: 'CJMZ320782836JQ',
+    title: 'Pasamontañas 3D Hiperrealista Esquí y Moto',
+    logisticName: 'CJPacket Eub',
+    cogsUsd: 1.10
+  },
+  'AW-VIRAL-011': {
+    pid: '2609290358281623700',
+    vid: '2610160136531626809',
+    sku: 'CJMZ320782836JQ',
+    title: 'Pasamontañas 3D Hiperrealista Esquí y Moto',
+    logisticName: 'CJPacket Eub',
+    cogsUsd: 1.10
+  },
+  prod_viral_012: {
+    pid: '1393043039106240512',
+    vid: '1393043040461000704',
+    sku: 'CJSD112822601AZ',
+    title: 'Mini Linterna LED COB de Llavero con Mosquetón Ultraligera (38 g)',
+    logisticName: 'CJPacket Eub',
+    cogsUsd: 0.59
+  },
+  'AW-VIRAL-012': {
+    pid: '1393043039106240512',
+    vid: '1393043040461000704',
+    sku: 'CJSD112822601AZ',
+    title: 'Mini Linterna LED COB de Llavero con Mosquetón Ultraligera (38 g)',
+    logisticName: 'CJPacket Eub',
+    cogsUsd: 0.59
+  },
+  prod_viral_013: {
+    pid: '1398152856363732992',
+    vid: '2605210623341625300',
+    sku: 'CJSD114825308HS',
+    title: 'Linterna Táctica LED Zoom Ultrapotente USB con Pantalla de Batería',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 2.99
+  },
+  'AW-VIRAL-013': {
+    pid: '1398152856363732992',
+    vid: '2605210623341625300',
+    sku: 'CJSD114825308HS',
+    title: 'Linterna Táctica LED Zoom Ultrapotente USB con Pantalla de Batería',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 2.99
+  },
+  prod_viral_014: {
+    pid: '1760197513509871616',
+    vid: '1760197513576980480',
+    sku: 'CJYP197300601AZ',
+    title: 'Cascos Inalámbricos Bluetooth Plegables Extra Bass Ultraligeros',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 1.65
+  },
+  'AW-VIRAL-014': {
+    pid: '1760197513509871616',
+    vid: '1760197513576980480',
+    sku: 'CJYP197300601AZ',
+    title: 'Cascos Inalámbricos Bluetooth Plegables Extra Bass Ultraligeros',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 1.65
+  },
+  prod_viral_015: {
+    pid: '1544596715590922240',
+    vid: '1544596715666419712',
+    sku: 'CJEJ151918601AZ',
+    title: 'Auriculares Inalámbricos TWS con Pantalla LED Digital Inteligente',
+    logisticName: 'CJPacket Sensitive',
+    cogsUsd: 3.69
+  },
+  'AW-VIRAL-015': {
+    pid: '1544596715590922240',
+    vid: '1544596715666419712',
+    sku: 'CJEJ151918601AZ',
+    title: 'Auriculares Inalámbricos TWS con Pantalla LED Digital Inteligente',
+    logisticName: 'CJPacket Sensitive',
+    cogsUsd: 3.69
+  },
+  prod_viral_016: {
+    pid: '1784859045673836544',
+    vid: '1784859045757722624',
+    sku: 'CJBQ202388401AZ',
+    title: 'Gorro y Diadema Musical Bluetooth Inalámbrico para Dormir y Running',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 6.63
+  },
+  'AW-VIRAL-016': {
+    pid: '1784859045673836544',
+    vid: '1784859045757722624',
+    sku: 'CJBQ202388401AZ',
+    title: 'Gorro y Diadema Musical Bluetooth Inalámbrico para Dormir y Running',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 6.63
+  },
+  prod_viral_017: {
+    pid: '1605139484134354944',
+    vid: '1605139484176297985',
+    sku: 'CJSN164392805EV',
+    title: 'Lámpara de Mesa Inalámbrica Táctil Seta en Madera Nogal',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 9.68
+  },
+  'AW-VIRAL-017': {
+    pid: '1605139484134354944',
+    vid: '1605139484176297985',
+    sku: 'CJSN164392805EV',
+    title: 'Lámpara de Mesa Inalámbrica Táctil Seta en Madera Nogal',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 9.68
+  },
+  prod_viral_018: {
+    pid: 'F91CA00A-6403-435D-8E5A-5555B4D78FFA',
+    vid: '401F84AD-0F3A-4955-9DF8-48DCF734D9FB',
+    sku: 'CJJZSNSN00255-Positive white 6LED-1pcs',
+    title: 'Aplique de Pared LED Magnético con Sensor Inteligente sin Cables',
+    logisticName: 'YunExpress Ordinary',
+    cogsUsd: 2.69
+  },
+  'AW-VIRAL-018': {
+    pid: 'F91CA00A-6403-435D-8E5A-5555B4D78FFA',
+    vid: '401F84AD-0F3A-4955-9DF8-48DCF734D9FB',
+    sku: 'CJJZSNSN00255-Positive white 6LED-1pcs',
+    title: 'Aplique de Pared LED Magnético con Sensor Inteligente sin Cables',
+    logisticName: 'YunExpress Ordinary',
+    cogsUsd: 2.69
+  },
+  prod_viral_019: {
+    pid: '2408020738341606800',
+    vid: '2408020738341607100',
+    sku: 'CJSN209979302BY',
+    title: 'Proyector Astronauta de Galaxia y Nebulosa 360° con Mando',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 7.96
+  },
+  'AW-VIRAL-019': {
+    pid: '2408020738341606800',
+    vid: '2408020738341607100',
+    sku: 'CJSN209979302BY',
+    title: 'Proyector Astronauta de Galaxia y Nebulosa 360° con Mando',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 7.96
+  },
+  prod_viral_020: {
+    pid: '1392396647220252672',
+    vid: '1603215010296246272',
+    sku: 'CJSN112543561IR',
+    title: 'Lámpara Proyector Puesta de Sol Sunset Lamp 180° RGB con Mando',
+    logisticName: 'CJPacket Sensitive',
+    cogsUsd: 8.60
+  },
+  'AW-VIRAL-020': {
+    pid: '1392396647220252672',
+    vid: '1603215010296246272',
+    sku: 'CJSN112543561IR',
+    title: 'Lámpara Proyector Puesta de Sol Sunset Lamp 180° RGB con Mando',
+    logisticName: 'CJPacket Sensitive',
+    cogsUsd: 8.60
+  },
+  prod_viral_021: {
+    pid: 'F79E18C1-CA52-49E2-8309-3308C6C04D05',
+    vid: '0BBE0C99-5F88-4FB7-ACFA-E9CD0593E121',
+    sku: 'CJWJWJDZ00176-Blue',
+    title: 'Bola Voladora Boomerang RGB 360° con Inducción',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 10.06
+  },
+  'AW-VIRAL-021': {
+    pid: 'F79E18C1-CA52-49E2-8309-3308C6C04D05',
+    vid: '0BBE0C99-5F88-4FB7-ACFA-E9CD0593E121',
+    sku: 'CJWJWJDZ00176-Blue',
+    title: 'Bola Voladora Boomerang RGB 360° con Inducción',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 10.06
+  },
+  prod_viral_022: {
+    pid: '2406120927071614600',
+    vid: '2406120927071614800',
+    sku: 'CJYD205893901AZ',
+    title: 'Lámpara Táctil de Silicona Rebel Duck Recargable USB',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 5.69
+  },
+  'AW-VIRAL-022': {
+    pid: '2406120927071614600',
+    vid: '2406120927071614800',
+    sku: 'CJYD205893901AZ',
+    title: 'Lámpara Táctil de Silicona Rebel Duck Recargable USB',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 5.69
+  },
+  prod_viral_023: {
+    pid: '1465145114119770112',
+    vid: '1465145114186878976',
+    sku: 'CJJT136588001AZ',
+    title: 'Mini Impresora Térmica Portátil Bluetooth sin Tinta',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 15.28
+  },
+  'AW-VIRAL-023': {
+    pid: '1465145114119770112',
+    vid: '1465145114186878976',
+    sku: 'CJJT136588001AZ',
+    title: 'Mini Impresora Térmica Portátil Bluetooth sin Tinta',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 15.28
+  },
+  prod_viral_024: {
+    pid: '1454623662098485248',
+    vid: '1454623662304006144',
+    sku: 'CJFM133625601AZ',
+    title: 'Máscara LED Luminosa Reactiva al Sonido para Fiestas y Eventos',
+    logisticName: 'CJPacket Eub Special Line',
+    cogsUsd: 7.16
+  },
+  'AW-VIRAL-024': {
+    pid: '1454623662098485248',
+    vid: '1454623662304006144',
+    sku: 'CJFM133625601AZ',
+    title: 'Máscara LED Luminosa Reactiva al Sonido para Fiestas y Eventos',
+    logisticName: 'CJPacket Eub Special Line',
+    cogsUsd: 7.16
+  },
+  prod_viral_025: {
+    pid: '1737785083941105664',
+    vid: '1737785084066934784',
+    sku: 'CJYD192666301AZ',
+    title: 'Quitapelusas Eléctrico Recargable USB con Pantalla Digital LED',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 3.35
+  },
+  'AW-VIRAL-025': {
+    pid: '1737785083941105664',
+    vid: '1737785084066934784',
+    sku: 'CJYD192666301AZ',
+    title: 'Quitapelusas Eléctrico Recargable USB con Pantalla Digital LED',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 3.35
+  },
+  prod_viral_026: {
+    pid: '2408160514451617700',
+    vid: '2408160514451617900',
+    sku: 'CJYD211196101AZ',
+    title: 'Mini Sellador Térmico Magnético 2 en 1 Recargable USB para Bolsas',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 1.65
+  },
+  'AW-VIRAL-026': {
+    pid: '2408160514451617700',
+    vid: '2408160514451617900',
+    sku: 'CJYD211196101AZ',
+    title: 'Mini Sellador Térmico Magnético 2 en 1 Recargable USB para Bolsas',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 1.65
+  },
+  prod_viral_027: {
+    pid: '10A2E8CF-227C-49D0-AF4E-FAE2945E2D3D',
+    vid: '2608060254151617200',
+    sku: 'CJJZLELE00235-Charging sensing yellow light-500mm',
+    title: 'Barra LED Magnética Ultrafina 50 cm con Sensor de Movimiento USB',
+    logisticName: 'CJPacket Sensitive',
+    cogsUsd: 1.06
+  },
+  'AW-VIRAL-027': {
+    pid: '10A2E8CF-227C-49D0-AF4E-FAE2945E2D3D',
+    vid: '2608060254151617200',
+    sku: 'CJJZLELE00235-Charging sensing yellow light-500mm',
+    title: 'Barra LED Magnética Ultrafina 50 cm con Sensor de Movimiento USB',
+    logisticName: 'CJPacket Sensitive',
+    cogsUsd: 1.06
+  },
+  prod_viral_028: {
+    pid: '2406090246571623400',
+    vid: '2406090246571624000',
+    sku: 'CJJT205645303CX',
+    title: 'Lámpara Acrílica 3D Táctil Tricolor con Control Remoto',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 2.42
+  },
+  'AW-VIRAL-028': {
+    pid: '2406090246571623400',
+    vid: '2406090246571624000',
+    sku: 'CJJT205645303CX',
+    title: 'Lámpara Acrílica 3D Táctil Tricolor con Control Remoto',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 2.42
+  },
+  prod_viral_029: {
+    pid: '1359670736125562880',
+    vid: '1359670737455157248',
+    sku: 'CJQC101111901AZ',
+    title: 'Proyector LED Láser Inalámbrico de Bienvenida para Puerta de Coche',
+    logisticName: 'CJPacket Eub',
+    cogsUsd: 1.41
+  },
+  'AW-VIRAL-029': {
+    pid: '1359670736125562880',
+    vid: '1359670737455157248',
+    sku: 'CJQC101111901AZ',
+    title: 'Proyector LED Láser Inalámbrico de Bienvenida para Puerta de Coche',
+    logisticName: 'CJPacket Eub',
+    cogsUsd: 1.41
+  },
+  prod_viral_030: {
+    pid: '1694541389201154048',
+    vid: '1694541389276651520',
+    sku: 'CJJT182943504DW',
+    title: 'Lámpara de Noche Táctil de Silicona Suave Recargable LED',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 5.47
+  },
+  'AW-VIRAL-030': {
+    pid: '1694541389201154048',
+    vid: '1694541389276651520',
+    sku: 'CJJT182943504DW',
+    title: 'Lámpara de Noche Táctil de Silicona Suave Recargable LED',
+    logisticName: 'CJPacket Liquid Line',
+    cogsUsd: 5.47
   }
 };
 
@@ -487,9 +807,49 @@ export async function dispatchStripeSessionToCj(sessionId, stripeSecretKey) {
       .map((li) => {
         const desc = `${li.description || ''} ${li.price?.product?.name || ''}`.toLowerCase();
         let productId = 'prod_xmas_curtain_001';
-        if (desc.includes('pack mágico') || desc.includes('pack magico') || desc.includes('3 en 1') || desc.includes('aw-xmas-bundle')) {
+        if (desc.includes('pack') || desc.includes('colección completa') || desc.includes('aw-xmas-bundle')) {
           productId = 'prod_xmas_bundle_all';
-        } else if (desc.includes('copos de nieve') || desc.includes('16 figuras') || desc.includes('aw-xmas-002')) {
+        } else if (desc.includes('pasamontañas') || desc.includes('pasamontanas') || desc.includes('balaclava')) {
+          productId = 'prod_viral_011';
+        } else if (desc.includes('llavero') || desc.includes('mosquetón') || desc.includes('mosqueton') || desc.includes('38 g')) {
+          productId = 'prod_viral_012';
+        } else if (desc.includes('linterna táctica') || desc.includes('linterna tactica') || desc.includes('zoom ultrapotente')) {
+          productId = 'prod_viral_013';
+        } else if (desc.includes('cascos') || desc.includes('plegables') || desc.includes('extra bass')) {
+          productId = 'prod_viral_014';
+        } else if (desc.includes('auriculares') || desc.includes('tws')) {
+          productId = 'prod_viral_015';
+        } else if (desc.includes('diadema') || desc.includes('gorro musical') || desc.includes('dormir')) {
+          productId = 'prod_viral_016';
+        } else if (desc.includes('seta') || desc.includes('nogal')) {
+          productId = 'prod_viral_017';
+        } else if (desc.includes('aplique') || desc.includes('sensor inteligente')) {
+          productId = 'prod_viral_018';
+        } else if (desc.includes('astronauta')) {
+          productId = 'prod_viral_019';
+        } else if (desc.includes('puesta de sol') || desc.includes('sunset')) {
+          productId = 'prod_viral_020';
+        } else if (desc.includes('bola voladora') || desc.includes('boomerang')) {
+          productId = 'prod_viral_021';
+        } else if (desc.includes('rebel duck') || desc.includes('pato')) {
+          productId = 'prod_viral_022';
+        } else if (desc.includes('impresora térmica') || desc.includes('impresora termica')) {
+          productId = 'prod_viral_023';
+        } else if (desc.includes('máscara led') || desc.includes('mascara led') || desc.includes('reactiva al sonido')) {
+          productId = 'prod_viral_024';
+        } else if (desc.includes('quitapelusas')) {
+          productId = 'prod_viral_025';
+        } else if (desc.includes('sellador térmico') || desc.includes('sellador termico')) {
+          productId = 'prod_viral_026';
+        } else if (desc.includes('barra led magnética') || desc.includes('barra led magnetica') || desc.includes('50 cm')) {
+          productId = 'prod_viral_027';
+        } else if (desc.includes('tricolor') || desc.includes('control remoto')) {
+          productId = 'prod_viral_028';
+        } else if (desc.includes('puerta de coche') || desc.includes('láser inalámbrico')) {
+          productId = 'prod_viral_029';
+        } else if (desc.includes('silicona suave')) {
+          productId = 'prod_viral_030';
+        } else if (desc.includes('copos de nieve') || desc.includes('16 figuras') || desc.includes('16 patrones') || desc.includes('aw-xmas-002')) {
           productId = 'prod_xmas_projector_002';
         } else if (desc.includes('esfera') || desc.includes('cristal k9') || desc.includes('aw-xmas-003')) {
           productId = 'prod_xmas_crystal_003';
