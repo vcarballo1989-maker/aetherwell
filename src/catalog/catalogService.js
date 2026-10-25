@@ -188,13 +188,25 @@ export function normalizeProduct(raw, idx = 0) {
     sku,
     role: raw.role || 'standard',
     title,
+    shortName: raw.short_name || raw.shortName || title,
+    category: raw.category || raw.niche || 'Iluminación & Ambiente',
     niche: raw.niche || raw.category || 'Health, Wellness & Ergonomic Recovery',
+    shortSummary:
+      raw.short_summary ||
+      raw.shortSummary ||
+      raw.headline ||
+      raw.description ||
+      `${title} con envío a España y garantía oficial.`,
     description:
       raw.description ||
       raw.headline ||
       raw.hook ||
       raw.value_proposition ||
       `${title} — Alta conversión verificada con envío rápido.`,
+    images: Array.isArray(raw.images) && raw.images.length > 0
+      ? raw.images
+      : ['/assets/xmas-01-curtain-lights.jpg'],
+    specs: raw.specs || null,
     price: +price.toFixed(2),
     compareAtPrice: +compareAtPrice.toFixed(2),
     supplierCost: +supplierCost.toFixed(2),
@@ -259,10 +271,10 @@ export function loadCatalog(catalogPath = DEFAULT_CATALOG_PATH) {
             source: 'data/catalog.json',
             metadata: !Array.isArray(parsed)
               ? {
-                  brandName: parsed.brand_identity?.brand_name || 'AetherWell™',
+                  brandName: parsed.brand_identity?.brand_name || 'AetherWell',
                   tagline:
                     parsed.brand_identity?.tagline ||
-                    'Alivio Cervical Clínico y Descanso Profundo en 10 Minutos al Día',
+                    'Gadgets, Iluminación & Hogar',
                   niche:
                     parsed.brand_identity?.niche_category ||
                     parsed.niche ||
@@ -278,7 +290,7 @@ export function loadCatalog(catalogPath = DEFAULT_CATALOG_PATH) {
                     parsed.generated_at || parsed.updatedAt || parsed.timestamp || new Date().toISOString()
                 }
               : {
-                  brandName: 'AetherWell™',
+                  brandName: 'AetherWell',
                   niche: normalized[0]?.niche,
                   freeShippingThresholdUsd: 45.0,
                   standardShippingFeeUsd: 4.99,

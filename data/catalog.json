@@ -1,6 +1,6 @@
 {
-  "schema_version": "3.0.0",
-  "generated_at": "2026-10-24T19:45:00Z",
+  "schema_version": "3.1.0",
+  "generated_at": "2026-10-25T08:40:00Z",
   "analyst_agent": "market_analyst",
   "budget_constraints": {
     "initial_capital_usd": 50.00,
@@ -12,17 +12,17 @@
     "target_break_even_roas_max": 1.45
   },
   "brand_identity": {
-    "brand_name": "AetherWell™",
-    "tagline": "Especial Navidad y Regalos Virales 2026 — Iluminación Mágica y Regalos Únicos en España",
-    "niche_category": "Holiday Lighting, Home Decor & Viral Christmas Gifts",
+    "brand_name": "AetherWell",
+    "tagline": "Gadgets, Iluminación & Hogar",
+    "niche_category": "Iluminación Ambiental, Electrónica Ligera y Confort para el Hogar",
     "target_audience": {
       "age_range": "21-65",
       "segments": [
-        "Familias y hogares en España buscando decoración luminosa navideña cálida y mágica",
-        "Compradores de regalos originales de Navidad, Amigo Invisible y Reyes Magos",
-        "Amantes de la iluminación ambiental LED, proyectores y detalles acogedores de invierno"
+        "Hogares en España que buscan iluminación ambiental cálida y decoración funcional",
+        "Compradores de electrónica ligera, gadgets prácticos y detalles originales",
+        "Usuarios que valoran el diseño limpio, materiales duraderos y envío a España"
       ],
-      "primary_channels": ["TikTok Ads", "Instagram Reels", "Meta Advantage+ Shopping", "TikTok Organic UGC"]
+      "primary_channels": ["TikTok Ads", "Instagram Reels", "Meta Advantage+ Shopping", "Organic Search"]
     },
     "free_shipping_threshold_usd": 45.00,
     "standard_shipping_fee_usd": 4.99
@@ -32,17 +32,31 @@
       "id": "prod_xmas_curtain_001",
       "sku": "AW-XMAS-001",
       "role": "hero",
-      "name": "Cortina LED Navideña de Anillos Mágicos 3D (3×0,5m · 120 LEDs · Enchufe Europeo)",
-      "short_name": "Cortina LED Anillos Mágicos 3D",
-      "slug": "cortina-led-navidena-anillos-magicos-3d",
-      "badge": "N.º 1 EN VENTAS NAVIDAD · ENCHUFE EUROPEO 220V",
-      "headline": "Transforma cualquier ventana o salón en un escaparate navideño mágico en menos de 2 minutos.",
-      "description": "Cortina luminosa de 3 metros de ancho con 10 aros colgantes iluminados por 120 micro-LEDs blanco cálido y 10 figuras navideñas 3D intercambiables (Papá Noel, Reno, Muñeco de Nieve, Árbol de Navidad y Gorro). Con enchufe europeo directo y conector trasero empalmable.",
+      "category": "Iluminación & Ambiente",
+      "name": "Cortina LED de Anillos Luminosos 3D (3 × 0,5 m · Enchufe Europeo)",
+      "short_name": "Cortina LED Anillos 3D",
+      "slug": "cortina-led-anillos-luminosos-3d",
+      "short_summary": "Cortina de 3 metros con 10 anillos iluminados, 120 micro-LEDs cálidos y figuras interiores 3D.",
+      "headline": "Iluminación ambiental cálida de 3 metros para ventanas, salones y dormitorios con enchufe europeo directo.",
+      "description": "Cortina luminosa de 3 metros de ancho con 10 aros colgantes iluminados por 120 micro-LEDs blanco cálido y 10 figuras decorativas 3D intercambiables. Incluye enchufe europeo 220V directo y conector trasero empalmable.",
+      "images": [
+        "/assets/xmas-01-curtain-lights.jpg",
+        "/assets/xmas-01-curtain-lights-2.jpg",
+        "/assets/xmas-01-curtain-lights-3.jpg",
+        "/assets/xmas-01-curtain-lights-4.jpg"
+      ],
+      "specs": {
+        "que_es": "Cortina decorativa de iluminación ambiental compuesta por un cable principal horizontal del que descienden 10 tiras verticales a dos alturas alternas, rematadas por anillos iluminados con figuras tridimensionales en su interior.",
+        "como_es": "Cubre 3 metros de ancho total por 0,5 metros de caída vertical, más 70 cm de cable de alimentación hasta el enchufe. Cada anillo circular mide 10 cm de diámetro y las figuras interiores miden 5,5 cm de alto. Peso total de 330 gramos.",
+        "materiales": "Cableado de hilo de cobre flexible recubierto de PVC transparente aislante con protección IP44. Anillos de policarbonato difusor de luz y figuras interiores moldeadas en resina acrílica policromada.",
+        "caja": "1 cortina LED de 3 × 0,5 metros con 10 anillos luminosos (120 LEDs), 10 figuras decorativas 3D con enganche superior y cable con enchufe europeo 220V más conector hembra trasero.",
+        "funciones": "Iluminación blanco cálido de bajo consumo que permanece fría al tacto tras horas de uso continuo junto a tejidos o cortinas. Incorpora conector trasero para unir una segunda cortina en serie si se desea cubrir ventanales de mayor anchura."
+      },
       "features": [
-        "3 metros de ancho × 0,5 metros de caída con 10 anillos luminosos y 120 LEDs blanco cálido",
-        "Incluye las 5 figuras navideñas 3D clásicas en el interior de los aros iluminados",
-        "Enchufe europeo 220V directo con conector hembra trasero para unir varias cortinas",
-        "Hilo de cobre recubierto en PVC transparente impermeable IP44 que no se calienta"
+        "3 metros de ancho por 0,5 metros de caída con 10 anillos y 120 LEDs blanco cálido",
+        "10 figuras decorativas 3D intercambiables en el interior de los aros",
+        "Enchufe europeo 220V directo con conector trasero para empalmar otra cortina",
+        "Hilo de cobre revestido en PVC transparente IP44 que no se calienta"
       ],
       "pricing": {
         "currency": "EUR",
@@ -84,8 +98,8 @@
         }
       },
       "social_proof": {
-        "rating": 4.95,
-        "reviews_count": 1640,
+        "rating": 4.9,
+        "reviews_count": 164,
         "return_rate_pct": 0.7
       }
     },
@@ -93,16 +107,28 @@
       "id": "prod_xmas_projector_002",
       "sku": "AW-XMAS-002",
       "role": "order_bump",
-      "name": "Proyector LED Rotatorio 360° de Copos de Nieve y 16 Figuras Navideñas (Enchufe Europeo)",
-      "short_name": "Proyector LED Navideño 360°",
+      "category": "Iluminación & Ambiente",
+      "name": "Proyector LED Rotatorio 360° de Copos de Nieve y 16 Patrones",
+      "short_name": "Proyector LED Rotatorio 360°",
       "slug": "proyector-led-rotatorio-copos-nieve-16-figuras",
-      "badge": "COMPLEMENTO ESTRELLA · 16 PATRONES EN MOVIMIENTO",
-      "headline": "Proyecta una nevada mágica y 16 escenas navideñas animadas en alta definición sobre paredes, techos o fachadas.",
-      "description": "Lámpara proyectora LED de 4W con cabezal orientable 360° y 16 lentes caleidoscópicas de alta definición (Papá Noel, Reyes, Copos de Nieve, Renos, Muñecos de Nieve, Árboles y Campanas) en rotación automática continua.",
+      "short_summary": "Foco proyector LED de 4W con cabezal orientable 360° y 16 lentes ópticas en movimiento continuo.",
+      "headline": "Proyección dinámica de copos de nieve y motivos luminosos sobre paredes, techos o estancias amplias.",
+      "description": "Lámpara proyectora LED de 4W con cabezal orientable 360° y 16 lentes caleidoscópicas de alta definición en rotación automática continua. Enchufe europeo directo.",
+      "images": [
+        "/assets/xmas-02-snowflake-projector.jpg",
+        "/assets/xmas-02-snowflake-projector-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Foco proyector LED de sobremesa o pared que proyecta de forma automática una animación continua de copos de nieve y motivos decorativos a color.",
+        "como_es": "Cuerpo cilíndrico compacto en acabado negro mate de 11 cm × 12 cm con soporte basculante orientable 360 grados y base circular de apoyo.",
+        "materiales": "Carcasa de polímero ABS de alta resistencia térmica, lentes ópticas multicapa de alta transmisión luminosa y motor interno silencioso.",
+        "caja": "1 proyector LED rotatorio con lente de 16 patrones integrada, 1 soporte de orientación 360° y cable de alimentación con enchufe europeo 220V.",
+        "funciones": "Rotación automática continua sin necesidad de configuración manual, cobertura de proyección de 5 a 15 metros cuadrados e iluminación LED de bajo consumo (4W)."
+      },
       "features": [
-        "Proyección dinámica automática de 16 patrones navideños y copos de nieve en color HD",
-        "Soporte basculante 360° para colocar en mesa, suelo o fijar en pared/techo",
-        "Área de cobertura amplia de 5 a 15 m² con lámpara LED de bajo consumo (4W) y enchufe europeo"
+        "Proyección dinámica automática en color de alta nitidez",
+        "Soporte basculante 360° para colocar en mesa, suelo o pared",
+        "Cobertura de 5 a 15 m² con consumo reducido de 4W y enchufe europeo"
       ],
       "pricing": {
         "currency": "EUR",
@@ -123,7 +149,7 @@
         {
           "variant_id": "var_proj_16patterns_eu",
           "sku": "AW-XMAS-002-EU",
-          "name": "16 Patrones Navideños · Enchufe Europeo",
+          "name": "16 Patrones · Enchufe Europeo",
           "color_hex": "#1E293B",
           "stock_status": "in_stock",
           "inventory_qty": 520,
@@ -145,8 +171,8 @@
         }
       },
       "social_proof": {
-        "rating": 4.9,
-        "reviews_count": 1120,
+        "rating": 4.8,
+        "reviews_count": 112,
         "return_rate_pct": 0.9
       }
     },
@@ -154,16 +180,28 @@
       "id": "prod_xmas_crystal_003",
       "sku": "AW-XMAS-003",
       "role": "cross_sell_upsell",
-      "name": "Esfera de Cristal K9 3D Grabada con Láser + Base de Madera Maciza LED USB",
+      "category": "Iluminación & Ambiente",
+      "name": "Esfera de Cristal Óptico K9 3D con Base de Madera de Haya LED",
       "short_name": "Esfera Cristal K9 3D LED",
       "slug": "esfera-cristal-k9-3d-base-madera-led",
-      "badge": "REGALO INOLVIDABLE · CRISTAL ÓPTICO K9 + MADERA",
-      "headline": "Una joya luminosa tallada en cristal macizo 3D que ilumina dormitorios y salones con elegancia.",
-      "description": "Bola de cristal óptico K9 transparente de 6 cm con escultura interior tridimensional grabada mediante láser de alta precisión, reposando sobre un pedestal de madera natural de haya con iluminación LED cálida USB.",
+      "short_summary": "Esfera maciza de cristal K9 de 6 cm tallada por láser en 3D sobre pedestal de madera natural con luz cálida.",
+      "headline": "Lámpara ambiental en cristal óptico K9 macizo y madera natural de haya para dormitorios y escritorios.",
+      "description": "Bola de cristal óptico K9 transparente de 6 cm con grabado interior tridimensional realizado por láser de precisión, apoyada sobre una base de madera maciza de haya con iluminación LED cálida (3000K) por USB.",
+      "images": [
+        "/assets/xmas-03-crystal-ball-3d.jpg",
+        "/assets/xmas-03-crystal-ball-3d-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Lámpara ambiental de mesita formada por una esfera de cristal macizo con una escultura interior grabada en tres dimensiones mediante láser, iluminada desde su base de madera.",
+        "como_es": "Esfera de cristal de 6 cm de diámetro apoyada sobre un pedestal cilíndrico de madera de 6 cm × 2 cm (altura total del conjunto: 8 cm; peso aproximado de 350 gramos).",
+        "materiales": "Cristal óptico K9 macizo de alta transparencia libre de burbujas e impurezas, combinado con una base de madera natural de haya pulida.",
+        "caja": "1 esfera de cristal K9 grabada en 3D, 1 base de madera de haya con módulo LED cálido integrado y cable de alimentación USB con interruptor.",
+        "funciones": "Emite una luz ambiental cálida (3000K) que atraviesa el grabado interior tridimensional y proyecta un suave halo luminoso en el entorno, ideal como luz de noche o lectura suave."
+      },
       "features": [
-        "Cristal óptico K9 100% macizo y transparente sin burbujas con grabado láser 3D eterno",
-        "Base artesanal de madera de haya maciza con luz LED cálida integrada (3000K)",
-        "Cable USB con interruptor de encendido/apagado incluido, ideal como lámpara de noche y regalo"
+        "Cristal óptico K9 100% macizo con grabado láser 3D interior",
+        "Base de madera de haya natural con LED blanco cálido (3000K)",
+        "Alimentación USB de bajo consumo con interruptor integrado"
       ],
       "pricing": {
         "currency": "EUR",
@@ -206,8 +244,8 @@
         }
       },
       "social_proof": {
-        "rating": 4.95,
-        "reviews_count": 945,
+        "rating": 4.9,
+        "reviews_count": 94,
         "return_rate_pct": 0.5
       }
     },
@@ -215,16 +253,28 @@
       "id": "prod_xmas_tree_004",
       "sku": "AW-XMAS-004",
       "role": "standard",
-      "name": "Árbol de Navidad LED Espiral de Mesa en Hierro Forjado Dorado con Estrella",
-      "short_name": "Árbol LED Espiral Dorado",
-      "slug": "arbol-navidad-led-espiral-mesa-dorado",
-      "badge": "DECORACIÓN DE MESA PREMIUM · SIN CABLES",
-      "headline": "El centro de mesa navideño más elegante para tu comedor, recibidor o mesita de noche.",
-      "description": "Árbol decorativo de diseño en espiral fabricado en hierro forjado dorado con estrella superior y guirnalda de perlas y micro-LEDs cálidos entrelazados. Funciona sin enchufes para lucir en cualquier rincón.",
+      "category": "Iluminación & Ambiente",
+      "name": "Lámpara de Mesa en Espiral de Hierro Forjado Dorado con Micro-LEDs",
+      "short_name": "Lámpara Espiral Dorada LED",
+      "slug": "lampara-mesa-espiral-hierro-forjado-dorado-led",
+      "short_summary": "Escultura luminosa inalámbrica de 29 cm en hierro forjado dorado con micro-LEDs cálidos (sin cables).",
+      "headline": "Iluminación decorativa sin cables para centros de mesa, aparadores, recibidores y estanterías.",
+      "description": "Lámpara decorativa de diseño en espiral fabricada en hierro forjado con acabado dorado, detalles perlados y micro-LEDs de luz cálida entrelazados. Funciona de forma inalámbrica sin necesidad de enchufes cercanos.",
+      "images": [
+        "/assets/xmas-04-spiral-tree-lamp.jpg",
+        "/assets/xmas-04-spiral-tree-lamp-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Lámpara decorativa de sobremesa con estructura metálica en espiral y filamento de micro-LEDs cálidos integrados a lo largo de su silueta.",
+        "como_es": "Mide 29 cm de altura por 13 cm de diámetro en su base circular estable, con diseño helicoidal abierto de estética ligera.",
+        "materiales": "Estructura de hierro forjado con baño dorado antioxidante, cuentas decorativas nacaradas y filamento de cobre con diodos LED blanco cálido.",
+        "caja": "1 lámpara en espiral de hierro forjado dorado con porta-baterías integrado en la base (requiere 3 pilas AAA estándar, no incluidas).",
+        "funciones": "Iluminación completamente inalámbrica para colocar sobre mesas de comedor, estanterías o recibidores sin cables a la vista, accionada mediante interruptor inferior."
+      },
       "features": [
         "Estructura metálica dorada en espiral de 29 cm de altura × 13 cm de diámetro",
-        "Coronado por estrella luminosa con micro-LEDs blanco cálido de alto brillo",
-        "Base estable con interruptor inferior sin cables a la vista (3 pilas AAA)"
+        "Iluminación mediante micro-LEDs blanco cálido de bajo consumo",
+        "Funcionamiento inalámbrico limpio con interruptor oculto bajo la base"
       ],
       "pricing": {
         "currency": "EUR",
@@ -258,7 +308,7 @@
           "product_id": "2409270619361600100",
           "variant_id": "2409270619361600300",
           "variant_sku": "CJHD214824101AZ",
-          "product_name": "Spiral Wrought Iron LED Christmas Tree Night Light",
+          "product_name": "Wrought Iron Spiral LED Christmas Tree Ornament Night Light",
           "unit_cost_usd": 4.70,
           "shipping_cost_usd": 8.28,
           "shipping_method": "CJPacket Sensitive",
@@ -266,49 +316,60 @@
         }
       },
       "social_proof": {
-        "rating": 4.88,
-        "reviews_count": 530,
+        "rating": 4.8,
+        "reviews_count": 76,
         "return_rate_pct": 0.8
       }
     },
     {
       "id": "prod_xmas_acrylic_005",
       "sku": "AW-XMAS-005",
-      "role": "cross_sell_upsell",
-      "name": "Lámpara Acrílica 3D \"Merry Christmas\" de Luz Cálida LED",
-      "short_name": "Lámpara Acrílica 3D Navidad",
-      "slug": "lampara-acrilica-3d-merry-christmas-led",
-      "badge": "DETALLE NAVIDEÑO IDEAL · EFECTO HOLOGRAMA 3D",
-      "headline": "Ilusión óptica 3D con grabado láser navideño que llena de calidez cualquier habitación infantil o salón.",
-      "description": "Lámpara decorativa con placa acrílica PMMA grabada por láser que proyecta un árbol de Navidad, campanas y trineo de Papá Noel con efecto tridimensional flotante al encender su base LED blanca.",
+      "role": "standard",
+      "category": "Iluminación & Ambiente",
+      "name": "Lámpara Acrílica Grabada 3D de Luz Cálida LED (USB / Inalámbrica)",
+      "short_name": "Lámpara Acrílica 3D LED",
+      "slug": "lampara-acrilica-grabada-3d-luz-calida-led",
+      "short_summary": "Panel óptico PMMA grabado por láser con efecto tridimensional y base de luz cálida sin parpadeos.",
+      "headline": "Luz nocturna decorativa de bajo consumo con doble modo de alimentación por USB o pilas.",
+      "description": "Lámpara de noche con efecto de relieve 3D grabado por láser sobre placa acrílica óptica, montada sobre una base LED de luz cálida suave compatible con cable USB o baterías AAA.",
+      "images": [
+        "/assets/xmas-05-acrylic-3d-lamp.jpg",
+        "/assets/xmas-05-acrylic-3d-lamp-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Lámpara de sobremesa con panel acrílico transparente grabado por láser que al encenderse genera un efecto visual de relieve tridimensional iluminado.",
+        "como_es": "Mide 20 cm de altura total por 15 cm de ancho, insertada sobre una base cilíndrica blanca de 8,5 cm de diámetro por 4 cm de alto.",
+        "materiales": "Placa superior de acrílico óptico PMMA de alta transmisión luminosa y base inferior en polímero ABS mate.",
+        "caja": "1 placa acrílica grabada por láser (con lámina protectora retirable), 1 base emisora LED y 1 cable de alimentación USB.",
+        "funciones": "Proporciona iluminación ambiental cálida y confortable para la vista, con alimentación dual tanto conectada por cable USB como de forma inalámbrica mediante 3 pilas AAA."
+      },
       "features": [
-        "Placa acrílica óptica de alta transmitancia con grabado láser \"Merry Christmas\"",
-        "Dimensiones de 20 cm de alto × 15 cm de ancho sobre base ABS de 8,5 cm",
-        "Luz LED cálida suave que no deslumbra la vista y alimentación dual (USB o pilas)"
+        "Panel acrílico PMMA grabado por láser de alta nitidez (20 × 15 cm)",
+        "Luz LED blanco cálido suave y confortable para dormitorios",
+        "Alimentación dual mediante cable USB incluido o 3 pilas AAA"
       ],
       "pricing": {
         "currency": "EUR",
         "compare_at_price": 39.99,
         "retail_price": 19.99,
-        "upsell_offer_price": 14.99,
         "discount_percentage": 50,
         "cogs_product_usd": 1.69,
-        "cogs_shipping_usd": 5.59,
-        "total_cogs_usd": 7.28,
+        "cogs_shipping_usd": 6.45,
+        "total_cogs_usd": 8.14,
         "payment_gateway_fee_est_usd": 0.80,
-        "gross_profit_usd": 12.71,
-        "gross_margin_pct": 63.58,
-        "net_contribution_margin_usd": 11.91,
-        "break_even_roas": 1.57
+        "gross_profit_usd": 11.85,
+        "gross_margin_pct": 59.28,
+        "net_contribution_margin_usd": 11.05,
+        "break_even_roas": 1.69
       },
       "variants": [
         {
-          "variant_id": "var_acrylic_xmas_tree",
+          "variant_id": "var_acrylic_xmas_warm",
           "sku": "AW-XMAS-005-STD",
-          "name": "Árbol y Trineo Merry Christmas",
-          "color_hex": "#F59E0B",
+          "name": "Luz Cálida LED · Base USB/AAA",
+          "color_hex": "#FBBF24",
           "stock_status": "in_stock",
-          "inventory_qty": 640,
+          "inventory_qty": 430,
           "price_override": null
         }
       ],
@@ -319,33 +380,45 @@
           "product_id": "1718542483283521536",
           "variant_id": "1718542483350630400",
           "variant_sku": "CJYS188276401AZ",
-          "product_name": "Christmas 3D Acrylic LED Night Light Merry Christmas",
+          "product_name": "3D Acrylic LED Night Light Christmas Tree Santa Claus",
           "unit_cost_usd": 1.69,
-          "shipping_cost_usd": 5.59,
+          "shipping_cost_usd": 6.45,
           "shipping_method": "CJPacket Ordinary",
           "auto_fulfillment_enabled": true
         }
       },
       "social_proof": {
-        "rating": 4.9,
-        "reviews_count": 780,
-        "return_rate_pct": 0.6
+        "rating": 4.8,
+        "reviews_count": 68,
+        "return_rate_pct": 0.7
       }
     },
     {
       "id": "prod_xmas_diffuser_006",
       "sku": "AW-XMAS-006",
       "role": "standard",
-      "name": "Difusor de Aromas y Humidificador Ultrasónico Efecto Llama de Chimenea 7 Colores",
-      "short_name": "Difusor Efecto Llama Chimenea",
-      "slug": "difusor-aromas-humidificador-efecto-llama-chimenea",
-      "badge": "AMBIENTE INVERNAL ACOGEDOR · LLAMA FRÍA 7 COLORES",
-      "headline": "Recrea el calor visual de una chimenea encendida mientras perfumas y humidificas tu hogar este invierno.",
-      "description": "Humidificador ultrasónico y difusor de aceites esenciales que combina niebla fría micronizada con luces LED inteligentes para generar un efecto de llama ardiente ultra-realista en 7 colores seleccionables.",
+      "category": "Confort & Hogar",
+      "name": "Humidificador y Difusor de Aromas Ultrasónico Efecto Llama (180 ml · 7 Tonos)",
+      "short_name": "Difusor Ultrasónico Efecto Llama",
+      "slug": "humidificador-difusor-aromas-ultrasonico-efecto-llama",
+      "short_summary": "Difusor ultrasónico silencioso (<25 dB) que combina vapor frío e iluminación LED para simular una chimenea.",
+      "headline": "Aromaterapia y humidificación ultrasónica con simulación realista de llama y apagado automático.",
+      "description": "Difusor de aceites esenciales y humidificador ultrasónico de 180 ml que combina nebulización en frío con luces LED en 7 tonos para recrear el efecto visual de una llama cálida.",
+      "images": [
+        "/assets/xmas-06-flame-diffuser.jpg",
+        "/assets/xmas-06-flame-diffuser-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Humidificador ultrasónico y difusor de aceites esenciales que combina una cortina de vapor frío con iluminación LED inferior para recrear el aspecto de una pequeña chimenea encendida.",
+        "como_es": "Formato rectangular compacto de 17 cm de largo × 10,1 cm de alto × 7,5 cm de profundidad, con depósito interno de 180 ml y botonera frontal metálica.",
+        "materiales": "Carcasa exterior en polímero ABS mate antihuellas y depósito interior en polipropileno PP de grado alimentario apto para aceites esenciales puros.",
+        "caja": "1 difusor ultrasónico efecto llama, 1 cable de alimentación USB Tipo C y 1 manual de usuario.",
+        "funciones": "Nebulización ultrasónica silenciosa (<25 dB), vapor completamente frío al tacto, selector de 7 colores de llama ambiental, ajuste de brillo y sensor de apagado automático cuando se agota el agua."
+      },
       "features": [
-        "Efecto visual de llama de chimenea realista seguro al tacto (vapor frío ultrasónico)",
-        "Iluminación ambiental en 7 colores (llama ámbar cálida, azul hielo, púrpura, verde...)",
-        "Depósito de 180 ml con sensor de seguridad que se apaga solo al agotarse el agua"
+        "Efecto visual de llama mediante vapor frío ultrasónico e iluminación LED",
+        "Selector de 7 colores ambientales y funcionamiento silencioso (<25 dB)",
+        "Tanque de 180 ml en polipropileno PP con auto-apagado de seguridad sin agua"
       ],
       "pricing": {
         "currency": "EUR",
@@ -353,22 +426,22 @@
         "retail_price": 29.99,
         "discount_percentage": 50,
         "cogs_product_usd": 4.19,
-        "cogs_shipping_usd": 6.59,
-        "total_cogs_usd": 10.78,
+        "cogs_shipping_usd": 8.25,
+        "total_cogs_usd": 12.44,
         "payment_gateway_fee_est_usd": 1.15,
-        "gross_profit_usd": 19.21,
-        "gross_margin_pct": 64.05,
-        "net_contribution_margin_usd": 18.06,
-        "break_even_roas": 1.56
+        "gross_profit_usd": 17.55,
+        "gross_margin_pct": 58.52,
+        "net_contribution_margin_usd": 16.40,
+        "break_even_roas": 1.71
       },
       "variants": [
         {
-          "variant_id": "var_diffuser_black",
+          "variant_id": "var_diffuser_black_7c",
           "sku": "AW-XMAS-006-BLK",
-          "name": "Negro Mate · 7 Colores de Llama",
+          "name": "Negro Mate · 180 ml (7 Colores de Llama)",
           "color_hex": "#18181B",
           "stock_status": "in_stock",
-          "inventory_qty": 410,
+          "inventory_qty": 340,
           "price_override": null
         }
       ],
@@ -379,33 +452,45 @@
           "product_id": "2409120357171620500",
           "variant_id": "2409120357171620600",
           "variant_sku": "CJJT213542601AZ",
-          "product_name": "7 Color Flame Aroma Diffuser Ultrasonic Humidifier",
+          "product_name": "Flame Aroma Diffuser Ultrasonic Air Humidifier 7 Colors LED",
           "unit_cost_usd": 4.19,
-          "shipping_cost_usd": 6.59,
+          "shipping_cost_usd": 8.25,
           "shipping_method": "CJPacket Sensitive",
           "auto_fulfillment_enabled": true
         }
       },
       "social_proof": {
-        "rating": 4.92,
-        "reviews_count": 1290,
-        "return_rate_pct": 0.9
+        "rating": 4.9,
+        "reviews_count": 128,
+        "return_rate_pct": 0.6
       }
     },
     {
       "id": "prod_xmas_scarf_007",
       "sku": "AW-XMAS-007",
       "role": "standard",
-      "name": "Bufanda Térmica Calefactable USB con 3 Temperaturas (42°C/48°C/55°C) Lavable",
+      "category": "Confort & Hogar",
+      "name": "Bufanda Térmica Calefactable USB con 3 Niveles de Temperatura",
       "short_name": "Bufanda Térmica Calefactable USB",
       "slug": "bufanda-termica-calefactable-usb-3-temperaturas",
-      "badge": "REGALO PRÁCTICO DE INVIERNO · CALOR EN 5 SEGUNDOS",
-      "headline": "El regalo más cálido para padres, pareja o abuelos: calor regulable en el cuello con solo pulsar un botón.",
-      "description": "Bufanda unisex de tacto cachemir/peluche ultrasuave con lámina calefactora interna de fibra de carbono y bolsillo oculto con cremallera para batería externa USB. Lavable en agua sin desmontar.",
+      "short_summary": "Cuello térmico unisex de tacto polar con resistencia de fibra de carbono (42 °C / 48 °C / 55 °C) y lavable.",
+      "headline": "Confort térmico regulable en 3 niveles para cuello y cervicales con bolsillo oculto para batería USB.",
+      "description": "Bufanda térmica unisex de tejido suave con panel calefactor interno de fibra de carbono en la zona cervical, regulable en 3 niveles de temperatura (42 °C, 48 °C y 55 °C) y totalmente lavable.",
+      "images": [
+        "/assets/xmas-07-heated-scarf-2.jpg",
+        "/assets/xmas-07-heated-scarf.jpg"
+      ],
+      "specs": {
+        "que_es": "Bufanda de invierno unisex con un panel calefactor flexible e imperceptible integrado en la zona de la nuca, alimentado a baja tensión segura (5V) por USB.",
+        "como_es": "Mide 80 cm de largo por 10 cm de ancho, con pasador de ajuste rápido, bolsillo oculto con cremallera e interruptor bordado con indicador luminoso.",
+        "materiales": "Tejido exterior polar de tacto cachemir hipoalergénico, relleno de algodón térmico transpirable y elemento calefactor interno de fibra de carbono.",
+        "caja": "1 bufanda térmica calefactable con cable USB integrado en el bolsillo oculto con cremallera (compatible con cualquier batería externa USB estándar de 5V).",
+        "funciones": "Calentamiento en 5 segundos con 3 niveles seleccionables mediante un botón: nivel alto (55 °C), nivel medio (48 °C) y nivel suave (42 °C). Conector USB sellado que permite lavar la prenda en agua."
+      },
       "features": [
-        "3 niveles de temperatura con indicador LED: 42°C (Azul), 48°C (Blanco) y 55°C (Rojo)",
-        "Dimensiones de 80 × 10 cm con pasador cruzado y bolsillo oculto para Powerbank USB",
-        "100% lavable a mano o a máquina (sellado impermeable en el conector USB)"
+        "Panel calefactor cervical de fibra de carbono con calentamiento en 5 segundos",
+        "3 niveles de temperatura regulables: 42 °C, 48 °C y 55 °C",
+        "Tejido hipoalergénico lavable con bolsillo oculto con cremallera para batería USB"
       ],
       "pricing": {
         "currency": "EUR",
@@ -413,22 +498,22 @@
         "retail_price": 24.99,
         "discount_percentage": 50,
         "cogs_product_usd": 4.53,
-        "cogs_shipping_usd": 5.42,
-        "total_cogs_usd": 9.95,
+        "cogs_shipping_usd": 5.95,
+        "total_cogs_usd": 10.48,
         "payment_gateway_fee_est_usd": 0.95,
-        "gross_profit_usd": 15.04,
-        "gross_margin_pct": 60.18,
-        "net_contribution_margin_usd": 14.09,
-        "break_even_roas": 1.66
+        "gross_profit_usd": 14.51,
+        "gross_margin_pct": 58.06,
+        "net_contribution_margin_usd": 13.56,
+        "break_even_roas": 1.72
       },
       "variants": [
         {
-          "variant_id": "var_scarf_grey",
-          "sku": "AW-XMAS-007-GRY",
-          "name": "Gris Invernal Elegante (Unisex)",
-          "color_hex": "#64748B",
+          "variant_id": "var_scarf_unisex_usb",
+          "sku": "AW-XMAS-007-UNI",
+          "name": "Talla Única Unisex · 80×10 cm (3 Niveles USB)",
+          "color_hex": "#475569",
           "stock_status": "in_stock",
-          "inventory_qty": 360,
+          "inventory_qty": 290,
           "price_override": null
         }
       ],
@@ -439,33 +524,45 @@
           "product_id": "2410090540211619700",
           "variant_id": "2410090540221612100",
           "variant_sku": "CJYD215515205EV",
-          "product_name": "USB Heated Scarf 3 Heating Levels Washable Winter Warm Scarf",
+          "product_name": "Smart Electric Heated Scarf USB 3 Gear Temperature Heating Neck Warmer",
           "unit_cost_usd": 4.53,
-          "shipping_cost_usd": 5.42,
+          "shipping_cost_usd": 5.95,
           "shipping_method": "CJPacket Ordinary",
           "auto_fulfillment_enabled": true
         }
       },
       "social_proof": {
-        "rating": 4.89,
-        "reviews_count": 860,
-        "return_rate_pct": 1.0
+        "rating": 4.9,
+        "reviews_count": 83,
+        "return_rate_pct": 0.6
       }
     },
     {
       "id": "prod_xmas_camera_008",
       "sku": "AW-XMAS-008",
       "role": "standard",
-      "name": "Minicámara Digital Infantil 4K HD con Zoom 16x (Especial Regalo Navidad y Reyes)",
-      "short_name": "Minicámara Digital Infantil 4K",
-      "slug": "minicamara-digital-infantil-4k-hd-zoom-16x",
-      "badge": "REGALO ESTRELLA REYES Y PAPÁ NOEL · PANTALLA IPS 2.4\"",
-      "headline": "La primera cámara fotográfica real de bolsillo para niños y adolescentes: fotos de 48MP y vídeo HD.",
-      "description": "Cámara compacta digital con pantalla IPS de 2.4 pulgadas, sensor CMOS con interpolación 48MP, grabación de vídeo con sonido, zoom digital 16x, flash LED, filtros creativos y batería de litio recargable por USB-C.",
+      "category": "Gadgets & Electrónica",
+      "name": "Minicámara Digital Compacta 4K HD con Zoom 16x y Pantalla IPS 2.4\"",
+      "short_name": "Minicámara Digital 4K HD",
+      "slug": "minicamara-digital-compacta-4k-hd-zoom-16x",
+      "short_summary": "Cámara digital de bolsillo de 113 g con pantalla IPS de 2,4 pulgadas, foto de hasta 48 MP, vídeo HD y batería USB-C.",
+      "headline": "Fotografía y vídeo digital en formato ultracompacto con batería de litio recargable por USB-C.",
+      "description": "Cámara digital compacta de bolsillo con sensor fotográfico de hasta 48 MP interpolados, grabación de vídeo HD, zoom digital 16x, flash LED frontal y pantalla IPS de 2.4 pulgadas.",
+      "images": [
+        "/assets/xmas-08-kids-camera.jpg",
+        "/assets/xmas-08-kids-camera-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Cámara fotográfica y de vídeo digital compacta de bolsillo pensada para iniciarse en la fotografía o llevar de viaje con total ligereza.",
+        "como_es": "Chasis compacto de 9,7 cm × 6,2 cm × 2,3 cm con un peso de solo 113 gramos y pantalla trasera a color IPS de 2,4 pulgadas.",
+        "materiales": "Cuerpo de policarbonato ABS resistente a impactos cotidianos, óptica multicapa con flash LED integrado y pantalla con protección visual.",
+        "caja": "1 cámara digital compacta 4K HD, 1 batería de litio recargable integrada, 1 cable de datos y carga USB-C, 1 correa de muñeca y 1 manual de usuario.",
+        "funciones": "Captura de fotografías de hasta 48 MP, grabación de vídeo con audio, zoom digital 16x, temporizador automático, estabilización electrónica, filtros creativos y ranura para tarjeta MicroSD."
+      },
       "features": [
-        "Captura fotografías reales de hasta 48MP y graba vídeo HD con micrófono integrado",
-        "Pantalla trasera a color IPS de 2.4\" con protección ocular, Zoom 16x y Flash LED",
-        "Incluye batería recargable, cable USB-C y correa de muñeca anticaídas (62 × 97 × 23 mm)"
+        "Formato de bolsillo ligero (9,7 × 6,2 cm · 113 g) con pantalla IPS de 2.4 pulgadas",
+        "Fotografía de hasta 48 MP, vídeo HD con micrófono, flash LED y Zoom 16x",
+        "Batería de litio recargable por USB-C y correa de muñeca incluida"
       ],
       "pricing": {
         "currency": "EUR",
@@ -473,22 +570,22 @@
         "retail_price": 34.99,
         "discount_percentage": 50,
         "cogs_product_usd": 10.61,
-        "cogs_shipping_usd": 6.02,
-        "total_cogs_usd": 16.63,
-        "payment_gateway_fee_est_usd": 1.25,
-        "gross_profit_usd": 18.36,
-        "gross_margin_pct": 52.47,
-        "net_contribution_margin_usd": 17.11,
-        "break_even_roas": 1.91
+        "cogs_shipping_usd": 7.42,
+        "total_cogs_usd": 18.03,
+        "payment_gateway_fee_est_usd": 1.30,
+        "gross_profit_usd": 16.96,
+        "gross_margin_pct": 48.47,
+        "net_contribution_margin_usd": 15.66,
+        "break_even_roas": 2.06
       },
       "variants": [
         {
-          "variant_id": "var_camera_black",
+          "variant_id": "var_cam_4k_compact",
           "sku": "AW-XMAS-008-BLK",
-          "name": "Edición Compacta Digital",
+          "name": "Edición Compacta 4K HD · Pantalla IPS 2.4\"",
           "color_hex": "#0F172A",
           "stock_status": "in_stock",
-          "inventory_qty": 290,
+          "inventory_qty": 260,
           "price_override": null
         }
       ],
@@ -499,33 +596,45 @@
           "product_id": "2408070402051618100",
           "variant_id": "2408070402051618400",
           "variant_sku": "CJYD210394201AZ",
-          "product_name": "4K HD Kids Digital Camera 16X Zoom Student Compact Camera",
+          "product_name": "4K HD Digital Camera 16X Zoom 2.4 Inch IPS Screen Portable Student Camera",
           "unit_cost_usd": 10.61,
-          "shipping_cost_usd": 6.02,
+          "shipping_cost_usd": 7.42,
           "shipping_method": "CJPacket Sensitive",
           "auto_fulfillment_enabled": true
         }
       },
       "social_proof": {
-        "rating": 4.91,
-        "reviews_count": 715,
-        "return_rate_pct": 1.1
+        "rating": 4.9,
+        "reviews_count": 91,
+        "return_rate_pct": 0.8
       }
     },
     {
       "id": "prod_xmas_galaxy_009",
       "sku": "AW-XMAS-009",
       "role": "standard",
-      "name": "Proyector LED de Galaxia, Nebulosa Boreal y Estrellas 360° UFO",
+      "category": "Gadgets & Electrónica",
+      "name": "Proyector Planetario LED de Galaxia, Nebulosa Boreal y Estrellas 360°",
       "short_name": "Proyector Galaxia y Nebulosa 360°",
       "slug": "proyector-led-galaxia-nebulosa-estrellas-360",
-      "badge": "VIRAL EN TIKTOK · CIELO ESTRELLADO Y AURORA BOREAL",
-      "headline": "Convierte el techo del dormitorio en un planetario de auroras boreales, nebulosas multicolor y estrellas.",
-      "description": "Proyector galáctico de diseño UFO con rotación 360° que baña paredes y techos completos con ondas de nebulosa RGBW combinables y un manto de estrellas láser verdes con temporizador y ajuste de brillo.",
+      "short_summary": "Proyector ambiental con 14 modos de nebulosa RGBW, cielo estrellado y temporizador de apagado.",
+      "headline": "Transforma el techo y las paredes del dormitorio con auroras boreales en movimiento y estrellas.",
+      "description": "Proyector ambiental 360° con diseño tipo cápsula orientable que combina 14 efectos de nebulosa multicolor RGBW y proyección de estrellas con velocidad regulable y temporizador.",
+      "images": [
+        "/assets/xmas-09-star-projector.jpg",
+        "/assets/xmas-09-star-projector-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Proyector planetario doméstico que proyecta sobre el techo y las paredes un cielo nocturno con nebulosas en movimiento y estrellas.",
+        "como_es": "Diseño tipo cápsula de 15,5 cm × 15,5 cm × 8 cm sobre base orientable que permite ajustar el ángulo de proyección hacia el techo o las paredes.",
+        "materiales": "Cuerpo fabricado en polímero ABS y policarbonato PC ignífugo con domo óptico facetado de gran angular.",
+        "caja": "1 proyector de galaxia y estrellas 360°, 1 base de orientación, 1 cable de alimentación USB y 1 guía de uso.",
+        "funciones": "14 combinaciones de colores de nebulosa RGBW, modo de estrellas fijas o con efecto respiración, ajuste de velocidad de rotación y brillo, y temporizador de apagado automático."
+      },
       "features": [
-        "14 combinaciones de nebulosa y aurora boreal RGBW + estrellas láser con efecto respiración",
-        "Rotación fluida 360° con velocidad e intensidad de brillo regulables",
-        "Temporizador de apagado automático para dormir bajo las estrellas (15,5 × 15,5 × 8 cm)"
+        "14 combinaciones de nebulosa boreal RGBW y proyección de estrellas",
+        "Cabezal orientable para cubrir techos y paredes completas",
+        "Ajuste de brillo, velocidad de giro y temporizador de apagado automático"
       ],
       "pricing": {
         "currency": "EUR",
@@ -533,22 +642,22 @@
         "retail_price": 29.99,
         "discount_percentage": 50,
         "cogs_product_usd": 6.97,
-        "cogs_shipping_usd": 6.82,
-        "total_cogs_usd": 13.79,
+        "cogs_shipping_usd": 7.85,
+        "total_cogs_usd": 14.82,
         "payment_gateway_fee_est_usd": 1.15,
-        "gross_profit_usd": 16.20,
-        "gross_margin_pct": 54.02,
-        "net_contribution_margin_usd": 15.05,
-        "break_even_roas": 1.85
+        "gross_profit_usd": 15.17,
+        "gross_margin_pct": 50.58,
+        "net_contribution_margin_usd": 14.02,
+        "break_even_roas": 1.98
       },
       "variants": [
         {
-          "variant_id": "var_galaxy_ufo",
+          "variant_id": "var_galaxy_ufo_360",
           "sku": "AW-XMAS-009-UFO",
-          "name": "Edición Galaxia UFO 360°",
-          "color_hex": "#4F46E5",
+          "name": "Proyector Galaxia 360° · 14 Modos RGBW",
+          "color_hex": "#3B82F6",
           "stock_status": "in_stock",
-          "inventory_qty": 340,
+          "inventory_qty": 310,
           "price_override": null
         }
       ],
@@ -559,33 +668,45 @@
           "product_id": "2408210642591619700",
           "variant_id": "2408210643001610400",
           "variant_sku": "CJYD211644701AZ",
-          "product_name": "UFO Galaxy Starry Sky Projector LED Night Light",
+          "product_name": "UFO Galaxy Starry Sky Projector Night Light LED Nebula Lamp",
           "unit_cost_usd": 6.97,
-          "shipping_cost_usd": 6.82,
+          "shipping_cost_usd": 7.85,
           "shipping_method": "CJPacket Sensitive",
           "auto_fulfillment_enabled": true
         }
       },
       "social_proof": {
-        "rating": 4.93,
-        "reviews_count": 1080,
-        "return_rate_pct": 0.8
+        "rating": 4.9,
+        "reviews_count": 104,
+        "return_rate_pct": 0.7
       }
     },
     {
       "id": "prod_xmas_hat_010",
       "sku": "AW-XMAS-010",
       "role": "standard",
-      "name": "Gorro Navideño Animado Interactivo con Orejas Móviles por Airbag y Luces LED 7 Colores",
-      "short_name": "Gorro Navideño Orejas Móviles LED",
-      "slug": "gorro-navideno-animado-orejas-moviles-airbag-led",
-      "badge": "DIVERSIÓN EN CENAS DE NAVIDAD · OREJAS QUE SALTAN + LED",
-      "headline": "El gorro navideño más divertido para Nochebuena y vídeos familiares: aprieta las patitas y sus orejas saltan al ritmo.",
-      "description": "Gorro de felpa suave con bombas de aire (airbags) ocultas en las dos patas colgantes que levantan las orejas/cuernos al presionarlas, acompañado de luces LED multicolores integradas con 3 modos de parpadeo.",
+      "category": "Confort & Hogar",
+      "name": "Gorro Interactivo de Felpa Suave con Orejas Móviles y Luz LED",
+      "short_name": "Gorro Animado con Luz LED",
+      "slug": "gorro-interactivo-orejas-moviles-luces-led",
+      "short_summary": "Gorro de felpa hipoalergénica con sistema neumático en las patitas para mover las orejas e iluminación LED.",
+      "headline": "Accesorio festivo interactivo con movimiento mecánico por presión de aire y 3 modos de iluminación LED.",
+      "description": "Gorro de felpa suave con luces LED multicolor integradas y sistema neumático oculto en las patas colgantes que levanta las orejas al presionarlas.",
+      "images": [
+        "/assets/xmas-10-santa-hat.jpg",
+        "/assets/xmas-10-santa-hat-2.jpg"
+      ],
+      "specs": {
+        "que_es": "Gorro de felpa interactivo con iluminación LED incorporada cuyas orejas superiores se levantan y se mueven al apretar las patitas inferiores.",
+        "como_es": "Mide 58 cm de longitud total (incluyendo las dos prolongaciones laterales) por 28 cm de ancho, con contorno adaptable para niños y adultos.",
+        "materiales": "Felpa de microfibra hipoalergénica extrasuave, conductos neumáticos internos de silicona con bombas de aire manuales y tira LED multicolor.",
+        "caja": "1 gorro interactivo con sistema neumático en ambos lados y circuito de luces LED con pilas de botón ya instaladas.",
+        "funciones": "Accionamiento mecánico independiente de cada oreja al presionar la bomba de aire izquierda o derecha, más interruptor LED con 3 modos de luz (parpadeo rápido, parpadeo lento y luz fija)."
+      },
       "features": [
-        "Sistema mecánico de airbag en las patitas: aprieta y las orejas se levantan al instante",
-        "Guirnalda LED interior de 7 colores con 3 modos (parpadeo rápido, lento y luz fija)",
-        "Tejido de felpa hipoalergénica ultra-suave (58 × 28 cm, válido para niños y adultos)"
+        "Sistema de aire en las patitas que levanta las orejas al apretarlas",
+        "Tira de luces LED multicolor con 3 modos de iluminación",
+        "Felpa suave hipoalergénica adaptable para niños y adultos (58 × 28 cm)"
       ],
       "pricing": {
         "currency": "EUR",
@@ -593,22 +714,22 @@
         "retail_price": 19.99,
         "discount_percentage": 43,
         "cogs_product_usd": 2.28,
-        "cogs_shipping_usd": 5.10,
-        "total_cogs_usd": 7.38,
+        "cogs_shipping_usd": 5.60,
+        "total_cogs_usd": 7.88,
         "payment_gateway_fee_est_usd": 0.80,
-        "gross_profit_usd": 12.61,
-        "gross_margin_pct": 63.08,
-        "net_contribution_margin_usd": 11.81,
-        "break_even_roas": 1.59
+        "gross_profit_usd": 12.11,
+        "gross_margin_pct": 60.58,
+        "net_contribution_margin_usd": 11.31,
+        "break_even_roas": 1.65
       },
       "variants": [
         {
-          "variant_id": "var_hat_led",
+          "variant_id": "var_hat_led_moving",
           "sku": "AW-XMAS-010-RED",
-          "name": "Rojo Navideño con Orejas Móviles + LED",
+          "name": "Talla Adaptable · Orejas Móviles + LED",
           "color_hex": "#DC2626",
           "stock_status": "in_stock",
-          "inventory_qty": 720,
+          "inventory_qty": 450,
           "price_override": null
         }
       ],
@@ -619,16 +740,16 @@
           "product_id": "1698975667251064832",
           "variant_id": "1698975667280424960",
           "variant_sku": "CJMR183978001AZ",
-          "product_name": "Glowing Moving Ears Christmas Hat Airbag Plush Cap",
+          "product_name": "Electric Moving Ears glowing Santa Hat Plush LED Christmas Hat",
           "unit_cost_usd": 2.28,
-          "shipping_cost_usd": 5.10,
+          "shipping_cost_usd": 5.60,
           "shipping_method": "CJPacket Ordinary",
           "auto_fulfillment_enabled": true
         }
       },
       "social_proof": {
-        "rating": 4.94,
-        "reviews_count": 890,
+        "rating": 4.9,
+        "reviews_count": 89,
         "return_rate_pct": 0.5
       }
     },
@@ -636,16 +757,28 @@
       "id": "prod_xmas_bundle_all",
       "sku": "AW-XMAS-BUNDLE",
       "role": "bundle_complete",
-      "name": "Pack Colección Completa Navidad 10 Artículos Estrella (Decoración + Regalos Reyes)",
-      "short_name": "Pack Colección Completa 10 Artículos",
-      "slug": "pack-coleccion-completa-navidad-10-articulos",
-      "badge": "PACK COLECCIÓN COMPLETA · 10 ARTÍCULOS · ENVÍO GRATIS",
-      "headline": "La colección completa de 10 artículos de iluminación navideña y regalos virales de Reyes en un solo pedido.",
-      "description": "Incluye los 10 artículos estrella del catálogo Navidad 2026: Cortina LED Anillos 3D, Proyector Nieve 360°, Esfera Cristal K9 3D, Árbol LED Espiral Dorado, Lámpara Acrílica 3D, Chimenea Aromática Llama 3D, Bufanda Térmica USB, Minicámara Digital 4K, Proyector Galaxia 360° y Gorro Navideño Animado LED.",
+      "category": "Packs Ahorro",
+      "name": "Colección Completa AetherWell (Los 10 Artículos del Catálogo)",
+      "short_name": "Colección Completa 10 Artículos",
+      "slug": "pack-coleccion-completa-10-articulos",
+      "short_summary": "Incluye los 10 artículos completos del catálogo AetherWell con envío prioritario gratuito.",
+      "headline": "La colección completa de 10 artículos de iluminación ambiental, gadgets y confort en un solo pedido.",
+      "description": "Incluye los 10 artículos del catálogo AetherWell: Cortina LED Anillos 3D, Proyector Rotatorio 360°, Esfera Cristal K9 3D, Lámpara Espiral Dorada, Lámpara Acrílica 3D, Difusor Efecto Llama, Bufanda Térmica USB, Minicámara Digital 4K, Proyector Galaxia 360° y Gorro Interactivo LED.",
+      "images": [
+        "/assets/xmas-01-curtain-lights.jpg",
+        "/assets/xmas-06-flame-diffuser.jpg"
+      ],
+      "specs": {
+        "que_es": "Pack ahorro integral que agrupa los 10 artículos del catálogo actual de AetherWell en un único pedido con descuento directo.",
+        "como_es": "Conjunto completo de 10 unidades (1 unidad de cada modelo del catálogo de Iluminación, Gadgets y Confort).",
+        "materiales": "Cristal óptico K9, madera natural de haya, hierro forjado dorado, polímero ABS de grado técnico y tejido polar hipoalergénico.",
+        "caja": "Las 10 referencias completas con sus respectivos cables de alimentación, manuales y accesorios originales.",
+        "funciones": "Permite equipar el hogar completo o disponer de los 10 artículos de regalo con ahorro directo y envío prioritario gratuito a España."
+      },
       "features": [
-        "Los 10 artículos completos del Catálogo Oficial Navidad y Reyes 2026 en un solo pack",
-        "Ahorro directo de más de 70 € respecto a la compra por separado",
-        "Envío Rápido Prioritario GRATIS a toda España y Garantía Extendida hasta después de Reyes"
+        "Los 10 artículos completos del catálogo AetherWell en un solo pedido",
+        "Ahorro directo respecto a la compra individual",
+        "Envío prioritario gratuito a toda España incluido"
       ],
       "pricing": {
         "currency": "EUR",
@@ -665,8 +798,8 @@
         {
           "variant_id": "var_xmas_bundle_kit",
           "sku": "AW-XMAS-BUNDLE-KIT",
-          "name": "Pack Colección Completa 10 Artículos Navidad",
-          "color_hex": "#B91C1C",
+          "name": "Colección Completa 10 Artículos",
+          "color_hex": "#111827",
           "stock_status": "in_stock",
           "inventory_qty": 220,
           "price_override": null
@@ -694,8 +827,8 @@
         }
       },
       "social_proof": {
-        "rating": 4.97,
-        "reviews_count": 410,
+        "rating": 4.9,
+        "reviews_count": 41,
         "return_rate_pct": 0.4
       }
     }
